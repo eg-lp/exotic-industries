@@ -6,6 +6,15 @@
 
 -- basic steam train
 
+
+local drive_over_tie = function()
+	return
+	{
+	  type = "play-sound",
+	  sound = sound_variations("__base__/sound/train-tie", 6, 0.4, { volume_multiplier("main-menu", 2.4), volume_multiplier("driving", 1.3) } )
+	}
+  end
+
 data:extend({
     {
         name = "ei_steam-basic-locomotive",
@@ -205,37 +214,38 @@ data:extend({
 		
 		pictures =
 		{
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames =
-			{
-				ei_graphics_train_path.."se_cbl_sheet-0.png",
-				ei_graphics_train_path.."se_cbl_sheet-1.png",
-				ei_graphics_train_path.."se_cbl_sheet-2.png",
-				ei_graphics_train_path.."se_cbl_sheet-3.png",
-				ei_graphics_train_path.."se_cbl_sheet-4.png",
-				ei_graphics_train_path.."se_cbl_sheet-5.png",
-				ei_graphics_train_path.."se_cbl_sheet-6.png",
-				ei_graphics_train_path.."se_cbl_sheet-7.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0, -1.125},
-			scale = 0.5,
-			
+			rotated = {
+				priority = "very-low",
+				width = 512,
+				height = 512,
+				direction_count = 128,
+				filenames =
+				{
+					ei_graphics_train_path.."se_cbl_sheet-0.png",
+					ei_graphics_train_path.."se_cbl_sheet-1.png",
+					ei_graphics_train_path.."se_cbl_sheet-2.png",
+					ei_graphics_train_path.."se_cbl_sheet-3.png",
+					ei_graphics_train_path.."se_cbl_sheet-4.png",
+					ei_graphics_train_path.."se_cbl_sheet-5.png",
+					ei_graphics_train_path.."se_cbl_sheet-6.png",
+					ei_graphics_train_path.."se_cbl_sheet-7.png",
+				},
+				line_length = 4,
+				lines_per_file = 4,
+				shift = {0, -1.125},
+				scale = 0.5,
+			}
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 		  flags = {"icon"},
 		  size = {20, 40},
 		  scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 		  flags = {"icon"},
 		  size = {20, 40},
 		  scale = 0.5
@@ -336,24 +346,26 @@ data:extend({
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = ei_graphics_train_path.."4acw_gr_sheet.png",      
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
+			rotated = {
+				priority = "very-low",
+				width = 256,
+				height = 256,
+				back_equals_front = true,
+				direction_count = 64,
+				filename = ei_graphics_train_path.."4acw_gr_sheet.png",      
+				line_length = 8,
+				lines_per_file = 8,
+				shift = {0.42, -1.125}
+			}
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
@@ -511,30 +523,32 @@ data:extend({
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
-			priority = "very-low",			
-			width = 512,
-			height = 512,
-			scale = 0.5,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames = {
-				ei_graphics_train_path.."4aw_cw_vc_sheet-0.png",      
-				ei_graphics_train_path.."4aw_cw_vc_sheet-1.png",      
-				ei_graphics_train_path.."4aw_cw_vc_sheet-2.png",      
-				ei_graphics_train_path.."4aw_cw_vc_sheet-3.png",      				
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -0.875}
+			rotated = {
+				priority = "very-low",			
+				width = 512,
+				height = 512,
+				scale = 0.5,
+				back_equals_front = true,
+				direction_count = 64,
+				filenames = {
+					ei_graphics_train_path.."4aw_cw_vc_sheet-0.png",      
+					ei_graphics_train_path.."4aw_cw_vc_sheet-1.png",      
+					ei_graphics_train_path.."4aw_cw_vc_sheet-2.png",      
+					ei_graphics_train_path.."4aw_cw_vc_sheet-3.png",      				
+				},
+				line_length = 4,
+				lines_per_file = 4,
+				shift = {0.42, -0.875}
+			}
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
@@ -639,30 +653,32 @@ data:extend({
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
-			priority = "very-low",
-			width = 512, height = 512, scale = 0.5,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames = {
-				ei_graphics_train_path.."4aw_fw_vc_sheet-0.png",      
-				ei_graphics_train_path.."4aw_fw_vc_sheet-1.png",      
-				ei_graphics_train_path.."4aw_fw_vc_sheet-2.png",      
-				ei_graphics_train_path.."4aw_fw_vc_sheet-3.png",      				
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -0.875}
+			rotated = {
+				priority = "very-low",
+				width = 512, height = 512, scale = 0.5,
+				back_equals_front = true,
+				direction_count = 64,
+				filenames = {
+					ei_graphics_train_path.."4aw_fw_vc_sheet-0.png",      
+					ei_graphics_train_path.."4aw_fw_vc_sheet-1.png",      
+					ei_graphics_train_path.."4aw_fw_vc_sheet-2.png",      
+					ei_graphics_train_path.."4aw_fw_vc_sheet-3.png",      				
+				},
+				line_length = 4,
+				lines_per_file = 4,
+				shift = {0.42, -0.875}
+			}
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/fluid-wagon-minimap-representation.png",
+		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
 		  flags = {"icon"},
 		  size = {20, 40},
 		  scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/fluid-wagon-selected-minimap-representation.png",
+		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
 		  flags = {"icon"},
 		  size = {20, 40},
 		  scale = 0.5
@@ -770,33 +786,35 @@ data:extend({
 		--back_light = rolling_stock_back_light(),
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures = {
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			scale = 0.5,
-			direction_count = 128,
-			filenames = {
-				ei_graphics_train_path.."se_krgreen_sheet-0.png",
-				ei_graphics_train_path.."se_krgreen_sheet-1.png",
-				ei_graphics_train_path.."se_krgreen_sheet-2.png",
-				ei_graphics_train_path.."se_krgreen_sheet-3.png",
-				ei_graphics_train_path.."se_krgreen_sheet-4.png",
-				ei_graphics_train_path.."se_krgreen_sheet-5.png",
-				ei_graphics_train_path.."se_krgreen_sheet-6.png",
-				ei_graphics_train_path.."se_krgreen_sheet-7.png"
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0, -1.125}
+			rotated = {
+				priority = "very-low",
+				width = 512,
+				height = 512,
+				scale = 0.5,
+				direction_count = 128,
+				filenames = {
+					ei_graphics_train_path.."se_krgreen_sheet-0.png",
+					ei_graphics_train_path.."se_krgreen_sheet-1.png",
+					ei_graphics_train_path.."se_krgreen_sheet-2.png",
+					ei_graphics_train_path.."se_krgreen_sheet-3.png",
+					ei_graphics_train_path.."se_krgreen_sheet-4.png",
+					ei_graphics_train_path.."se_krgreen_sheet-5.png",
+					ei_graphics_train_path.."se_krgreen_sheet-6.png",
+					ei_graphics_train_path.."se_krgreen_sheet-7.png"
+				},
+				line_length = 4,
+				lines_per_file = 4,
+				shift = {0, -1.125}
+			}
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
