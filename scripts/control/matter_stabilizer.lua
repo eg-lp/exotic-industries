@@ -225,7 +225,7 @@ function model.remove_rendering(entity)
 
     for _, render in pairs(storage.ei.selected_render) do
         if render.type == "connection" and render.target == entity then
-            rendering.destroy(render.render)
+            render.render.destroy()
             table.remove(storage.ei.selected_render, _)
         end
     end
@@ -234,12 +234,12 @@ function model.remove_rendering(entity)
 
     for _, render in pairs(storage.ei.selected_render) do
         if render.type == "range" and render.source == entity then
-            rendering.destroy(render.render)
+            render.render.destroy()
             table.remove(storage.ei.selected_render, _)
         end
 
         if render.type == "connection" and render.source == entity then
-            rendering.destroy(render.render)
+            render.render.destroy()
             table.remove(storage.ei.selected_render, _)
         end
 
@@ -272,7 +272,7 @@ function model.clear_rendering(player)
     if storage.ei.selected_render then
         for _, render in pairs(storage.ei.selected_render) do
             render = render.render
-            rendering.destroy(render)
+            render.destroy()
         end
     end
 

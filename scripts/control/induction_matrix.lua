@@ -132,11 +132,13 @@ function model.check_tile(entity)
         })
 
         if tiles ~= 4 then
-            entity.surface.create_entity{
-                name = "flying-text",
-                position = entity.position,
+            rendering.draw_text{
+                target = entity,
                 text = "This entity must be placed on a induction matrix tile",
                 color = {r=1, g=0, b=0},
+                surface = entity.surface,
+                scale = 1,
+                time_to_live = 120
             }
             return false
         end
@@ -148,11 +150,13 @@ function model.check_tile(entity)
         local tile = entity.surface.get_tile(entity.position)
 
         if tile.name ~= "ei_induction-matrix-tile" then
-            entity.surface.create_entity{
-                name = "flying-text",
-                position = entity.position,
+            rendering.draw_text{
+                target = entity,
                 text = "This entity must be placed on a induction matrix tile",
                 color = {r=1, g=0, b=0},
+                surface = entity.surface,
+                scale = 1,
+                time_to_live = 120
             }
             return false
         end
@@ -237,18 +241,22 @@ function model.check_connected_tiles(pos, surface, render, matrix_id, force)
     end
 
     if known_lenght > max_connected_tiles then
-        surface.create_entity{
-            name = "flying-text",
-            position = pos,
+        rendering.draw_text{
+            target = pos,
             text = "Matrix overflow!",
             color = {r=1, g=0, b=0},
+            surface = surface,
+            scale = 1,
+            time_to_live = 120
         }
 
-        surface.create_entity{
-            name = "flying-text",
-            position = {x=pos.x, y=pos.y + 0.5},
+        rendering.draw_text{
+            target = {x=pos.x, y=pos.y + 0.5},
             text = "Max supported tiles are: " .. max_connected_tiles,
-            color = {r=1, g=1, b=1},
+            color = {r=1, g=0, b=0},
+            surface = surface,
+            scale = 1,
+            time_to_live = 120
         }
 
         if render == true then
@@ -266,7 +274,7 @@ function model.check_connected_tiles(pos, surface, render, matrix_id, force)
 
 end
 
-
+---@param surface LuaSurface
 function model.lookup_tile_for_entity(pos, surface, matrix_id)
 
     model.check_global_init()
@@ -338,11 +346,13 @@ function model.lookup_tile_for_entity(pos, surface, matrix_id)
                 storage.ei.induction_matrix.core[old_core.unit_number] = nil
                 storage.ei.induction_matrix.core[matrix_id].core[old_core.unit_number] = nil
 
-                surface.create_entity{
-                    name = "flying-text",
-                    position = pos,
+                rendering.draw_text{
+                    target = entity,
                     text = "Only one core per matrix allowed",
                     color = {r=1, g=0, b=0},
+                    surface = entity.surface,
+                    scale = 1,
+                    time_to_live = 120
                 }
 
                 -- also let the new core explode
@@ -999,11 +1009,11 @@ function model.show_stats(surface, pos, stats)
     end
 
     if capacity_text then
-        rendering.destroy(capacity_text)
+        capacity_text.destroy()
     end
 
     if IO_text then
-        rendering.destroy(IO_text)
+        IO_text.destroy()
     end
 
     capacity_text = rendering.draw_text{
@@ -1048,8 +1058,8 @@ end
 
 function model.remove_stat_text(data)
 
-    rendering.destroy(data.capacity_text)
-    rendering.destroy(data.IO_text)
+    data.capacity_text.destroy()
+    data.IO_text.destroy()
 
 end
 

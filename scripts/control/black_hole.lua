@@ -245,11 +245,13 @@ function model.check_battery(unit, entity)
     if storage.ei.black_hole[unit].battery < 8 then
         storage.ei.black_hole[unit].stage = 0
         storage.ei.black_hole[unit].stage_progress = 0
-        entity.surface.create_entity{
-            name = "flying-text",
-            position = entity.position,
+        rendering.draw_text{
+            target = entity,
             text = "WARNING: Black hole containment failure!",
             color = {r=1, g=0, b=0},
+            surface = entity.surface,
+            scale = 1,
+            time_to_live = 120
         }
 
         -- also print chat message
@@ -411,7 +413,7 @@ function model.make_stage_picture(unit, entity)
 
         if storage.ei.black_hole[unit].overlay ~= nil then
             
-            rendering.destroy(storage.ei.black_hole[unit].overlay)
+            storage.ei.black_hole[unit].overlay.destroy()
             storage.ei.black_hole[unit].overlay = nil
 
         end
@@ -445,9 +447,8 @@ function model.make_stage_picture(unit, entity)
             }
 
         else
-
-            rendering.set_animation(storage.ei.black_hole[unit].overlay, "ei_black-hole_growing")
-            rendering.set_animation_offset(storage.ei.black_hole[unit].overlay, frame)
+            storage.ei.black_hole[unit].overlay.animation = "ei_black-hole_growing"
+            storage.ei.black_hole[unit].overlay.animation_offset = frame
 
         end
 
@@ -470,9 +471,8 @@ function model.make_stage_picture(unit, entity)
             }
 
         else
-
-            rendering.set_animation(storage.ei.black_hole[unit].overlay, "ei_black-hole_glowing")
-            rendering.set_animation_speed(storage.ei.black_hole[unit].overlay, 0.3)
+            storage.ei.black_hole[unit].overlay.animation = "ei_black-hole_glowing"
+            storage.ei.black_hole[unit].overlay.animation_speed = 0.3
 
         end
 

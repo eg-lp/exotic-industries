@@ -266,7 +266,7 @@ function model.remove_overload_icon(entity)
     end
 
     -- remove the sprite
-    rendering.destroy(storage.ei.overload_icons[entity.unit_number])
+    storage.ei.overload_icons[entity.unit_number].destroy()
     storage.ei.overload_icons[entity.unit_number] = nil
 end
 
@@ -319,13 +319,12 @@ function model.add_overload_effect(entity)
         render_layer=139,
         time_to_live=30
     })
-
-    -- spawn the text
-    entity.surface.create_entity{
-        name = "flying-text",
-        position = {pos.x - 1, pos.y - size/2},
+    rendering.draw_text{
+        target = {pos.x - 1, pos.y - size/2},
         text = "Beacon overload",
         color = {r=1, g=0.77, b=0},
+        surface = entity.surface,
+        scale = 1,
         time_to_live = 15
     }
 end

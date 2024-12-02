@@ -61,22 +61,26 @@ function model.count_flowers(entity)
         local rand = math.random(1, 10)
         if rand > 4 then
             -- spawn floating text
-            entity.surface.create_entity{
-                name = "flying-text",
-                position = entity.position,
+            rendering.draw_text{
+                target = entity,
                 text = model.flower_counter_warnings[storage.ei.flower_counter],
-                color = {r=1, g=0.5, b=0.5}
+                color = {r=1, g=0.5, b=0.5},
+                surface = entity.surface,
+                scale = 1,
+                time_to_live = 120
             }
         end
     end
 
     if storage.ei.flower_counter == 12 then
         -- spawn text
-        entity.surface.create_entity{
-            name = "flying-text",
-            position = entity.position,
+        rendering.draw_text{
+            target = entity,
             text = {"exotic-industries.flower-count-12"},
-            color = {r=1, g=0.2, b=0.2}
+            color = {r=1, g=0.2, b=0.2},
+            surface = entity.surface,
+            scale = 1,
+            time_to_live = 120
         }
         storage.ei.flower_counter = 0
 

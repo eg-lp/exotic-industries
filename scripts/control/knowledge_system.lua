@@ -636,7 +636,7 @@ end
 
 function model.scan_artifact(event)
 
-    local entities = event.entities
+    local entities = event.entities --[=[@as LuaEntity[]]=]
     local player = game.get_player(event.player_index)
     
     -- ensure knowledge system is enabled
@@ -668,11 +668,13 @@ function model.scan_artifact(event)
             if entity.last_user then
 
                 -- display message
-                entity.surface.create_entity{
-                    name = "flying-text",
-                    position = entity.position,
+                rendering.draw_text{
+                    target = entity,
                     text = {"exotic-industries.scanner-no-effect"},
                     color = {r = 0.3, g = 0.36, b = 0.82},
+                    surface = entity.surface,
+                    scale = 1,
+                    time_to_live = 120
                 }
 
                 goto continue
@@ -724,11 +726,13 @@ function model.scan_artifact(event)
     end
 
     -- spawn the floating text above the player
-    player.surface.create_entity{
-        name = "flying-text",
-        position = player.position,
+    rendering.draw_text{
+        target = player.position,
         text = "+" .. gained_value.." KU",
         color = {r = 0.98, g = 0.66, b = 0.22},
+        surface = player.surface,
+        scale = 1,
+        time_to_live = 120
     }
 
     ei_victory.count_value("knowledge_gained", gained_value)

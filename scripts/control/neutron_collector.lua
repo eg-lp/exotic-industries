@@ -119,11 +119,12 @@ function model.find_neutron_source(entity, exclude)
 
     if best_source == nil then
         -- create flying text
-        entity.surface.create_entity{
-            name = "flying-text",
-            position = entity.position,
+        rendering.draw_text{
+            target = entity,
             text = "No nearby neutron source",
             color = {r=1, g=0.77, b=0},
+            surface = entity.surface,
+            scale = 1,
             time_to_live = 15
         }
 
@@ -156,11 +157,12 @@ function model.find_neutron_source(entity, exclude)
             scale_with_zoom = false
         }
     else
-        entity.surface.create_entity{
-            name = "flying-text",
-            position = entity.position,
+        rendering.draw_text{
+            target = entity,
             text = "Insufficient neutron flux",
             color = {r=1, g=0.77, b=0},
+            surface = entity.surface,
+            scale = 1,
             time_to_live = 15
         }
     end
@@ -579,7 +581,7 @@ function model.remove_direction_animation(entity)
     end
 
     if storage.ei["neutron_collector_animation"][entity.unit_number] then
-        rendering.destroy(storage.ei["neutron_collector_animation"][entity.unit_number])
+        storage.ei["neutron_collector_animation"][entity.unit_number].destroy()
         storage.ei["neutron_collector_animation"][entity.unit_number] = nil
     end
 end

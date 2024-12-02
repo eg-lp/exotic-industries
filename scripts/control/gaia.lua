@@ -368,12 +368,14 @@ function model.destroy_building(entity)
 
             -- game.print(serpent.block(storage.gaia_surfaces))
             -- create flying text
-            surface.create_entity({
-                name = "flying-text",
-                position = entity.position,
+            rendering.draw_text{
+                target = entity.position,
                 text = "Can't build on Gaia!",
-                color = {r=1, g=0, b=0}
-            })
+                color = {r=1, g=0, b=0},
+                surface = entity.surface,
+                scale = 1,
+                time_to_live = 120
+            }
             model.create_drop(entity)
 
             entity.destroy()
@@ -388,12 +390,14 @@ function model.destroy_building(entity)
 
             -- game.print(serpent.block(storage.gaia_surfaces))
             -- create flying text
-            surface.create_entity({
-                name = "flying-text",
-                position = entity.position,
+            rendering.draw_text{
+                target = entity.position,
                 text = "Can only be built on Gaia!",
-                color = {r=1, g=0, b=0}
-            })
+                color = {r=1, g=0, b=0},
+                surface = entity.surface,
+                scale = 1,
+                time_to_live = 120
+            }
             model.create_drop(entity)
 
             entity.destroy()
