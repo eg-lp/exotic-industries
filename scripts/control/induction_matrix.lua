@@ -1508,7 +1508,7 @@ function model.open_gui(player)
         titlebar.add{
             type = "sprite-button",
             style = "close_button",
-            sprite = "utility/close_white",
+            sprite = "utility/close",
             hovered_sprite = "utility/close_black",
             clicked_sprite = "utility/close_black",
             tags = {
