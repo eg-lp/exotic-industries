@@ -1926,11 +1926,9 @@ ei_lib.recipe_add("lithium-sulfur-battery", "battery", 1)
 ei_lib.recipe_add("ei_fusion-data", "lithium", 2)
 
 data.raw["recipe"]["ai-core"].ingredients = {
-    {type="item", name="processing-unit", 1}, {"imersite-crystal", 3}, {"ei_computing-unit", amount=1}, 
+    {type="item", name="processing-unit", 1}, {type="item", name="imersite-crystal", amount=3}, {"ei_computing-unit", amount=1}, 
 }
-data.raw["recipe"]["ai-core"].results = nil
-data.raw["recipe"]["ai-core"].result = "ai-core"
-data.raw["recipe"]["ai-core"].result_count = 10
+data.raw["recipe"]["ai-core"].results = {{type="item", name="ai-core", amount=10}}
 ei_lib.recipe_add("ei_superior-data", "ai-core", 1)
 ei_lib.recipe_add("ei_plasma-data__tritium", "ai-core", 1)
 ei_lib.recipe_add("ei_plasma-data__deuterium", "ai-core", 1)

@@ -600,7 +600,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10,
         subgroup = "intermediate-product",
-        order = "d[empty-barrel]-2",
+        order = "d[barrel]-2",
     },
     {
         name = "ei_eu-circuit",
@@ -891,13 +891,6 @@ data:extend({
             }
         },
         automatic = false,
-        ability_icon = {
-            filename = "__base__/graphics/icons/discharge-defense-equipment-controller.png",
-            flags = { "icon" },
-            mipmap_count = 4,
-            size = 64,
-            priority = "extra-high-no-scale"
-        },
     },
     {
         name = "ei_bug-zapper-remote",
