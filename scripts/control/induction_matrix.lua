@@ -346,7 +346,7 @@ function model.lookup_tile_for_entity(pos, surface, matrix_id)
                 }
 
                 -- also let the new core explode
-                entity.surface.spill_item_stack(entity.position, {name="ei_induction-matrix-core", count=1}, true)
+                entity.surface.spill_item_stack{position=entity.position, stack={name="ei_induction-matrix-core", count=1}, enable_looted=true}
 
                 rendering.draw_animation({
                     animation="ei_overload-animation",
@@ -1305,7 +1305,7 @@ function model.on_destroyed_tile(event)
                 end
 
                 -- spill core
-                entity.surface.spill_item_stack(entity.position, {name = "ei_induction-matrix-core", count = 1}, true)
+                entity.surface.spill_item_stack{position=entity.position, stack={name = "ei_induction-matrix-core", count = 1}, enable_looted=true}
 
                 -- destroy core
                 entity.destroy()
@@ -1347,7 +1347,7 @@ function model.on_destroyed_tile(event)
                     end
 
                     -- spill core
-                    entity.surface.spill_item_stack(entity.position, {name = "ei_induction-matrix-core", count = 1}, true)
+                    entity.surface.spill_item_stack{position=entity.position, stack={name = "ei_induction-matrix-core", count = 1}, enable_looted=true}
 
                     -- destroy core
                     entity.destroy()
@@ -1385,7 +1385,7 @@ function model.on_destroyed_tile(event)
                 if (north_pos.x == pos.x and north_pos.y == pos.y) or (north_west_pos.x == pos.x and north_west_pos.y == pos.y) or (west_pos.x == pos.x and west_pos.y == pos.y) or (converter_tile_pos.x == pos.x and converter_tile_pos.y == pos.y) then
                 
                     -- spill item
-                    entity.surface.spill_item_stack(entity.position, {name = entity.name, count = 1}, true)
+                    entity.surface.spill_item_stack{position=entity.position, stack={name = entity.name, count = 1}, enable_looted=true}
 
                     -- destroy core
                     entity.destroy()

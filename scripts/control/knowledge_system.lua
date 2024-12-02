@@ -703,7 +703,7 @@ function model.scan_artifact(event)
                 for _,stack in ipairs(loot) do
                 
                     if math.random() < stack.probability then
-                        entity.surface.spill_item_stack(entity.position, {name=stack.item, count=stack.count_min}, true, nil, false)
+                        entity.surface.spill_item_stack{position=entity.position, stack={name=stack.item, count=stack.count_min}, enable_looted=true, allow_belts=false}
                     end
 
                 end

@@ -11,7 +11,7 @@ function age_enabler.get_researched_age_techs(force, dummy_tech)
     -- this is counted as those techs are prerequisites of the dummy tech
 
     local researchedAgeTechs = 0
-    local dummy_prototype = game.technology_prototypes[dummy_tech]
+    local dummy_prototype = prototypes.technology[dummy_tech]
     local dummy_list = dummy_prototype.prerequisites
     -- dummy_list of the form {"tech_1", "tech_2", ...}
 
@@ -19,8 +19,8 @@ function age_enabler.get_researched_age_techs(force, dummy_tech)
     local totalTechs = ei_lib.getn(dummy_list)
 
     if not dummy_prototype then
-        log("Error: "..dummy_tech.." not found in game.technology_prototypes")
-        game.print("Error: "..dummy_tech.." not found in game.technology_prototypes")
+        log("Error: "..dummy_tech.." not found in prototypes.technology")
+        game.print("Error: "..dummy_tech.." not found in prototypes.technology")
         return
     end
 

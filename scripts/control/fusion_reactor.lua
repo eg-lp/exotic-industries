@@ -314,7 +314,7 @@ function model.update_recipe(player)
         "ei_fusion-F1__%s-F2__%s-TM__%s-FM__%s",
         fuel_1, fuel_2, temperature, injection_rate
     )
-    if game.recipe_prototypes[recipe] then
+    if prototypes.recipe[recipe] then
         entity.set_recipe(recipe)
         model.update_gui(player, {fuel_1, fuel_2, temperature, injection_rate})
         ei_neutron_collector.update_neutron_collectors_in_range(entity)

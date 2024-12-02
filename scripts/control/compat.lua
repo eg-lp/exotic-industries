@@ -10,7 +10,7 @@ function model.check_init()
 
     -- K2
     ---------------------------------------------------------------------------
-    if game.active_mods["Krastorio2"] then
+    if script.active_mods["Krastorio2"] then
         remote.call("kr-intergalactic-transceiver", "set_no_victory", true)
     end
     
@@ -21,7 +21,7 @@ function model.nth_tick(e)
 
     -- K2
     ---------------------------------------------------------------------------
-    if game.active_mods["Krastorio2"] then
+    if script.active_mods["Krastorio2"] then
 
         local forces = game.forces
 

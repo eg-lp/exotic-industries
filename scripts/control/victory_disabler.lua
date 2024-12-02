@@ -17,7 +17,7 @@ end
 
 
 function victory_disabler.add_interface()
-    if game.active_mods["better-victory-screen"] then
+    if script.active_mods["better-victory-screen"] then
         -- if interface is not yet added
         if remote.interfaces["exotic-industries-bvs"] then return end
         remote.add_interface("exotic-industries-bvs", {["better-victory-screen-statistics"] = function(winning_force, forces)

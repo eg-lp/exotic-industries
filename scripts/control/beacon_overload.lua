@@ -194,7 +194,7 @@ function model.update_all_machines_in_range(entity, destroy_type, beacon_value)
     end
 
     -- get range of this beacon
-    local range = entity.prototype.supply_area_distance
+    local range = entity.prototype.get_supply_area_distance()
 
     -- consider size of machine as well
     local size = entity.prototype.collision_box.right_bottom.x - entity.prototype.collision_box.left_top.x

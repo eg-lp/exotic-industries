@@ -95,7 +95,7 @@ function model.spawn_guardian(surface, pos)
         return
     end
 
-    local evolution_factor = game.forces["enemy"].evolution_factor
+    local evolution_factor = game.forces["enemy"].get_evolution_factor(surface)
 
     local worm_name = "small-worm-turret"
     local biter_name = "small-biter"
@@ -484,7 +484,7 @@ function model.select_preset(rarity)
         if preset.rarity == rarity then
 
             if preset.mod then
-                if not game.active_mods[preset.mod] then
+                if not script.active_mods[preset.mod] then
                     goto continue
                 end
             end

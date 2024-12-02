@@ -488,19 +488,19 @@ function model.render_exit(gate, box)
     -- check if exit already exists, if at same pos and surface extend time to live
     if storage.ei.gate.gate[gate_unit].exit_animation then
 
-        animation = storage.ei.gate.gate[gate_unit].exit_animation
+        animation = storage.ei.gate.gate[gate_unit].exit_animation  --[[@as LuaRenderObject]]
 
         -- check if still valid, might be very old
-        if rendering.is_valid(animation) then
+        if animation.valid then
 
-            -- also test pos and surface
-            local target = rendering.get_target(animation)
-            local surface = rendering.get_surface(animation)
+            -- also test pos and surface  
+            local target = animation.target
+            local surface = animation.surface
             
             if target.position.x == exit.x and target.position.y == exit.y and surface.name == exit.surface then
                 
                 -- extend time to live
-                rendering.set_time_to_live(animation, 180)
+                animation.time_to_live = 180
                 return
             end
         end
@@ -565,7 +565,7 @@ function model.update_renders(unit, gate)
 
     if not state then
         if storage.ei.gate.gate[unit].animation then
-            rendering.destroy(storage.ei.gate.gate[unit].animation)
+            storage.ei.gate.gate[unit].animation.destroy()
             storage.ei.gate.gate[unit].animation = nil
         end
     else
@@ -1056,7 +1056,7 @@ end
 --[[
 function model.update_player_permissions()
 
-    if not game.active_mods["RemoteConfiguration"] then
+    if not script.active_mods["RemoteConfiguration"] then
         return
     end
 

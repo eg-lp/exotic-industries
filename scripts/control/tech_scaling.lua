@@ -24,7 +24,7 @@ function ei_tech_scaling.init()
     storage.ei["tech_scaling"].startPrice = ei_lib.config("tech-scaling__startPrice")
 
     -- count total number of technologies
-    storage.ei["tech_scaling"].techCount = ei_lib.getn(game.technology_prototypes)
+    storage.ei["tech_scaling"].techCount = ei_lib.getn(prototypes.technology)
 end
 
 function ei_tech_scaling.on_research_finished()
