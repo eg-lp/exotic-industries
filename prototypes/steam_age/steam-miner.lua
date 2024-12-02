@@ -51,14 +51,12 @@ miner.energy_source = {
     type = "fluid",
     fluid_box = {   
         filter = "steam",
-        base_area = 1,
-        base_level = -1,
-        height = 2,
+        volume = 200,
         pipe_covers = pipecoverspictures(),
         pipe_picture = ei_pipe_miner,
         pipe_connections = {
-            {type = "input-output", position = {1.5, -0.5}},
-            {type = "input-output", position = {-1.5, -0.5}},
+            {flow_direction = "input-output", direction = defines.direction.east, position = {0.5, -0.5}},
+            {flow_direction = "input-output", direction = defines.direction.west, position = {-0.5, -0.5}},
         },
         production_type = "input-output",
     },

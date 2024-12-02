@@ -97,14 +97,12 @@ data:extend({
             type = "fluid",
             fluid_box = {   
                 filter = "steam",
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_steam,
                 pipe_connections = {
-                    {type = "input-output", position = {0, -2}},
-                    {type = "input-output", position = {0, 2}}
+                    {flow_direction = "input-output", direction = defines.direction.north, position = {0, -1}},
+                    {flow_direction = "input-output", direction = defines.direction.south, position = {0, 1}}
                 },
                 production_type = "input-output",
             },

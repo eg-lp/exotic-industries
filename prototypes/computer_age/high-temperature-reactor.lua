@@ -120,25 +120,21 @@ data:extend({
         source_inventory_size = 1,
         fluid_boxes = {
             {   
-                base_area = 6000,
-                base_level = -1,
-                height = 2,
+                volume = 1200000,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_reactor,
                 pipe_connections = {
-                    {type = "input", position = {0, 3}},
+                    {flow_direction = "input", direction = defines.direction.south, position = {0, 2}},
                 },
                 production_type = "input",
                 filter = "water",
             },
             {   
-                base_area = 6000,
-                base_level = 1,
-                height = 2,
+                volume = 1200000,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_reactor,
                 pipe_connections = {
-                    {type = "output", position = {0, -3}},
+                    {flow_direction = "output", direction = defines.direction.north, position = {0, -2}},
                 },
                 production_type = "output",
                 filter = "steam",

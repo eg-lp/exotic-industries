@@ -102,51 +102,43 @@ data:extend({
         fluid_boxes = {
             {   
                 -- fusion inputs
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big_nitrogen,
                 pipe_connections = {
-                    {type = "input", position = {6, 0}},
+                    {flow_direction = "input", direction = defines.direction.east, position = {5, 0}},
                 },
                 production_type = "input",
             },
             {   
                 -- fusion inputs
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big_nitrogen,
                 pipe_connections = {
-                    {type = "input", position = {-6, 0}},
+                    {flow_direction = "input", direction = defines.direction.west, position = {-5, 0}},
                 },
                 production_type = "input",
             },
             {   
                 -- coolant
                 filter = "ei_cold-coolant",
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big_round,
                 pipe_connections = {
-                    {type = "input", position = {0, 6}},
+                    {flow_direction = "input", direction = defines.direction.south, position = {0, 5}},
                 },
                 production_type = "input",
             },
             {   
                 -- coolant
                 filter = "ei_hot-coolant",
-                base_area = 1,
-                base_level = 1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big_round,
                 pipe_connections = {
-                    {type = "output", position = {0, -6}},
+                    {flow_direction = "output", direction = defines.direction.north, position = {0, -5}},
                 },
                 production_type = "output",
             },

@@ -143,16 +143,14 @@ data:extend({
             }
         },
         fluid_box = {   
-            base_area = 20,
-            base_level = 0,
-            height = 1,
+            volume = 2000,
             pipe_covers = pipecoverspictures(),
             pipe_picture = ei_pipe_insulated_tank,
             pipe_connections = {
-                {type = "input-output", position = {2, 0}},
-                {type = "input-output", position = {-2, 0}},
-                {type = "input-output", position = {0, 2}},
-                {type = "input-output", position = {0, -2}},
+                {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0}},
+                {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0}},
+                {flow_direction = "input-output", direction = defines.direction.south, position = {0, 1}},
+                {flow_direction = "input-output", direction = defines.direction.north, position = {0, -1}},
             },
             production_type = "input-output",
             -- filter = "ei_liquid-nitrogen",

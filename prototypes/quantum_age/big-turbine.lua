@@ -62,16 +62,14 @@ data:extend({
         max_power_output = tostring(ei_data.fusion.turbine_power).."MW",
         fluid_box = {
           filter = "ei_critical-steam",
-          base_area = 1,
-          height = 2,
-          base_level = -1,
+          volume = 200,
           pipe_covers = pipecoverspictures(),
           pipe_connections =
           {
-            {type = "input-output", position = {-4, 0}},
-            {type = "input-output", position = {4, 0}},
-            {type = "input-output", position = {0, 4}},
-            {type = "input-output", position = {0, -4}}
+            {flow_direction = "input-output", direction = defines.direction.west, position = {-3, 0}},
+            {flow_direction = "input-output", direction = defines.direction.east, position = {3, 0}},
+            {flow_direction = "input-output", direction = defines.direction.south, position = {0, 3}},
+            {flow_direction = "input-output", direction = defines.direction.north, position = {0, -3}}
           },
           production_type = "input-output"
         },

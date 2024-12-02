@@ -86,25 +86,21 @@ data:extend({
         fluid_boxes = {
             {   
                 filter = "water",
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big_round,
                 pipe_connections = {
-                    {type = "input", position = {6, 0}},
+                    {flow_direction = "input", direction = defines.direction.east, position = {5, 0}},
                 },
                 production_type = "input",
             },
             {   
                 filter = "ei_dirty-water",
-                base_area = 1,
-                base_level = 1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big_round,
                 pipe_connections = {
-                    {type = "output", position = {-6, 0}},
+                    {flow_direction = "output", direction = defines.direction.west, position = {-5, 0}},
                 },
                 production_type = "output",
             },

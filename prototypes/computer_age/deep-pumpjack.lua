@@ -79,14 +79,12 @@ data:extend({
             type = "fluid",
             fluid_box = {   
                 filter = "ei_drill-fluid",
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_big,
                 pipe_connections = {
-                    {position = {3, 0}},
-                    {position = {-3, 0}},
+                    {direction = defines.direction.east, position = {2, 0}},
+                    {direction = defines.direction.west, position = {-2, 0}},
                 },
                 production_type = "input-output",
             },
@@ -96,24 +94,20 @@ data:extend({
             scale_fluid_usage = true,
         },
         input_fluid_box = {   
-            base_area = 1,
-            base_level = -1,
-            height = 2,
+            volume = 200,
             pipe_covers = pipecoverspictures(),
             pipe_picture = ei_pipe_big,
             pipe_connections = {
-                {position = {0, -3}},
+                {direction = defines.direction.north, position = {0, -2}},
             },
             production_type = "input",
         },
         output_fluid_box = {   
-            base_area = 1,
-            base_level = 1,
-            height = 2,
+            volume = 200,
             pipe_covers = pipecoverspictures(),
             pipe_picture = ei_pipe_big,
             pipe_connections = {
-                {position = {0, 3}},
+                {direction = defines.direction.south, position = {0, 2}},
             },
             production_type = "output",
         },
@@ -129,16 +123,14 @@ data:extend({
 		},
         --[[
         input_fluid_box = {   
-            base_area = 1,
-            base_level = -1,
-            height = 2,
+            volume = 200,
             pipe_covers = pipecoverspictures(),
             pipe_picture = ei_pipe_big,
             pipe_connections = {
-                {position = {3, 0}},
-                {position = {-3, 0}},
-                {position = {0, 3}},
-                -- {position = {0, -3}},
+                {direction = defines.direction.east, position = {2, 0}},
+                {direction = defines.direction.west, position = {-2, 0}},
+                {direction = defines.direction.south, position = {0, 2}},
+                -- {direction = defines.direction.north, position = {0, -2}},
             },
             production_type = "input-output",
             

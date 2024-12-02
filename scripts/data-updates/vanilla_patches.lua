@@ -1078,16 +1078,19 @@ data.raw["recipe"]["electric-engine-unit"].category = "crafting"
 -- make underground pipes longer, read from setting
 data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.pipe_connections = {
     {
+        direction=defines.direction.north,
         position = {
             0,
-            -1
+            0
         }
     },
     {
+        connection_type = "underground",
         max_underground_distance = ei_lib.config("pipe-to-ground__length"),
+        direction=defines.direction.south,
         position = {
             0,
-            1
+            0
         }
     }
 }
@@ -1104,16 +1107,15 @@ data.raw["reactor"]["nuclear-reactor"].picture.layers[1].filename = ei_graphics_
 data.raw["reactor"]["nuclear-reactor"].working_light_picture.filename = ei_graphics_entity_path.."reactor-lights-color.png"
 
 -- add fluidbox to centrifuge
+data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recipe = true
 data.raw["assembling-machine"]["centrifuge"].fluid_boxes = {
     {
         production_type = "input",
         pipe_picture = ei_pipe_centrifuge,
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        height = 2,
+        volume = 200,
         pipe_connections = {
-            {type = "input", position = {2, 0}}
+            {flow_direction = "input", direction = defines.direction.east, position = {1, 0}}
         },
         secondary_draw_orders = {north = -1}
     },
@@ -1121,15 +1123,12 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes = {
         production_type = "output",
         pipe_picture = ei_pipe_centrifuge,
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = 1,
-        height = 2,
+        volume = 200,
         pipe_connections = {
-            {type = "output", position = {-2, 0}}
+            {flow_direction = "output", direction = defines.direction.west, position = {-1, 0}}
         },
         secondary_draw_orders = {north = -1}
-    },
-    off_when_no_fluid_recipe = true
+    }
 }
 
 -- remove neighbour bonus from nuclear reactor and set fuel category to ei_nuclear_fuel

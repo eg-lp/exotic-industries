@@ -91,13 +91,11 @@ pump.energy_source = {
     type = "fluid",
     fluid_box = {   
         filter = "steam",
-        base_area = 1,
-        base_level = -1,
-        height = 2,
+        volume = 200,
         pipe_covers = pipecoverspictures(),
         pipe_picture = ei_pipe_pumpjack,
         pipe_connections = {
-            {type = "input", position = {0, 2.0}},
+            {flow_direction = "input", direction = defines.direction.south, position = {0, 1}},
         },
         production_type = "input",
     },

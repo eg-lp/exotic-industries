@@ -79,16 +79,14 @@ data:extend({
         energy_source = {
             type = "fluid",
             fluid_box = {
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_fluid_heater,
                 pipe_connections = {
-                    {type = "input-output", position = {0, -2}},
-                    {type = "input-output", position = {0, 2}},
-                    {type = "input-output", position = {2, 0}},
-                    {type = "input-output", position = {-2, 0}}
+                    {flow_direction = "input-output", direction = defines.direction.north, position = {0, -1}},
+                    {flow_direction = "input-output", direction = defines.direction.south, position = {0, 1}},
+                    {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0}},
+                    {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0}}
                 },
                 production_type = "input-output",
             },

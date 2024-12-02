@@ -77,24 +77,20 @@ data:extend({
         },
         fluid_boxes = {
             {   
-                base_area = 1,
-                base_level = 1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_electricity,
                 pipe_connections = {
-                    {type = "output", position = {2, 0}},
+                    {flow_direction = "output", direction = defines.direction.east, position = {1, 0}},
                 },
                 production_type = "output",
             },
             {   
-                base_area = 1,
-                base_level = -1,
-                height = 2,
+                volume = 200,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = ei_pipe_electricity,
                 pipe_connections = {
-                    {type = "input", position = {-2, 0}},
+                    {flow_direction = "input", direction = defines.direction.west, position = {-1, 0}},
                 },
                 production_type = "input",
             },
