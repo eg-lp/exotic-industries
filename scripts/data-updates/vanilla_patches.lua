@@ -1425,37 +1425,37 @@ data.raw.module["efficiency-module-3"].icon = ei_graphics_item_path .. "effectiv
 
 -- nerf vanilla modules a bit
 data.raw.module["productivity-module"].effect = {
-    productivity = {bonus = 0.03},
-    --consumption = {bonus = 0.3},
-    pollution = {bonus = 0.05},
-    speed = {bonus = -0.05}
+    productivity = 0.03,
+    --consumption = 0.3,
+    pollution = 0.05,
+    speed = -0.05
 }
 data.raw.module["productivity-module-2"].effect = {
-    productivity = {bonus = 0.05},
-    consumption = {bonus = 0.2},
-    pollution = {bonus = 0.07},
-    speed = {bonus = -0.1}
+    productivity = 0.05,
+    consumption = 0.2,
+    pollution = 0.07,
+    speed = -0.1
 }
 data.raw.module["productivity-module-3"].effect = {
-    productivity = {bonus = 0.07},
-    consumption = {bonus = 0.4},
-    pollution = {bonus = 0.15},
-    speed = {bonus = -0.2}
+    productivity = 0.07,
+    consumption = 0.4,
+    pollution = 0.15,
+    speed = -0.2
 }
 
 data.raw.module["speed-module"].effect = {
-    consumption = {bonus = 0.1},
-    speed = {bonus = 0.3}
+    consumption = 0.1,
+    speed = 0.3
 }
 
 data.raw.module["speed-module-2"].effect = {
-    consumption = {bonus = 0.2},
-    speed = {bonus = 0.4}
+    consumption = 0.2,
+    speed = 0.4
 }
 
 data.raw.module["speed-module-3"].effect = {
-    consumption = {bonus = 0.3},
-    speed = {bonus = 0.5}
+    consumption = 0.3,
+    speed = 0.5
 }
 
 -- clone vanilla prod module limitation to ei prod modules

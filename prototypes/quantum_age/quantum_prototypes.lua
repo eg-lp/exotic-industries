@@ -20,7 +20,7 @@ data:extend({
         order = "a[speed]-c[speed-module-3]-a",
         category = "speed",
         tier = 4,
-        effect = { speed = {bonus = 0.6}, consumption = {bonus = 0.4}},
+        effect = { speed = 0.6, consumption = 0.4},
     },
     {
         name = "ei_speed-module-5",
@@ -32,7 +32,7 @@ data:extend({
         order = "a[speed]-c[speed-module-3]-b",
         category = "speed",
         tier = 5,
-        effect = { speed = {bonus = 0.7}, consumption = {bonus = 0.5}},
+        effect = { speed = 0.7, consumption = 0.5},
     },
     {
         name = "ei_speed-module-6",
@@ -44,43 +44,43 @@ data:extend({
         order = "a[speed]-c[speed-module-3]-c",
         category = "speed",
         tier = 6,
-        effect = { speed = {bonus = 0.8}, consumption = {bonus = 0.5}},
+        effect = { speed = 0.8, consumption = 0.5},
     },
     {
-        name = "ei_effectivity-module-4",
+        name = "ei_efficiency-module-4",
         type = "module",
         icon = ei_graphics_item_path.."effectivity-module-4.png",
         icon_size = 64,
         stack_size = 50,
         subgroup = "module",
-        order = "c[effectivity]-c[effectivity-module-3]-a",
-        category = "effectivity",
+        order = "c[efficiency]-c[efficiency-module-3]-a",
+        category = "efficiency",
         tier = 4,
-        effect = {consumption = {bonus = -0.6}},
+        effect = {consumption = -0.6},
     },
     {
-        name = "ei_effectivity-module-5",
+        name = "ei_efficiency-module-5",
         type = "module",
         icon = ei_graphics_item_path.."effectivity-module-5.png",
         icon_size = 64,
         stack_size = 50,
         subgroup = "module",
-        order = "c[effectivity]-c[effectivity-module-3]-b",
-        category = "effectivity",
+        order = "c[efficiency]-c[efficiency-module-3]-b",
+        category = "efficiency",
         tier = 5,
-        effect = {consumption = {bonus = -0.8}},
+        effect = {consumption = -0.8},
     },
     {
-        name = "ei_effectivity-module-6",
+        name = "ei_efficiency-module-6",
         type = "module",
         icon = ei_graphics_item_path.."effectivity-module-6.png",
         icon_size = 64,
         stack_size = 50,
         subgroup = "module",
-        order = "c[effectivity]-c[effectivity-module-3]-c",
-        category = "effectivity",
+        order = "c[efficiency]-c[efficiency-module-3]-c",
+        category = "efficiency",
         tier = 6,
-        effect = {consumption = {bonus = -1}},
+        effect = {consumption = -1},
     },
     {
         name = "ei_productivity-module-4",
@@ -93,10 +93,10 @@ data:extend({
         category = "productivity",
         tier = 4,
         effect = {
-            productivity = {bonus = 0.1},
-            consumption = {bonus = 0.6},
-            pollution = {bonus = 0.2},
-            speed = {bonus = -0.25}
+            productivity = 0.1,
+            consumption = 0.6,
+            pollution = 0.2,
+            speed = -0.25
         },
         limitation = data.raw["module"]["productivity-module"].limitation,
         limitation_message_key = data.raw["module"]["productivity-module"].limitation_message_key,
@@ -112,10 +112,10 @@ data:extend({
         category = "productivity",
         tier = 5,
         effect = {
-            productivity = {bonus = 0.13},
-            consumption = {bonus = 0.8},
-            pollution = {bonus = 0.4},
-            speed = {bonus = -0.4}
+            productivity = 0.13,
+            consumption = 0.8,
+            pollution = 0.4,
+            speed = -0.4
         },
         limitation = data.raw["module"]["productivity-module"].limitation,
         limitation_message_key = data.raw["module"]["productivity-module"].limitation_message_key,
@@ -131,10 +131,10 @@ data:extend({
         category = "productivity",
         tier = 6,
         effect = {
-            productivity = {bonus = 0.16},
-            consumption = {bonus = 1.0},
-            pollution = {bonus = 0.6},
-            speed = {bonus = -0.8}
+            productivity = 0.16,
+            consumption = 1.0,
+            pollution = 0.6,
+            speed = -0.8
         },
         limitation = data.raw["module"]["productivity-module"].limitation,
         limitation_message_key = data.raw["module"]["productivity-module"].limitation_message_key,
@@ -150,10 +150,10 @@ data:extend({
         category = "productivity",
         tier = 7,
         effect = {
-            productivity = {bonus = 0.2},
-            consumption = {bonus = 2},
-            pollution = {bonus = 2},
-            speed = {bonus = -2}
+            productivity = 0.2,
+            consumption = 2,
+            pollution = 2,
+            speed = -2
         },
     },
     {
@@ -1925,7 +1925,7 @@ data:extend({
         main_product = "ei_speed-module-4",
     },
     {
-        name = "ei_effectivity-module-4",
+        name = "ei_efficiency-module-4",
         type = "recipe",
         category = "crafting",
         energy_required = 80,
@@ -1935,11 +1935,11 @@ data:extend({
             {type = "item", name = "ei_module-base", amount = 1},
         },
         results = {
-            {type = "item", name = "ei_effectivity-module-4", amount = 1},
+            {type = "item", name = "ei_efficiency-module-4", amount = 1},
         },
         always_show_made_in = true,
         enabled = false,
-        main_product = "ei_effectivity-module-4",
+        main_product = "ei_efficiency-module-4",
     },
     {
         name = "ei_productivity-module-4",
@@ -1976,21 +1976,21 @@ data:extend({
         main_product = "ei_speed-module-5",
     },
     {
-        name = "ei_effectivity-module-5",
+        name = "ei_efficiency-module-5",
         type = "recipe",
         category = "crafting",
         energy_required = 120,
         ingredients = {
-            {type = "item", name = "ei_effectivity-module-4", amount = 2},
+            {type = "item", name = "ei_efficiency-module-4", amount = 2},
             {type = "item", name = "ei_odd-plating", amount = 10},
             {type = "item", name = "ei_module-base", amount = 1},
         },
         results = {
-            {type = "item", name = "ei_effectivity-module-5", amount = 1},
+            {type = "item", name = "ei_efficiency-module-5", amount = 1},
         },
         always_show_made_in = true,
         enabled = false,
-        main_product = "ei_effectivity-module-5",
+        main_product = "ei_efficiency-module-5",
     },
     {
         name = "ei_productivity-module-5",
@@ -2027,21 +2027,21 @@ data:extend({
         main_product = "ei_speed-module-6",
     },
     {
-        name = "ei_effectivity-module-6",
+        name = "ei_efficiency-module-6",
         type = "recipe",
         category = "crafting",
         energy_required = 240,
         ingredients = {
-            {type = "item", name = "ei_effectivity-module-5", amount = 2},
+            {type = "item", name = "ei_efficiency-module-5", amount = 2},
             {type = "item", name = "ei_gluon-cavity", amount = 1},
             {type = "item", name = "ei_module-base", amount = 1},
         },
         results = {
-            {type = "item", name = "ei_effectivity-module-6", amount = 1},
+            {type = "item", name = "ei_efficiency-module-6", amount = 1},
         },
         always_show_made_in = true,
         enabled = false,
-        main_product = "ei_effectivity-module-6",
+        main_product = "ei_efficiency-module-6",
     },
     {
         name = "ei_productivity-module-6",
@@ -2068,7 +2068,7 @@ data:extend({
         ingredients = {
             {type = "item", name = "ei_productivity-module-6", amount = 4},
             {type = "item", name = "ei_speed-module-6", amount = 4},
-            {type = "item", name = "ei_effectivity-module-6", amount = 4},
+            {type = "item", name = "ei_efficiency-module-6", amount = 4},
             {type = "item", name = "ei_high-tech-parts", amount = 25},
         },
         results = {
@@ -2602,7 +2602,7 @@ data:extend({
         age = "quantum-age",
     },
     {
-        name = "ei_effectivity-module-4",
+        name = "ei_efficiency-module-4",
         type = "technology",
         icon = ei_graphics_tech_path.."effectivity-module-4.png",
         icon_size = 256,
@@ -2611,7 +2611,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_effectivity-module-4"
+                recipe = "ei_efficiency-module-4"
             },
         },
         unit = {
@@ -2662,16 +2662,16 @@ data:extend({
         age = "quantum-age",
     },
     {
-        name = "ei_effectivity-module-5",
+        name = "ei_efficiency-module-5",
         type = "technology",
         icon = ei_graphics_tech_path.."effectivity-module-5.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        prerequisites = {"ei_effectivity-module-4", "ei_odd-plating"},
+        prerequisites = {"ei_efficiency-module-4", "ei_odd-plating"},
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_effectivity-module-5"
+                recipe = "ei_efficiency-module-5"
             },
         },
         unit = {
@@ -2726,16 +2726,16 @@ data:extend({
         age = "space-quantum-age",
     },
     {
-        name = "ei_effectivity-module-6",
+        name = "ei_efficiency-module-6",
         type = "technology",
         icon = ei_graphics_tech_path.."effectivity-module-6.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        prerequisites = {"ei_effectivity-module-5", "ei_cavity", "ei_sun-watching"},
+        prerequisites = {"ei_efficiency-module-5", "ei_cavity", "ei_sun-watching"},
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_effectivity-module-6"
+                recipe = "ei_efficiency-module-6"
             },
             {
                 type = "unlock-recipe",
@@ -2778,7 +2778,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."gauss-module.png",
         icon_size = 128,
-        prerequisites = {"ei_productivity-module-6", "ei_speed-module-6", "ei_effectivity-module-6", "ei_high-tech-parts"},
+        prerequisites = {"ei_productivity-module-6", "ei_speed-module-6", "ei_efficiency-module-6", "ei_high-tech-parts"},
         effects = {
             {
                 type = "unlock-recipe",
