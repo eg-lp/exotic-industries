@@ -9,8 +9,8 @@ local ei_tech_scaling = {}
 
 function ei_tech_scaling.init()
     
-    if not global.ei["tech_scaling"] then
-        global.ei["tech_scaling"] = {}
+    if not storage.ei["tech_scaling"] then
+        storage.ei["tech_scaling"] = {}
     end
 
     -- switch for max Cost
@@ -24,13 +24,13 @@ function ei_tech_scaling.init()
     storage.ei["tech_scaling"].startPrice = ei_lib.config("tech-scaling__startPrice")
 
     -- count total number of technologies
-    global.ei["tech_scaling"].techCount = ei_lib.getn(game.technology_prototypes)
+    storage.ei["tech_scaling"].techCount = ei_lib.getn(game.technology_prototypes)
 end
 
 function ei_tech_scaling.on_research_finished()
-    maxCost = global.ei["tech_scaling"].maxCost
-    startPrice = global.ei["tech_scaling"].startPrice
-    techCount = global.ei["tech_scaling"].techCount
+    maxCost = storage.ei["tech_scaling"].maxCost
+    startPrice = storage.ei["tech_scaling"].startPrice
+    techCount = storage.ei["tech_scaling"].techCount
 
     -- do this for player force -> no support for multiple forces yet
     force = game.forces[1]

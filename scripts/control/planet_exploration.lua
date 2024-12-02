@@ -33,12 +33,12 @@ function model.check_force(force)
         return
     end
 
-    if not global.ei[force.name] then
-        global.ei[force.name] = {}
+    if not storage.ei[force.name] then
+        storage.ei[force.name] = {}
     end
 
-    if not global.ei[force.name].destinations then
-        global.ei[force.name].destinations = {}
+    if not storage.ei[force.name].destinations then
+        storage.ei[force.name].destinations = {}
     end
 
 end
@@ -150,22 +150,22 @@ end
 
 function model.add_force_destination(force, destination)
 
-    if not global.ei[force.name] then
+    if not storage.ei[force.name] then
         return
     end
 
-    if not global.ei[force.name].destinations then
+    if not storage.ei[force.name].destinations then
         return
     end
 
-    -- if tech is already in global.ei[force.name].destinations, do nothing
-    -- else add tech to global.ei[force.name].destinations
+    -- if tech is already in storage.ei[force.name].destinations, do nothing
+    -- else add tech to storage.ei[force.name].destinations
 
-    if global.ei[force.name].destinations[destination] then
+    if storage.ei[force.name].destinations[destination] then
         return
     end
 
-    global.ei[force.name].destinations[destination] = true
+    storage.ei[force.name].destinations[destination] = true
 
     -- game.print("New destination unlocked: " .. destination)
     game.print({"exotic-industries.message-destination-discovered", destination})
@@ -175,15 +175,15 @@ end
 
 function model.is_unlocked_destination(force, destination)
 
-    if not global.ei[force.name] then
+    if not storage.ei[force.name] then
         return false
     end
 
-    if not global.ei[force.name].destinations then
+    if not storage.ei[force.name].destinations then
         return false
     end
 
-    if global.ei[force.name].destinations[destination] then
+    if storage.ei[force.name].destinations[destination] then
         return true
     end
 
@@ -327,17 +327,17 @@ end
 
 function model.get_destination_list(force)
 
-    if not global.ei[force.name] then
+    if not storage.ei[force.name] then
         return
     end
 
-    if not global.ei[force.name].destinations then
+    if not storage.ei[force.name].destinations then
         return
     end
 
     local destination_list = {}
 
-    for destination, _ in pairs(global.ei[force.name].destinations) do
+    for destination, _ in pairs(storage.ei[force.name].destinations) do
         table.insert(destination_list, destination)
     end
 
