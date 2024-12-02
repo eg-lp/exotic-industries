@@ -3,8 +3,9 @@
 --====================================================================================================
 
 data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = nil
-data.raw["item"]["satellite"].rocket_launch_product = nil
-data.raw["item"]["satellite"].rocket_launch_products = nil
+data.raw["item"]["satellite"].rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 0}}
+data.raw["capsule"]["raw-fish"].rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 0}}
+data.raw["capsule"]["raw-fish"].send_to_orbit_mode = "automated"
 
 -- fuel costs:
 -- 10 for nauvis orbit
@@ -542,6 +543,9 @@ data:extend({
         stack_size = 1,
         subgroup = "space-related",
         order = "n-a-1",
+        rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 0}},
+        send_to_orbit_mode = "automated",
+        weight = 1
     },
     {
         name = "ei_watch-satellite",
@@ -551,6 +555,9 @@ data:extend({
         stack_size = 1,
         subgroup = "space-related",
         order = "n-a-2",
+        rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 0}},
+        send_to_orbit_mode = "automated",
+        weight = 1
     },
     {
         name = "ei_exploration-satellite",
@@ -560,6 +567,9 @@ data:extend({
         stack_size = 1,
         subgroup = "space-related",
         order = "n-a-3",
+        rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 0}},
+        send_to_orbit_mode = "automated",
+        weight = 1
     },
 
     -- RECIPES
