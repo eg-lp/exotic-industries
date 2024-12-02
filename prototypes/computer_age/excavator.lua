@@ -79,9 +79,7 @@ data:extend({
             usage_priority = 'secondary-input',
         },
         allowed_effects = {"speed", "consumption", "pollution", "productivity"},
-        module_specification = {
-            module_slots = 2
-        },
+        module_slots = 2,
         energy_usage = "3MW",
         fluid_boxes = {
             {   

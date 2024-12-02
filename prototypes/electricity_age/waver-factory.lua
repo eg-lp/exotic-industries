@@ -165,9 +165,7 @@ data:extend({
             },
         },
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
-        module_specification = {
-            module_slots = 2
-        },
+        module_slots = 2,
         working_sound =
         {
             sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.8},

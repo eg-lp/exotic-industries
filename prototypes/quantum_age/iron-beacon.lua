@@ -97,11 +97,7 @@ data:extend({
             --input_flow_limit = "400MW",
         },
         energy_usage = "5MW",
-        module_specification = {
-            module_slots = 12+2,
-            module_info_icon_shift = {0, 0.5},
-            module_info_multi_row_initial_height_modifier = -0.3,
-        },
+        module_slots = 12+2,
         supply_area_distance = ei_data.beacon_range,
         radius_visualisation_picture =
         {

@@ -83,9 +83,7 @@ data:extend({
         },
         energy_usage = "100MW",
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
-        module_specification = {
-            module_slots = 1
-        },
+        module_slots = 1,
         fluid_boxes = {
             {   
                 -- filter = "ei_computing-power",

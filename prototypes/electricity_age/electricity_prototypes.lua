@@ -1422,9 +1422,7 @@ quarry.energy_source = {
     usage_priority = "secondary-input",
 }
 quarry.allowed_effects = {"speed", "productivity", "consumption", "pollution"}
-quarry.module_specification = {
-    module_slots = 2
-}
+quarry.module_slots = 2
 
 data:extend({
     {

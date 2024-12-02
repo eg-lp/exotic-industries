@@ -118,9 +118,7 @@ data:extend({
             },
         },
         allowed_effects = {"speed", "consumption", "pollution"},
-        module_specification = {
-            module_slots = 1
-        },
+        module_slots = 1,
     },
     {
         name = "ei_store-nuclear-waste",

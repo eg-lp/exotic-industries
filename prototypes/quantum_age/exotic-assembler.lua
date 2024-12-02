@@ -90,9 +90,7 @@ local neo_assembler = {
     result_inventory_size = 1,
     source_inventory_size = 1,
     allowed_effects = {"speed", "consumption", "pollution", "productivity"},
-    module_specification = {
-        module_slots = 4
-    },
+    module_slots = 4,
     fluid_boxes = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes),
     graphics_set = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].graphics_set),
     working_sound =

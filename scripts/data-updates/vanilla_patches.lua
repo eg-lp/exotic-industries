@@ -1494,7 +1494,7 @@ data.raw.technology["rocket-silo"].localised_description = {"technology-descript
 data.raw.item["steel-plate"].localised_name = {"item-name.ei_steel-plate"}
 
 -- add 2 more module slots to rocket silo
-data.raw["rocket-silo"]["rocket-silo"].module_specification.module_slots = 8
+data.raw["rocket-silo"]["rocket-silo"].module_slots = 8
 
 data.raw["recipe"]["heavy-oil-cracking"].localised_name = {"recipe-name.ei_heavy-oil-cracking"}
 

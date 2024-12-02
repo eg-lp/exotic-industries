@@ -216,9 +216,7 @@ data:extend({
         },
         energy_usage = "5MW",
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
-        module_specification = {
-            module_slots = 4
-        },
+        module_slots = 4,
         graphics_set = {
             animation = {
                 filename = ei_graphics_entity_path.."fission-facility.png",

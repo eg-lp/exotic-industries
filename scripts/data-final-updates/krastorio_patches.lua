@@ -355,7 +355,7 @@ local K2_CHANGES = {
         ["ei_neo-splitter"] = {speed = ei_neo_speed},
     },
     ["beacon"] = {
-        ["kr-singularity-beacon"] = {module_specification = {module_slots = 1}, distribution_effectivity = 0.25},
+        ["kr-singularity-beacon"] = {module_slots = 1, distribution_effectivity = 0.25},
     },
     ["burner-generator"] = {
         ["kr-antimatter-reactor"] = {max_power_output = "10GW"},
@@ -363,9 +363,9 @@ local K2_CHANGES = {
     ["assembling-machine"] = {
         ["kr-advanced-chemical-plant"] = {crafting_categories = {"ei_advanced-chem-plant", "chemistry"}, localised_name = {"item-name.kr-advanced-chemical-plant"}},
         ["kr-crusher"] = {crafting_categories = {"ei_crushing"}, crafting_speed = 12, localised_name = {"item-name.kr-crusher"}},
-        ["kr-filtration-plant"] = {crafting_categories = {"ei_purifier", "fluid-filtration"}, crafting_speed = 3, module_specification = { module_slots = 6 }},
+        ["kr-filtration-plant"] = {crafting_categories = {"ei_purifier", "fluid-filtration"}, crafting_speed = 3, module_slots = 6},
         ["kr-quantum-computer"] = {crafting_speed = 2},
-        ["kr-advanced-assembling-machine"] = {crafting_speed = 8, crafting_categories = {"crafting", "basic-crafting", "advanced-crafting", "crafting-with-fluid"}, module_specification = {module_slots = 6}, energy_usage = "10MW",},
+        ["kr-advanced-assembling-machine"] = {crafting_speed = 8, crafting_categories = {"crafting", "basic-crafting", "advanced-crafting", "crafting-with-fluid"}, module_slots = 6, energy_usage = "10MW",},
         ["ei_quantum-computer"] = {crafting_categories = {"ei_quantum-computer", "t4-tech-cards", "t3-tech-cards", "t2-tech-cards"}, crafting_speed = 10, localised_name = {"item-name.kr-ai-core"}}, -- from 1x
         ["kr-atmospheric-condenser"] = {crafting_categories = {"ei_atmosphere-condensation", "ei_lufter"}, crafting_speed = 4},
     },

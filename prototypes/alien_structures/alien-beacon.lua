@@ -34,11 +34,7 @@ data:extend({
             type = "void",
         },
         energy_usage = "1W",
-        module_specification = {
-            module_slots = 8,
-            module_info_icon_shift = {0, 0.5},
-            module_info_multi_row_initial_height_modifier = -0.3,
-        },
+        module_slots = 8,
         supply_area_distance = 12,
         radius_visualisation_picture =
 		{

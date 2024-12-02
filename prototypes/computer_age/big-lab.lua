@@ -81,13 +81,7 @@ data:extend({
         energy_usage = "20MW",
         inputs = ei_data.lab_inputs["big-lab"],
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
-        module_specification = {
-            module_info_icon_shift = {
-                0,
-                0.8
-            },
-            module_slots = 6
-        }, 
+        module_slots = 6,
         off_animation = {
             filename = ei_graphics_entity_path.."big-lab.png",
             size = {512*2,512*2},

@@ -283,9 +283,7 @@ data:extend({
         },
         energy_usage = "450kW",
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
-        module_specification = {
-            module_slots = 4
-        },
+        module_slots = 4,
         fluid_boxes = {
             {   
                 volume = 200,

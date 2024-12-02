@@ -84,7 +84,7 @@ pump.minable.result = "ei_steam-oil-pumpjack"
 pump.mining_speed = 0.5
 
 -- remove modules
-pump.module_specification = nil
+pump.module_slots = 0
 
 -- set energy source
 pump.energy_source = {
