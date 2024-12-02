@@ -675,7 +675,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
     local circuit_connector_sprites = {
         blue_led_light_offset = {0.125+Dx, 0.46875+Dy},
         connector_main = {
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04a-base-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04a-base-sequence.png",
           height = 50,
           priority = "low",
           scale = 0.5,
@@ -689,7 +689,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
         },
         connector_shadow = {
           draw_as_shadow = true,
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04b-base-shadow-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04b-base-shadow-sequence.png",
           height = 46,
           priority = "low",
           scale = 0.5,
@@ -703,7 +703,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
         },
         led_blue = {
           draw_as_glow = true,
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04e-blue-LED-on-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04e-blue-LED-on-sequence.png",
           height = 60,
           priority = "low",
           scale = 0.5,
@@ -716,7 +716,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
           y = 180
         },
         led_blue_off = {
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04f-blue-LED-off-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04f-blue-LED-off-sequence.png",
           height = 44,
           priority = "low",
           scale = 0.5,
@@ -730,7 +730,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
         },
         led_green = {
           draw_as_glow = true,
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04h-green-LED-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04h-green-LED-sequence.png",
           height = 46,
           priority = "low",
           scale = 0.5,
@@ -748,7 +748,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
         },
         led_red = {
           draw_as_glow = true,
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04i-red-LED-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04i-red-LED-sequence.png",
           height = 46,
           priority = "low",
           scale = 0.5,
@@ -765,7 +765,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
           0.359375+Dy
         },
         wire_pins = {
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04c-wire-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04c-wire-sequence.png",
           height = 58,
           priority = "low",
           scale = 0.5,
@@ -779,7 +779,7 @@ function ei_lib.make_circuit_connector(Dx, Dy)
         },
         wire_pins_shadow = {
           draw_as_shadow = true,
-          filename = "__base__/graphics/entity/circuit-connector/hr-ccm-universal-04d-wire-shadow-sequence.png",
+          filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04d-wire-shadow-sequence.png",
           height = 54,
           priority = "low",
           scale = 0.5,

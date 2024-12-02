@@ -60,7 +60,7 @@ furnace.animation = {
         },
         {
             draw_as_shadow = true,
-            filename = "__base__/graphics/entity/stone-furnace/hr-stone-furnace-shadow.png",
+            filename = "__base__/graphics/entity/stone-furnace/stone-furnace-shadow.png",
             frame_count = 1,
             height = 74,
             priority = "extra-high",

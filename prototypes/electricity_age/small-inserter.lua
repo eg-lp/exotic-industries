@@ -117,7 +117,7 @@ inserter.hand_base_picture = {
     width = 32*2
 }
 inserter.hand_base_shadow = {
-    filename = "__base__/graphics/entity/burner-inserter/hr-burner-inserter-hand-base-shadow.png",
+    filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base-shadow.png",
     height = 132,
     priority = "extra-high",
     scale = 0.25*2,
@@ -131,7 +131,7 @@ inserter.hand_closed_picture = {
     width = 100
 }
 inserter.hand_closed_shadow = {
-    filename = "__base__/graphics/entity/burner-inserter/hr-burner-inserter-hand-closed-shadow.png",
+    filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-closed-shadow.png",
     height = 164,
     priority = "extra-high",
     scale = 0.25*2,
@@ -145,7 +145,7 @@ inserter.hand_open_picture = {
     width = 100
 }
 inserter.hand_open_shadow = {
-    filename = "__base__/graphics/entity/burner-inserter/hr-burner-inserter-hand-open-shadow.png",
+    filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-open-shadow.png",
     height = 164,
     priority = "extra-high",
     scale = 0.25*2,
@@ -206,7 +206,7 @@ inserter.hand_base_picture = {
     width = 32*2
 }
 inserter.hand_base_shadow = {
-    filename = "__base__/graphics/entity/burner-inserter/hr-burner-inserter-hand-base-shadow.png",
+    filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base-shadow.png",
     height = 132,
     priority = "extra-high",
     scale = 0.25*2,
@@ -220,7 +220,7 @@ inserter.hand_closed_picture = {
     width = 100
 }
 inserter.hand_closed_shadow = {
-    filename = "__base__/graphics/entity/burner-inserter/hr-burner-inserter-hand-closed-shadow.png",
+    filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-closed-shadow.png",
     height = 164,
     priority = "extra-high",
     scale = 0.25*2,
@@ -234,7 +234,7 @@ inserter.hand_open_picture = {
     width = 100
 }
 inserter.hand_open_shadow = {
-    filename = "__base__/graphics/entity/burner-inserter/hr-burner-inserter-hand-open-shadow.png",
+    filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-open-shadow.png",
     height = 164,
     priority = "extra-high",
     scale = 0.25*2,

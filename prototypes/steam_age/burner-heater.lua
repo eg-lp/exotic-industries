@@ -121,14 +121,14 @@ data:extend({
         },
         --[[
         connection_patches_connected = {
-            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings.png",
+            filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
             width = 64,
             height = 64,
             variation_count = 4,
             scale = 0.5
         },
         connection_patches_disconnected = {
-            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings.png",
+            filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
             width = 64,
             height = 64,
             variation_count = 4,
@@ -136,14 +136,14 @@ data:extend({
         },
 
         heat_connection_patches_connected = {
-            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings-heated.png",
+            filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
             width = 64,
             height = 64,
             variation_count = 4,
             scale = 0.5
         },
         heat_connection_patches_disconnected = {
-            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings-heated.png",
+            filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
             width = 64,
             height = 64,
             variation_count = 4,

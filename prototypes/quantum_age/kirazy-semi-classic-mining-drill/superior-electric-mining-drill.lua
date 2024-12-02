@@ -285,7 +285,7 @@ mining_drill_explosion.icon_size = 64
 mining_drill_explosion.height = 0
 mining_drill_explosion.animations = {
     {
-        filename = "__base__/graphics/entity/small-explosion/hr-small-explosion-1.png",
+        filename = "__base__/graphics/entity/small-explosion/small-explosion-1.png",
         priority = "high",
         line_length = 6,
         width = 88,
@@ -296,7 +296,7 @@ mining_drill_explosion.animations = {
         scale = 0.5,
     },
     {
-        filename = "__base__/graphics/entity/small-explosion/hr-small-explosion-2.png",
+        filename = "__base__/graphics/entity/small-explosion/small-explosion-2.png",
         priority = "high",
         line_length = 6,
         width = 92,

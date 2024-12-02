@@ -127,7 +127,7 @@ data:extend({
         layer = 55,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
-            ei_graphics_terrain_path.."gaia-grass-1_hr.png", "__base__/graphics/terrain/masks/hr-transition-3.png",
+            ei_graphics_terrain_path.."gaia-grass-1_hr.png", "__base__/graphics/terrain/masks/transition-3.png",
           {
             max_size = 4,
             [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -158,7 +158,7 @@ data:extend({
         layer = 56,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-grass-2.png", "__base__/graphics/terrain/masks/transition-3.png",
-            ei_graphics_terrain_path.."gaia-grass-2_hr.png", "__base__/graphics/terrain/masks/hr-transition-3.png",
+            ei_graphics_terrain_path.."gaia-grass-2_hr.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
                 max_size = 4,
                 [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -189,7 +189,7 @@ data:extend({
         layer = 57,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-grass-1_var.png", "__base__/graphics/terrain/masks/transition-3.png",
-            ei_graphics_terrain_path.."gaia-grass-1_var_hr.png", "__base__/graphics/terrain/masks/hr-transition-3.png",
+            ei_graphics_terrain_path.."gaia-grass-1_var_hr.png", "__base__/graphics/terrain/masks/transition-3.png",
           {
             max_size = 4,
             [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -220,7 +220,7 @@ data:extend({
         layer = 58,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-grass-2.png", "__base__/graphics/terrain/masks/transition-3.png",
-            ei_graphics_terrain_path.."gaia-grass-2_hr.png", "__base__/graphics/terrain/masks/hr-transition-3.png",
+            ei_graphics_terrain_path.."gaia-grass-2_hr.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
                 max_size = 4,
                 [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -251,7 +251,7 @@ data:extend({
         layer = 59,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-grass-2_var.png", "__base__/graphics/terrain/masks/transition-3.png",
-            ei_graphics_terrain_path.."gaia-grass-2_var_hr.png", "__base__/graphics/terrain/masks/hr-transition-3.png",
+            ei_graphics_terrain_path.."gaia-grass-2_var_hr.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
                 max_size = 4,
                 [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -282,7 +282,7 @@ data:extend({
         layer = 60,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-rock-1.png", "__base__/graphics/terrain/masks/transition-1.png",
-            ei_graphics_terrain_path.."gaia-rock-1_hr.png", "__base__/graphics/terrain/masks/hr-transition-1.png",
+            ei_graphics_terrain_path.."gaia-rock-1_hr.png", "__base__/graphics/terrain/masks/transition-1.png",
             {
                 max_size = 4,
                 [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -312,7 +312,7 @@ data:extend({
         layer = 61,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-rock-2.png", "__base__/graphics/terrain/masks/transition-1.png",
-            ei_graphics_terrain_path.."gaia-rock-2_hr.png", "__base__/graphics/terrain/masks/hr-transition-1.png",
+            ei_graphics_terrain_path.."gaia-rock-2_hr.png", "__base__/graphics/terrain/masks/transition-1.png",
             {
                 max_size = 4,
                 [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -342,7 +342,7 @@ data:extend({
         layer = 62,
         variants = tile_variations_template(
             ei_graphics_terrain_path.."gaia-rock-3.png", "__base__/graphics/terrain/masks/transition-1.png",
-            ei_graphics_terrain_path.."gaia-rock-3_hr.png", "__base__/graphics/terrain/masks/hr-transition-1.png",
+            ei_graphics_terrain_path.."gaia-rock-3_hr.png", "__base__/graphics/terrain/masks/transition-1.png",
             {
                 max_size = 4,
                 [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },

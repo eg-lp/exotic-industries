@@ -58,7 +58,7 @@ plant.animation = ei_lib.make_4way_animation_from_spritesheet({ layers =
     }
   },
   {
-    filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
+    filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
     width = 312,
     height = 222,
     repeat_count = 24,

@@ -146,7 +146,7 @@ local entity_base = {
     animation = {
         layers = {
             {
-                filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
+                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
                 priority = "high",
                 width = 214,
                 height = 226,
@@ -156,7 +156,7 @@ local entity_base = {
                 scale = 1/3,
             },
             {
-                filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
+                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
                 priority = "high",
                 width = 190,
                 height = 165,
@@ -198,7 +198,7 @@ local function make_metalworks(base, foo, level, max_level, animation, result)
         entity.animation.layers[1].height = foo[1].height
         entity.animation.layers[1].shift = foo[1].shift
 
-        entity.animation.layers[1].hr_version.filename = "__base__/graphics/entity/assembling-machine-"..level.."/hr-assembling-machine-"..level..".png"
+        entity.animation.layers[1].hr_version.filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level..".png"
         entity.animation.layers[1].hr_version.width = foo[1].hr_version.width
         entity.animation.layers[1].hr_version.height = foo[1].hr_version.height
         entity.animation.layers[1].hr_version.shift = foo[1].hr_version.shift
@@ -208,7 +208,7 @@ local function make_metalworks(base, foo, level, max_level, animation, result)
         entity.animation.layers[2].height = foo[2].height
         entity.animation.layers[2].shift = foo[2].shift
 
-        entity.animation.layers[2].hr_version.filename = "__base__/graphics/entity/assembling-machine-"..level.."/hr-assembling-machine-"..level.."-shadow.png"
+        entity.animation.layers[2].hr_version.filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level.."-shadow.png"
         entity.animation.layers[2].hr_version.width = foo[2].hr_version.width
         entity.animation.layers[2].hr_version.height = foo[2].hr_version.height
         entity.animation.layers[2].hr_version.shift = foo[2].hr_version.shift

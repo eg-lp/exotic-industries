@@ -125,7 +125,7 @@ pump.animations = {
         {
             animation_speed = 0.5,
             draw_as_shadow = true,
-            filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-horsehead-shadow.png",
+            filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead-shadow.png",
             frame_count = 40,
             height = 82,
             line_length = 8,
