@@ -913,7 +913,7 @@ function ei_lib.merge_item(target, item, icon_transfer)
     end
 
     -- hide the old item
-    data.raw.item[item].flags = {"hidden"}
+    data.raw.item[item].hidden = true
 
 end
 

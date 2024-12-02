@@ -150,7 +150,7 @@ data:extend({
         icon_size = 64,
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         collision_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        collision_mask = {},
+        collision_mask = {layers = {}},
         animation = {
             direction_count = 64,
             layers = {

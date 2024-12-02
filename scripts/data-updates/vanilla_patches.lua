@@ -970,23 +970,17 @@ data.raw["recipe"]["lab"].enabled = false
 data.raw["recipe"]["copper-cable"].enabled = false
 data.raw["recipe"]["iron-stick"].hidden = true
 data.raw["recipe"]["automation-science-pack"].hidden = true
-data.raw["recipe"]["steel-plate"].normal.hidden = true
-data.raw["recipe"]["steel-plate"].expensive.hidden = true
+data.raw["recipe"]["steel-plate"].hidden = true
 
 -- military
 data.raw["recipe"]["radar"].enabled = false
 
 -- expensive/normal variants
-data.raw["recipe"]["pipe"].normal.enabled = false
-data.raw["recipe"]["pipe"].expensive.enabled = false
-data.raw["recipe"]["steam-engine"].normal.enabled = false
-data.raw["recipe"]["steam-engine"].expensive.enabled = false
-data.raw["recipe"]["electric-mining-drill"].normal.enabled = false
-data.raw["recipe"]["electric-mining-drill"].expensive.enabled = false
-data.raw["recipe"]["iron-gear-wheel"].normal.enabled = false
-data.raw["recipe"]["iron-gear-wheel"].expensive.enabled = false
-data.raw["recipe"]["electronic-circuit"].normal.enabled = false
-data.raw["recipe"]["electronic-circuit"].expensive.enabled = false
+data.raw["recipe"]["pipe"].enabled = false
+data.raw["recipe"]["steam-engine"].enabled = false
+data.raw["recipe"]["electric-mining-drill"].enabled = false
+data.raw["recipe"]["iron-gear-wheel"].enabled = false
+data.raw["recipe"]["electronic-circuit"].enabled = false
 
 --FUEL CATEGORIES
 ------------------------------------------------------------------------------------------------------
@@ -1395,9 +1389,9 @@ end
 
 for _,item in ipairs(unused_items) do
     if data.raw["item"][item] then
-        data.raw["item"][item].flags = {"hidden"}
+        data.raw["item"][item].hidden = true
     elseif data.raw["tool"][item] then
-        data.raw["tool"][item].flags = {"hidden"}
+        data.raw["tool"][item].hidden = true
     else
         log("item "..item.." not found for hidding")
     end

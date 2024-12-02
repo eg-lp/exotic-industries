@@ -975,7 +975,7 @@ for _, foo in ipairs(entites_to_hide) do
     local entity_name = foo[2]
 
     if data.raw[entity_type][entity_name] then
-        data.raw[entity_type][entity_name].flags = {"hidden"}
+        data.raw[entity_type][entity_name].hidden = true
 
         -- also remove next upgrade
         data.raw[entity_type][entity_name].next_upgrade = nil
@@ -1006,7 +1006,7 @@ local items_to_hide = {
 -- hide items
 for _, item in ipairs(items_to_hide) do
     if data.raw.item[item] then
-        data.raw.item[item].flags = {"hidden"}
+        data.raw.item[item].hidden = true
 
         -- also remove the place result
         data.raw.item[item].place_result = nil

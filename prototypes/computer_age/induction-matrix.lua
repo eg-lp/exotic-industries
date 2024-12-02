@@ -612,7 +612,7 @@ data:extend({
         {
             result = "ei_induction-matrix-tile",
             condition_size = 1,
-            condition = { "water-tile" }
+            condition = {layers={water_tile=true}}
         },
         stack_size = 50
     },
