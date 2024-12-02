@@ -451,7 +451,7 @@ data:extend({
         energy_required = 1,
         ingredients = {
             {type = "fluid", name = "ei_diesel", amount = 100},
-            {type = "item", name = "empty-barrel", amount = 1},
+            {type = "item", name = "barrel", amount = 1},
         },
         results = {
             {type = "item", name = "ei_diesel-fuel-unit", amount = 10},

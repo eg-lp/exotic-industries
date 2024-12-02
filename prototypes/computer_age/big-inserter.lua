@@ -53,7 +53,7 @@ data:extend({
         ingredients =
         {
             {"ei_small-inserter-normal", 1},
-            {"stack-inserter", 4},
+            {"bulk-inserter", 4},
             {"low-density-structure", 6},
         },
         result = "ei_big-inserter-normal",
@@ -67,7 +67,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."big-inserter.png",
         icon_size = 128,
-        prerequisites = {"stack-inserter", "low-density-structure"},
+        prerequisites = {"bulk-inserter", "low-density-structure"},
         effects = {
             {
                 type = "unlock-recipe",

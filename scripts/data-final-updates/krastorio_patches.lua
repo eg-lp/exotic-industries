@@ -722,16 +722,16 @@ local new_prerequisites = {
         ["kr-automation-core"] = {{"ei_steam-age"},{"ei_steam-assembler"},true},
     },
     ["electricity-age"] = {
-        ["kr-gas-power-station"] = {{"ei_fluid-boiler", "advanced-electronics"},{},false},
+        ["kr-gas-power-station"] = {{"ei_fluid-boiler", "advanced-circuit"},{},false},
         ["kr-greenhouse"] = {{"ei_electricity-age"},{},false},
         ["logistics-2"] = {{"plastics", "logistics", "fast-inserter"},{},false},
-        ["kr-advanced-lab"] = {{"advanced-electronics"},{"ei_computer-age"},true},
+        ["kr-advanced-lab"] = {{"advanced-circuit"},{"ei_computer-age"},true},
         ["kr-steel-fluid-handling"] = {{"fluid-handling", "electric-engine"},{},true},
         ["kr-steel-fluid-tanks"] = {{"kr-steel-fluid-handling"},{},false},
         ["advanced-radar"] = {{"kr-radar", "ei_electronic-parts"},{},false},
-        ["advanced-electronics"] = {{"kr-silicon-processing", "sulfur-processing"},{},false},
-        ["kr-research-server"] = {{"advanced-electronics", "ei_grower"},{"ei_computer-age"},true},
-        ["kr-air-purification"] = {{"advanced-electronics"},{},true},
+        ["advanced-circuit"] = {{"kr-silicon-processing", "sulfur-processing"},{},false},
+        ["kr-research-server"] = {{"advanced-circuit", "ei_grower"},{"ei_computer-age"},true},
+        ["kr-air-purification"] = {{"advanced-circuit"},{},true},
         ["kr-fuel"] = {{"ei_destill-tower"},{},false},
         ["ei_grower"] = {{"sulfur-processing", "kr-silicon-processing"},{},false},
         ["railway"] = {{"sulfur-processing", "kr-fuel"},{},false},
@@ -742,7 +742,7 @@ local new_prerequisites = {
         ["kr-fluid-excess-handling"] = {{"kr-fluids-chemistry"},{},false},
         ["kr-railgun-turret"] = {{"military-4", "kr-fluids-chemistry", "ei_cannon-turret"},{},false},
         ["ei_nitric-acid"] = {{"ei_dinitrogen-tetroxide"},{},false},
-        ["stack-inserter"] = {{"kr-fluids-chemistry"},{},false},
+        ["bulk-inserter"] = {{"kr-fluids-chemistry"},{},false},
         ["ei_deep-pumpjack"] = {{"kr-fluids-chemistry"},{},false},
         ["ei_cooler"] = {{"kr-fluids-chemistry"},{},false},
         ["kr-nuclear-reactor-equipment"] = {{"ei_personal-reactor"},{},false},
@@ -751,9 +751,9 @@ local new_prerequisites = {
     },
     ["advanced-computer-age"] = {
         ["kr-enriched-ores"] = {{"ei_silicon"},{},false},
-        ["kr-improved-pollution-filter"] = {{"advanced-electronics-2", "kr-air-purification"},{},true},
+        ["kr-improved-pollution-filter"] = {{"processing-unit", "kr-air-purification"},{},true},
         ["kr-advanced-exoskeleton-equipment"] = {{"exoskeleton-equipment"},{},true},
-        ["kr-quantum-computer"] = {{"advanced-electronics-2"},{"ei_quantum-age"},true},
+        ["kr-quantum-computer"] = {{"processing-unit"},{"ei_quantum-age"},true},
     },
     ["knowledge-computer-age"] = {
         ["kr-logistic-4"] = {{"ei_computer-core", "logistics-3"},{},false},
@@ -790,8 +790,8 @@ local new_prerequisites = {
         ["kr-advanced-furnace"] = {{"ei_nano-factory", "kr-imersium-processing"},{},true},
         ["kr-power-armor-mk3"] = {{"kr-imersium-processing"},{},false},
         ["kr-automation"] = {{"kr-imersium-processing", "ei_neo-assembler"},{},true},
-        ["kr-superior-inserters"] = {{"kr-imersium-processing", "stack-inserter"},{},true},
-        ["kr-logistic-5"] = {{"kr-imersium-processing", "stack-inserter"},{},true},
+        ["kr-superior-inserters"] = {{"kr-imersium-processing", "bulk-inserter"},{},true},
+        ["kr-logistic-5"] = {{"kr-imersium-processing", "bulk-inserter"},{},true},
         ["kr-energy-storage"] = {{"kr-imersium-processing"},{"ei_superior-induction-matrix"},true},
         ["kr-personal-laser-defense-mk4-equipment"] = {{"kr-personal-laser-defense-mk3-equipment"},{},false},
     },
@@ -1354,18 +1354,18 @@ local recipe_overwrite = {
         {type = "item", name = "inserter", amount = 1},
         {type = "item", name = "electronic-circuit", amount = 2},
     },
-    ["filter-inserter"] = {
+    ["fast-inserter"] = {
         {type = "item", name = "inserter-parts", amount = 1},
         {type = "item", name = "inserter", amount = 1},
         {type = "item", name = "electronic-circuit", amount = 6},
     },
-    ["stack-inserter"] = {
+    ["bulk-inserter"] = {
         {type = "item", name = "inserter-parts", amount = 2},
         {type = "item", name = "fast-inserter", amount = 1},
         {type = "item", name = "ei_electronic-parts", amount = 1},
         {type = "item", name = "ei_steel-mechanical-parts", amount = 4},
     },
-    ["stack-filter-inserter"] = {
+    ["bulk-inserter"] = {
         {type = "item", name = "inserter-parts", amount = 2},
         {type = "item", name = "fast-inserter", amount = 1},
         {type = "item", name = "ei_electronic-parts", amount = 2},
@@ -1895,7 +1895,7 @@ data.raw["recipe"]["copper-plate"].results = {
     {type = "item", name = "copper-plate", amount = 1}
 }
 
-ei_lib.remove_unlock_recipe("advanced-electronics", "electronic-components")
+ei_lib.remove_unlock_recipe("advanced-circuit", "electronic-components")
 ei_lib.recipe_add("ei_crystal-solution", "chlorine", 20, true)
 ei_lib.recipe_add("ei_advanced-semiconductor", "chlorine", 5, true)
 ei_lib.recipe_add("ei_advanced-semiconductor:monosilicon", "chlorine", 10, true)
@@ -1981,7 +1981,7 @@ ei_lib.remove_unlock_recipe("kr-fluids-chemistry", "chemical-plant")
 
 ei_lib.add_prerequisite("speed-module", "kr-mineral-water-gathering")
 ei_lib.add_prerequisite("productivity-module", "kr-mineral-water-gathering")
-ei_lib.add_prerequisite("effectivity-module", "kr-mineral-water-gathering")
+ei_lib.add_prerequisite("efficiency-module", "kr-mineral-water-gathering")
 
 --[[
 data.raw.recipe["ei_module-base"].recipe_category = "crafting-with-fluid"

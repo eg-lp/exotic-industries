@@ -149,7 +149,7 @@ function model.spawn_guardian(surface, pos)
             {pos.x - 30, pos.y - 30},
             {pos.x + 30, pos.y + 30}
         },
-        name = "rock-huge"
+        name = "huge-rock"
     }
 
     for _, rock in ipairs(rocks) do

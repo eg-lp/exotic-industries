@@ -23,13 +23,13 @@ table.insert(data.raw.technology["fast-inserter"].effects, {
 })
 
 ei_lib.remove_unlock_recipe("logistics-2", "ei_fast-loader")
-table.insert(data.raw.technology["advanced-electronics"].effects, {
+table.insert(data.raw.technology["advanced-circuit"].effects, {
     type = "unlock-recipe",
     recipe = "ei_fast-loader"
 })
 
 ei_lib.remove_unlock_recipe("logistics-3", "ei_express-loader")
-table.insert(data.raw.technology["stack-inserter"].effects, {
+table.insert(data.raw.technology["bulk-inserter"].effects, {
     type = "unlock-recipe",
     recipe = "ei_express-loader"
 })
@@ -48,7 +48,7 @@ ei_lib.recipe_new("ei_fast-loader", {
 })
 
 ei_lib.recipe_new("ei_express-loader", {
-    {"stack-inserter", 2},
+    {"bulk-inserter", 2},
     {"ei_fast-loader", 1},
     {"ei_steel-mechanical-parts", 10},
 })

@@ -295,13 +295,13 @@ local new_ingredients_table = {
         {"battery", 5},
         {"plastic-bar", 2},
     },
-    ["stack-inserter"] = {
+    ["bulk-inserter"] = {
         {"ei_electronic-parts", 5},
         {"ei_advanced-motor", 4},
         {"fast-inserter", 1},
         {"ei_energy-crystal", 4},
     },
-    ["effectivity-module"] = {
+    ["efficiency-module"] = {
         {"ei_module-base", 1},
         {"ei_energy-crystal", 4},
     },
@@ -309,10 +309,10 @@ local new_ingredients_table = {
         {"ei_module-base", 1},
         {"advanced-circuit", 4},
     },
-    ["effectivity-module-2"] = {
+    ["efficiency-module-2"] = {
         {"ei_simulation-data", 25},
         {"ei_module-base", 1},
-        {"effectivity-module", 2},
+        {"efficiency-module", 2},
     },
     ["productivity-module-2"] = {
         {"ei_simulation-data", 25},
@@ -335,10 +335,10 @@ local new_ingredients_table = {
         {"ei_simulation-data", 4},
         {"ei_crushed-gold", 8},
     },
-    ["effectivity-module-3"] = {
+    ["efficiency-module-3"] = {
         {"processing-unit", 2},
         {"ei_module-base", 1},
-        {"effectivity-module-2", 2},
+        {"efficiency-module-2", 2},
     },
     ["productivity-module-3"] = {
         {"processing-unit", 2},
@@ -646,11 +646,11 @@ new_prerequisites_table["electricity-age"] = {
     {"automation-2", "automation"},
     {"fast-inserter", "ei_electricity-power"},
     {"circuit-network", "ei_electricity-power"},
-    {"optics", "ei_electricity-power"},
-    {"laser", "optics"},
+    {"lamp", "ei_electricity-power"},
+    {"laser", "lamp"},
     {"laser-turret", "laser"},
-    {"energy-weapons-damage-1", "laser"},
-    {"energy-weapons-damage-2", "energy-weapons-damage-1"},
+    {"laser-weapons-damage-1", "laser"},
+    {"laser-weapons-damage-2", "laser-weapons-damage-1"},
     {"laser-shooting-speed-1", "laser"},
     {"laser-shooting-speed-2", "laser-shooting-speed-1"},
     {"laser-shooting-speed-3", "laser-shooting-speed-2"},
@@ -665,7 +665,7 @@ new_prerequisites_table["electricity-age"] = {
     {"cliff-explosives", "explosives"},
     {"worker-robots-speed-2", "worker-robots-speed-1"},
     {"robotics", "lubricant"},
-    {"robotics", "advanced-electronics"},
+    {"robotics", "advanced-circuit"},
     {"robotics", "battery"},
     {"robotics", "ei_grower"},
     {"logistic-robotics", "robotics"},
@@ -706,26 +706,26 @@ new_prerequisites_table["electricity-age"] = {
     {"electric-energy-accumulators", "battery"},
     {"lubricant", "automation-2"},
     {"logistics-2", "plastics"},
-    {"advanced-electronics", "sulfur-processing"},
-    {"advanced-electronics", "automation-2"},
+    {"advanced-circuit", "sulfur-processing"},
+    {"advanced-circuit", "automation-2"},
     {"inserter-capacity-bonus-2", "lubricant"},
     {"construction-robotics", "concrete"},
     {"logistic-robotics", "concrete"},
     {"explosives", "sulfur-processing"},
     {"military-3", "explosives"},
-    {"modular-armor", "advanced-electronics"},
+    {"modular-armor", "advanced-circuit"},
     {"battery-equipment", "battery"},
     {"solar-panel-equipment", "solar-energy"},
     {"personal-laser-defense-equipment", "laser-turret"},
     {"laser", "ei_grower"},
-    {"laser", "advanced-electronics"},
+    {"laser", "advanced-circuit"},
     {"personal-roboport-equipment", "modular-armor"},
     {"power-armor", "ei_grower"},
     {"solar-energy", "ei_waver-factory"},
-    -- {"advanced-material-processing-2", "advanced-electronics"},
+    -- {"advanced-material-processing-2", "advanced-circuit"},
     {"advanced-material-processing-2", "ei_electricity-power"},
     {"uranium-processing", "ei_deep-mining"},
-    {"uranium-processing", "advanced-electronics"},
+    {"uranium-processing", "advanced-circuit"},
     {"uranium-processing", "ei_grower"},
     {"nuclear-power", "uranium-processing"},
     -- {"nuclear-fuel-processing", "nuclear-power"},
@@ -735,37 +735,37 @@ new_prerequisites_table["electricity-age"] = {
 }
 
 new_prerequisites_table["computer-age"] = {
-    {"inserter-capacity-bonus-3", "stack-inserter"},
+    {"inserter-capacity-bonus-3", "bulk-inserter"},
     {"speed-module", "modules"},
     {"speed-module-2", "speed-module"},
     {"speed-module-3", "speed-module-2"},
     {"speed-module-2", "ei_computer-core"},
-    {"speed-module-3", "advanced-electronics-2"},
+    {"speed-module-3", "processing-unit"},
     {"productivity-module", "modules"},
     {"productivity-module-2", "productivity-module"},
     {"productivity-module-2", "ei_computer-core"},
     {"productivity-module-3", "productivity-module-2"},
-    {"productivity-module-3", "advanced-electronics-2"},
-    {"effectivity-module", "modules"},
-    {"effectivity-module-2", "effectivity-module"},
-    {"effectivity-module-3", "effectivity-module-2"},
-    {"effectivity-module-2", "ei_computer-core"},
-    {"effectivity-module-3", "advanced-electronics-2"},
-    -- {"advanced-electronics-2", "ei_computer-core"},
-    {"advanced-electronics-2", "ei_nitric-acid"},
+    {"productivity-module-3", "processing-unit"},
+    {"efficiency-module", "modules"},
+    {"efficiency-module-2", "efficiency-module"},
+    {"efficiency-module-3", "efficiency-module-2"},
+    {"efficiency-module-2", "ei_computer-core"},
+    {"efficiency-module-3", "processing-unit"},
+    -- {"processing-unit", "ei_computer-core"},
+    {"processing-unit", "ei_nitric-acid"},
     {"braking-force-6", "logistics-3"},
     {"automation-3", "ei_cryodust"},
     -- {"automation-3", "ei_bio-reactor"},
     {"rocket-silo", "automation-3"},
     {"logistics-3", "automation-3"},
     {"mining-productivity-2", "ei_advanced-computer-age-tech"},
-    {"stack-inserter", "logistics-3"},
+    {"bulk-inserter", "logistics-3"},
     {"logistic-system", "ei_computer-core"},
     {"personal-roboport-mk2-equipment", "logistic-system"},
-    {"worker-robots-speed-3", "advanced-electronics-2"},
-    {"personal-roboport-mk2-equipment", "advanced-electronics-2"},
+    {"worker-robots-speed-3", "processing-unit"},
+    {"personal-roboport-mk2-equipment", "processing-unit"},
     {"worker-robots-speed-3", "logistic-system"},
-    {"worker-robots-storage-1", "advanced-electronics-2"},
+    {"worker-robots-storage-1", "processing-unit"},
     {"worker-robots-storage-1", "logistic-system"},
     {"research-speed-3", "ei_advanced-computer-age-tech"},
     {"artillery", "rocketry"},
@@ -777,7 +777,7 @@ new_prerequisites_table["computer-age"] = {
     {"spidertron", "automation-3"},
     {"rocketry", "military-4"},
     {"explosive-rocketry", "rocketry"},
-    {"energy-weapons-damage-3", "power-armor-mk2"},
+    {"laser-weapons-damage-3", "power-armor-mk2"},
     -- {"stronger-explosives-3", "military-4"},
     {"weapon-shooting-speed-3", "rocketry"},
     {"refined-flammables-5", "military-4"},
@@ -785,7 +785,7 @@ new_prerequisites_table["computer-age"] = {
     {"laser-shooting-speed-4", "power-armor-mk2"},
     {"follower-robot-count-3", "power-armor-mk2"},
     {"follower-robot-count-3", "personal-roboport-mk2-equipment"},
-    {"power-armor-mk2", "advanced-electronics-2"},
+    {"power-armor-mk2", "processing-unit"},
     {"power-armor-mk2", "low-density-structure"},
     {"power-armor-mk2", "ei_high-energy-crystal"},
     {"energy-shield-mk2-equipment", "power-armor-mk2"},
@@ -795,11 +795,11 @@ new_prerequisites_table["computer-age"] = {
     {"low-density-structure", "ei_advanced-steel"},
     {"rocket-fuel", "refined-flammables-6"},
     {"rocket-fuel", "ei_oxygen-gas"},
-    {"rocket-control-unit", "advanced-electronics-2"},
+    {"rocket-control-unit", "processing-unit"},
     {"rocket-control-unit", "ei_high-energy-crystal"},
     {"ei_rocket-parts", "rocket-fuel"},
     {"rocket-silo", "ei_rocket-parts"},
-    {"advanced-electronics-2", "ei_advanced-computer-age-tech"},
+    {"processing-unit", "ei_advanced-computer-age-tech"},
     
 }
 
@@ -812,8 +812,8 @@ new_prerequisites_table["quantum-age"] = {
     {"worker-robots-storage-3", "ei_fusion-data"},
     {"fusion-reactor-equipment", "ei_fusion-reactor"},
     {"fusion-reactor-equipment", "ei_plasma-cube"},
-    {"energy-weapons-damage-6", "ei_fusion-data"},
-    {"energy-weapons-damage-7", "ei_deep-exploration"},
+    {"laser-weapons-damage-6", "ei_fusion-data"},
+    {"laser-weapons-damage-7", "ei_deep-exploration"},
     {"stronger-explosives-7", "ei_deep-exploration"},
     {"follower-robot-count-7", "ei_deep-exploration"},
     {"physical-projectile-damage-7", "ei_deep-exploration"},
@@ -841,7 +841,7 @@ numbered_buffs = {
     "research-speed-6",
     "worker-robots-speed-6",
     "worker-robots-storage-3",
-    "energy-weapons-damage-7",
+    "laser-weapons-damage-7",
     "physical-projectile-damage-7",
     "refined-flammables-7",
     "inserter-capacity-bonus-7",
@@ -914,7 +914,7 @@ table.insert(data.raw["technology"]["engine"].effects, {
     recipe = "pump"
 })
 
-table.insert(data.raw["technology"]["optics"].effects, {
+table.insert(data.raw["technology"]["lamp"].effects, {
     type = "unlock-recipe",
     recipe = "radar"
 })
@@ -1439,9 +1439,9 @@ data.raw.module["speed-module"].icon = ei_graphics_item_path .. "speed-module.pn
 data.raw.module["speed-module-2"].icon = ei_graphics_item_path .. "speed-module-2.png"
 data.raw.module["speed-module-3"].icon = ei_graphics_item_path .. "speed-module-3.png"
 
-data.raw.module["effectivity-module"].icon = ei_graphics_item_path .. "effectivity-module.png"
-data.raw.module["effectivity-module-2"].icon = ei_graphics_item_path .. "effectivity-module-2.png"
-data.raw.module["effectivity-module-3"].icon = ei_graphics_item_path .. "effectivity-module-3.png"
+data.raw.module["efficiency-module"].icon = ei_graphics_item_path .. "effectivity-module.png"
+data.raw.module["efficiency-module-2"].icon = ei_graphics_item_path .. "effectivity-module-2.png"
+data.raw.module["efficiency-module-3"].icon = ei_graphics_item_path .. "effectivity-module-3.png"
 
 -- nerf vanilla modules a bit
 data.raw.module["productivity-module"].effect = {
@@ -1512,9 +1512,9 @@ if mods["exotic-industries-containers"] then
     ei_lib.recipe_add("ei_6x6-container_green", "ei_simulation-data", 40)
     ei_lib.recipe_add("ei_6x6-container_pink", "ei_simulation-data", 40)
 else
-    ei_lib.recipe_add("logistic-chest-requester", "ei_simulation-data", 10)
-    ei_lib.recipe_add("logistic-chest-buffer", "ei_simulation-data", 10)
-    ei_lib.recipe_add("logistic-chest-active-provider", "ei_simulation-data", 10)
+    ei_lib.recipe_add("requester-chest", "ei_simulation-data", 10)
+    ei_lib.recipe_add("buffer-chest", "ei_simulation-data", 10)
+    ei_lib.recipe_add("active-provider-chest", "ei_simulation-data", 10)
 end
 
 -- change description of rocket-silo tech and steel-plate
@@ -1581,14 +1581,14 @@ for i,item in pairs(data.raw["item"]) do
             if recipe.name == "fill-"..item.name then
                 recipe.ingredients = {
                     {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel:multiplier")},
-                    {type = "item", name = "empty-barrel", amount = 1}
+                    {type = "item", name = "barrel", amount = 1}
                 }
             end
 
             if recipe.name == "empty-"..item.name then
                 recipe.results = {
                     {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel:multiplier")},
-                    {type = "item", name = "empty-barrel", amount = 1}
+                    {type = "item", name = "barrel", amount = 1}
                 }
             end
 

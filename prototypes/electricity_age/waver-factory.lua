@@ -60,7 +60,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."waver-factory.png",
         icon_size = 256,
-        prerequisites = {"advanced-electronics", "ei_purifier", "optics"},
+        prerequisites = {"advanced-circuit", "ei_purifier", "lamp"},
         effects = {
             {
                 type = "unlock-recipe",

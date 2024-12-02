@@ -40,7 +40,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."combustion-turbine.png",
         icon_size = 512,
-        prerequisites = {"advanced-electronics", "advanced-oil-processing", "concrete"},
+        prerequisites = {"advanced-circuit", "advanced-oil-processing", "concrete"},
         effects = {
             {
                 type = "unlock-recipe",

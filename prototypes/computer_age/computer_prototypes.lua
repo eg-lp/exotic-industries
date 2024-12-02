@@ -33,7 +33,7 @@ data:extend({
         icon = ei_graphics_item_path.."empty-cryo-container.png",
         icon_size = 64,
         subgroup = "intermediate-product",
-        order = "d[empty-barrel]-1",
+        order = "d[barrel]-1",
         stack_size = 50
     },
     {
@@ -42,7 +42,7 @@ data:extend({
         icon = ei_graphics_item_path.."cryo-container-nitrogen.png",
         icon_size = 64,
         subgroup = "intermediate-product",
-        order = "d[empty-barrel]-1",
+        order = "d[barrel]-1",
         stack_size = 50
     },
     {
@@ -51,7 +51,7 @@ data:extend({
         icon = ei_graphics_item_path.."cryo-container-oxygen.png",
         icon_size = 64,
         subgroup = "intermediate-product",
-        order = "d[empty-barrel]-2",
+        order = "d[barrel]-2",
         stack_size = 50
     },
     --[[
@@ -1302,7 +1302,7 @@ data:extend({
         ingredients =
         {
             {"plastic-bar", 8},
-            {"empty-barrel", 1},
+            {"barrel", 1},
             {"ei_ceramic", 10},
             {"ei_glass", 8},
         },
@@ -1347,7 +1347,7 @@ data:extend({
         enabled = false,
         icon = ei_graphics_other_path.."empty-cryo-container-nitrogen.png",
         icon_size = 64,
-        subgroup = "empty-barrel",
+        subgroup = "barrel",
         order = "c-1",
     },
     {
@@ -1385,7 +1385,7 @@ data:extend({
         enabled = false,
         icon = ei_graphics_other_path.."empty-cryo-container-oxygen.png",
         icon_size = 64,
-        subgroup = "empty-barrel",
+        subgroup = "barrel",
         order = "c-2",
     },
     {
@@ -2116,7 +2116,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."lithium-battery.png",
         icon_size = 256,
-        prerequisites = {"advanced-electronics-2"},
+        prerequisites = {"processing-unit"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -2139,7 +2139,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."silicon.png",
         icon_size = 128,
-        prerequisites = {"advanced-electronics-2"},
+        prerequisites = {"processing-unit"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -2446,12 +2446,12 @@ data:extend({
     },
 })
 
-table.insert(data.raw["technology"]["advanced-electronics-2"].effects, {
+table.insert(data.raw["technology"]["processing-unit"].effects, {
     type = "unlock-recipe",
     recipe = "ei_advanced-semiconductor"
 })
 
-table.insert(data.raw["technology"]["advanced-electronics-2"].effects, {
+table.insert(data.raw["technology"]["processing-unit"].effects, {
     type = "unlock-recipe",
     recipe = "ei_advanced-base-semiconductor"
 })
@@ -2476,12 +2476,12 @@ table.insert(data.raw["technology"]["productivity-module"].effects, {
     recipe = "ei_module-part"
 })
 
-table.insert(data.raw["technology"]["effectivity-module"].effects, {
+table.insert(data.raw["technology"]["efficiency-module"].effects, {
     type = "unlock-recipe",
     recipe = "ei_module-base"
 })
 
-table.insert(data.raw["technology"]["effectivity-module"].effects, {
+table.insert(data.raw["technology"]["efficiency-module"].effects, {
     type = "unlock-recipe",
     recipe = "ei_module-part"
 })

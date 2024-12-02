@@ -1935,7 +1935,7 @@ data:extend({
         category = "crafting",
         energy_required = 80,
         ingredients = {
-            {type = "item", name = "effectivity-module-3", amount = 2},
+            {type = "item", name = "efficiency-module-3", amount = 2},
             {type = "item", name = "ei_computing-unit", amount = 1},
             {type = "item", name = "ei_module-base", amount = 1},
         },
@@ -2378,7 +2378,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."tritium-breeding.png",
         icon_size = 256,
-        prerequisites = {"ei_fusion-reactor", "energy-weapons-damage-6", "ei_neutron-collector"},
+        prerequisites = {"ei_fusion-reactor", "laser-weapons-damage-6", "ei_neutron-collector"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -2612,7 +2612,7 @@ data:extend({
         icon = ei_graphics_tech_path.."effectivity-module-4.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        prerequisites = {"ei_neodym-refining", "effectivity-module-3"},
+        prerequisites = {"ei_neodym-refining", "efficiency-module-3"},
         effects = {
             {
                 type = "unlock-recipe",

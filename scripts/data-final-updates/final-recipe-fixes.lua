@@ -24,7 +24,7 @@ end
 -- check if recipe is in fill-barrel or empty-barrel subgroup
 
 for i,v in pairs(data.raw.recipe) do
-    if data.raw.recipe[i].subgroup == "fill-barrel" or data.raw.recipe[i].subgroup == "empty-barrel" then
+    if data.raw.recipe[i].subgroup == "fill-barrel" or data.raw.recipe[i].subgroup == "barrel" then
         data.raw.recipe[i].hide_from_player_crafting = true
     end
 end

@@ -19,7 +19,7 @@ end
 data.raw["spider-vehicle"]["sp-spiderling"].guns = {}
 
 -- change spiderling tech
-data.raw["technology"]["sp-spiderling"].prerequisites = {"advanced-electronics", "military-3", "ei_grower"}
+data.raw["technology"]["sp-spiderling"].prerequisites = {"advanced-circuit", "military-3", "ei_grower"}
 data.raw["technology"]["sp-spiderling"].age = "electricity-age"
 
 ei_lib.recipe_new("sp-spiderling", {
