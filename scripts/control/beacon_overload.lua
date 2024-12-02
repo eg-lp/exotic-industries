@@ -126,10 +126,13 @@ function model.count_beacons(entity)
         area = area,
         name = "ei_alien-beacon"
     }
-    local kr_beacons = entity.surface.find_entities_filtered{
-        area = area,
-        name = "kr-singularity-beacon"
-    }
+    local kr_beacons = {};
+    if script.active_mods["Krastorio2"] then
+        kr_beacons = entity.surface.find_entities_filtered{
+            area = area,
+            name = "kr-singularity-beacon"
+        }
+    end
 
     -- now add the number of iron beacons since they count double
     local iron_beacons = entity.surface.find_entities_filtered{

@@ -189,8 +189,8 @@ function model.update_mass(unit, entity)
     end
 
     local items = inv.get_contents()
-    for name, count in pairs(items) do
-        storage.ei.black_hole[unit].mass = storage.ei.black_hole[unit].mass + count
+    for _, item in pairs(items) do
+        storage.ei.black_hole[unit].mass = storage.ei.black_hole[unit].mass + item.count
     end
 
     -- clear inventory
