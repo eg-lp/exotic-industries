@@ -103,8 +103,8 @@ data:extend({
                 },
                 production_type = "input",
             },
-            off_when_no_fluid_recipe = true
         },
+        fluid_boxes_off_when_no_fluid_recipe = true,
         energy_usage = "50kW",
         animation = {
             filename = ei_graphics_entity_path.."steam-assembler.png",

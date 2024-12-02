@@ -1130,6 +1130,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes = {
         secondary_draw_orders = {north = -1}
     }
 }
+data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recipe = true
 
 -- remove neighbour bonus from nuclear reactor and set fuel category to ei_nuclear_fuel
 -- also set energy output to 100MW (setting)

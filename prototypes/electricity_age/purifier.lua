@@ -305,8 +305,8 @@ data:extend({
                 },
                 production_type = "output",
             },
-            off_when_no_fluid_recipe = true
         },
+        fluid_boxes_off_when_no_fluid_recipe = true,
         animation = {
             filename = ei_graphics_entity_path.."purifier.png",
             size = {512,512},

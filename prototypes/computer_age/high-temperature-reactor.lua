@@ -138,9 +138,9 @@ data:extend({
                 },
                 production_type = "output",
                 filter = "steam",
-            },
-            off_when_no_fluid_recipe = true
+            }
         },
+        fluid_boxes_off_when_no_fluid_recipe = true,
         animation = {
             filename = ei_graphics_entity_path.."high-temperature-reactor.png",
             size = {512,512},
