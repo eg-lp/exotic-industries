@@ -100,7 +100,7 @@ function model.open_gui(player)
     image_frame.add{
         type = "sprite",
         name = "destination-sprite",
-        sprite = "ei_destination:moon",
+        sprite = "ei_destination__moon",
         style = "ei_space_destination_sprite"
     }.style.size = 96
 

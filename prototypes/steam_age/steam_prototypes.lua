@@ -244,7 +244,7 @@ data:extend({
         main_product = "ei_coke",
     },
     {
-        name = "ei_coke:charcoal",
+        name = "ei_coke__charcoal",
         type = "recipe",
         category = "ei_coke-furnace",
         energy_required = 1.5,
@@ -259,7 +259,7 @@ data:extend({
         main_product = "ei_coke",
     },
     {
-        name = "ei_coke:advanced_coal",
+        name = "ei_coke__advanced_coal",
         type = "recipe",
         category = "oil-processing",
         energy_required = 3.5,
@@ -275,7 +275,7 @@ data:extend({
         main_product = "ei_coke",
     },
     {
-        name = "ei_coke:advanced_charcoal",
+        name = "ei_coke__advanced_charcoal",
         type = "recipe",
         category = "oil-processing",
         energy_required = 3.5,
@@ -336,7 +336,7 @@ data:extend({
         main_product = "ei_crushed-iron",
     },
     {
-        name = "ei_crushed-iron:plate",
+        name = "ei_crushed-iron__plate",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 1,
@@ -352,7 +352,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_crushed-iron:beam",
+        name = "ei_crushed-iron__beam",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 1,
@@ -368,7 +368,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_crushed-iron:mechanical-parts",
+        name = "ei_crushed-iron__mechanical-parts",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 1,
@@ -463,7 +463,7 @@ data:extend({
         main_product = "storage-tank",
     },
     {
-        name = "ei_solid-fuel:residual-oil",
+        name = "ei_solid-fuel__residual-oil",
         type = "recipe",
         category = "chemistry",
         energy_required = 2,
@@ -478,7 +478,7 @@ data:extend({
         icon = ei_graphics_other_path.."residual-oil_solid-fuel.png",
         icon_size = 64,
         subgroup = "fluid-recipes",
-        order = "b[fluid-chemistry]-c[solid-fuel:residual-oil]",
+        order = "b[fluid-chemistry]-c[solid-fuel__residual-oil]",
     },
     {
         name = "ei_sand",
@@ -512,7 +512,7 @@ data:extend({
         main_product = "ei_glass",
     },
     {
-        name = "ei_ceramic:steam-assembler",
+        name = "ei_ceramic__steam-assembler",
         type = "recipe",
         category = "ei_steam-assembler",
         energy_required = 1,
@@ -578,7 +578,7 @@ data:extend({
         main_product = "ei_electricity-age-tech",
     },
     {
-        name = "ei_landfill:sand",
+        name = "ei_landfill__sand",
         type = "recipe",
         category = "crafting",
         energy_required = 0.5,
@@ -642,7 +642,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_coke:charcoal"
+                recipe = "ei_coke__charcoal"
             },
             {
                 type = "unlock-recipe",
@@ -689,11 +689,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_coke:advanced_coal"
+                recipe = "ei_coke__advanced_coal"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_coke:advanced_charcoal"
+                recipe = "ei_coke__advanced_charcoal"
             },
         },
         unit = {
@@ -720,7 +720,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_landfill:sand"
+                recipe = "ei_landfill__sand"
             },
         },
         unit = {

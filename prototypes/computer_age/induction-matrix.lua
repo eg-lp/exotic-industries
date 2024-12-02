@@ -12,7 +12,7 @@ data:extend({
         icon_size = 64,
         subgroup = "ei_induction-matrix",
         order = "a-a",
-        place_result = "ei_induction-matrix-core:0",
+        place_result = "ei_induction-matrix-core__0",
         stack_size = 1
     },
     {
@@ -653,7 +653,7 @@ data:extend({
 -- > I/O = 2^converters in MW, cap at 16 converters = 2^16 = 65.536MW
 
 local base = {
-    name = "ei_induction-matrix-core:1",
+    name = "ei_induction-matrix-core__1",
     type = "electric-energy-interface",
     icon = ei_graphics_item_path.."induction-matrix-core.png",
     icon_size = 64,

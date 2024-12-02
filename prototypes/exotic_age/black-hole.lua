@@ -114,7 +114,7 @@ data:extend({
         collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         map_color = ei_data.colors.assembler,
-        fixed_recipe = "ei_energy-injector-pylon:running",
+        fixed_recipe = "ei_energy-injector-pylon__running",
         crafting_categories = {"ei_energy-injector-pylon"},
         crafting_speed = 2,
         energy_source = {
@@ -158,7 +158,7 @@ data:extend({
         },
     },
     {
-        name = "ei_energy-injector-pylon:running",
+        name = "ei_energy-injector-pylon__running",
         type = "recipe",
         category = "ei_energy-injector-pylon",
         energy_required = 1000,

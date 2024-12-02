@@ -146,7 +146,7 @@ data:extend({
         main_product = "ei_nitrogen-gas",
     },
     {
-        name = "ei_nitrogen-gas:vent",
+        name = "ei_nitrogen-gas__vent",
         type = "recipe",
         category = "ei_lufter",
         energy_required = 1,
@@ -159,7 +159,7 @@ data:extend({
         icon = ei_graphics_other_path.."vent_nitrogen.png",
         icon_size = 64,
         subgroup = "fluid-recipes",
-        order = "b[fluid-chemistry]-h[ei_nitrogen-gas:vent]"
+        order = "b[fluid-chemistry]-h[ei_nitrogen-gas__vent]"
     },
     {
         name = "ei_oxygen-gas",
@@ -175,7 +175,7 @@ data:extend({
         main_product = "ei_oxygen-gas",
     },
     {
-        name = "ei_oxygen-gas:vent",
+        name = "ei_oxygen-gas__vent",
         type = "recipe",
         category = "ei_lufter",
         energy_required = 1,
@@ -188,7 +188,7 @@ data:extend({
         icon = ei_graphics_other_path.."vent_oxygen.png",
         icon_size = 64,
         subgroup = "fluid-recipes",
-        order = "b[fluid-chemistry]-h[ei_oxygen-gas:vent]"
+        order = "b[fluid-chemistry]-h[ei_oxygen-gas__vent]"
     },
     {
         name = "ei_extract-water",
@@ -206,7 +206,7 @@ data:extend({
         order = "b[fluid-chemistry]-j[water]"
     },
     {
-        name = "ei_steam:vent",
+        name = "ei_steam__vent",
         type = "recipe",
         category = "ei_lufter",
         energy_required = 1,
@@ -219,6 +219,6 @@ data:extend({
         icon = ei_graphics_other_path.."vent_steam.png",
         icon_size = 64,
         subgroup = "fluid-recipes",
-        order = "b[fluid-chemistry]-i[ei_steam:vent]"
+        order = "b[fluid-chemistry]-i[ei_steam__vent]"
     },
 })

@@ -34,7 +34,7 @@ model.destroy_non_gaia = {
 
 -- buildings that will get swapped to gaia version
 model.swap_gaia = {
-    ["ei_crystal-accumulator"] = "ei_crystal-accumulator:gaia"
+    ["ei_crystal-accumulator"] = "ei_crystal-accumulator__gaia"
 }
 
 

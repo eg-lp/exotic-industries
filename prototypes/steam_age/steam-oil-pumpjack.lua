@@ -55,7 +55,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_solid-fuel:residual-oil"
+                recipe = "ei_solid-fuel__residual-oil"
             },
             {
                 type = "unlock-recipe",

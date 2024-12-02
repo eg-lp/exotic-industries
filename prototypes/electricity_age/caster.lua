@@ -122,7 +122,7 @@ data:extend({
         },
     },
     {
-        name = "ei_cast-iron:ingot",
+        name = "ei_cast-iron__ingot",
         type = "recipe",
         category = "ei_casting",
         energy_required = 0.5,
@@ -138,7 +138,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_cast-copper:ingot",
+        name = "ei_cast-copper__ingot",
         type = "recipe",
         category = "ei_casting",
         energy_required = 0.5,
@@ -154,7 +154,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_cast-lead:ingot",
+        name = "ei_cast-lead__ingot",
         type = "recipe",
         category = "ei_casting",
         energy_required = 0.5,
@@ -170,7 +170,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_cast-gold:ingot",
+        name = "ei_cast-gold__ingot",
         type = "recipe",
         category = "ei_casting",
         energy_required = 0.5,
@@ -186,7 +186,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_cast-steel:ingot",
+        name = "ei_cast-steel__ingot",
         type = "recipe",
         category = "ei_casting",
         energy_required = 0.5,

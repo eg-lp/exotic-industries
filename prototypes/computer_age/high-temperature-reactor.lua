@@ -67,7 +67,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_thorium-232:washing"
+                recipe = "ei_thorium-232__washing"
             },
             {
                 type = "unlock-recipe",
@@ -441,7 +441,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_nitric-acid-uranium-235:centrifuging"
+                recipe = "ei_nitric-acid-uranium-235__centrifuging"
             },
             {
                 type = "unlock-recipe",
@@ -473,7 +473,7 @@ data:extend({
         main_product = "ei_nitric-acid-uranium-235",
     },
     {
-        name = "ei_nitric-acid-uranium-235:centrifuging",
+        name = "ei_nitric-acid-uranium-235__centrifuging",
         type = "recipe",
         category = "centrifuging",
         energy_required = 10,
@@ -522,7 +522,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_nitric-acid-plutonium-239:centrifuging"
+                recipe = "ei_nitric-acid-plutonium-239__centrifuging"
             },
         },
         unit = {
@@ -550,7 +550,7 @@ data:extend({
         main_product = "ei_nitric-acid-plutonium-239",
     },
     {
-        name = "ei_nitric-acid-plutonium-239:centrifuging",
+        name = "ei_nitric-acid-plutonium-239__centrifuging",
         type = "recipe",
         category = "centrifuging",
         energy_required = 10,
@@ -568,7 +568,7 @@ data:extend({
         icon_size = 128,
     },
     {
-        name = "ei_thorium-232:washing",
+        name = "ei_thorium-232__washing",
         type = "recipe",
         category = "centrifuging",
         energy_required = 10,
@@ -616,7 +616,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_nitric-acid-thorium-232:centrifuging"
+                recipe = "ei_nitric-acid-thorium-232__centrifuging"
             },
             {
                 type = "unlock-recipe",
@@ -648,7 +648,7 @@ data:extend({
         main_product = "ei_nitric-acid-thorium-232",
     },
     {
-        name = "ei_nitric-acid-thorium-232:centrifuging",
+        name = "ei_nitric-acid-thorium-232__centrifuging",
         type = "recipe",
         category = "centrifuging",
         energy_required = 10,
@@ -697,7 +697,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_nitric-acid-uranium-233:centrifuging"
+                recipe = "ei_nitric-acid-uranium-233__centrifuging"
             },
         },
         unit = {
@@ -725,7 +725,7 @@ data:extend({
         main_product = "ei_nitric-acid-uranium-233",
     },
     {
-        name = "ei_nitric-acid-uranium-233:centrifuging",
+        name = "ei_nitric-acid-uranium-233__centrifuging",
         type = "recipe",
         category = "centrifuging",
         energy_required = 10,

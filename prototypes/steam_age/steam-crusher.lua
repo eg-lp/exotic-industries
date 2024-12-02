@@ -50,15 +50,15 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_crushed-iron:plate"
+                recipe = "ei_crushed-iron__plate"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_crushed-iron:beam"
+                recipe = "ei_crushed-iron__beam"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_crushed-iron:mechanical-parts"
+                recipe = "ei_crushed-iron__mechanical-parts"
             },
             {
                 type = "unlock-recipe",

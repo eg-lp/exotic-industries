@@ -394,7 +394,7 @@ data:extend({
 
 data:extend({
     {
-        name = "ei_concrete:slag",
+        name = "ei_concrete__slag",
         type = "recipe",
         category = "crafting",
         energy_required = 10,
@@ -461,7 +461,7 @@ data:extend({
         main_product = "ei_diesel-fuel-unit",
     },
     {
-        name = "ei_benzol:coal-gas",
+        name = "ei_benzol__coal-gas",
         type = "recipe",
         category = "oil-processing",
         energy_required = 1,
@@ -478,7 +478,7 @@ data:extend({
         main_product = "ei_benzol",
     },
     {
-        name = "ei_plastic:benzol",
+        name = "ei_plastic__benzol",
         type = "recipe",
         category = "chemistry",
         energy_required = 1,
@@ -528,7 +528,7 @@ data:extend({
         order = "a[fluid-chemistry]-a[ei_desulfurize-kerosene]",
     },
     {
-        name = "ei_acidic-water:sulfur",
+        name = "ei_acidic-water__sulfur",
         type = "recipe",
         category = "chemistry",
         energy_required = 1,
@@ -544,7 +544,7 @@ data:extend({
         main_product = "sulfur",
     },
     {
-        name = "ei_sulfur:acidic-water",
+        name = "ei_sulfur__acidic-water",
         type = "recipe",
         category = "chemistry",
         energy_required = 1,
@@ -559,10 +559,10 @@ data:extend({
         enabled = false,
         main_product = "ei_acidic-water",
         subgroup = "fluid-recipes",
-        order = "a[fluid-chemistry]-a[ei_sulfur:acidic-water]",
+        order = "a[fluid-chemistry]-a[ei_sulfur__acidic-water]",
     },
     {
-        name = "ei_kerosene:heavy-oil",
+        name = "ei_kerosene__heavy-oil",
         type = "recipe",
         category = "chemistry",
         energy_required = 2,
@@ -582,7 +582,7 @@ data:extend({
         order = "a[fluid-chemistry]-c[kerosene]",
     },
     {
-        name = "ei_coal-gas:reforming",
+        name = "ei_coal-gas__reforming",
         type = "recipe",
         category = "oil-processing",
         energy_required = 2,
@@ -601,7 +601,7 @@ data:extend({
         order = "b[fluid-chemistry]-c[benzol]",
     },
     {
-        name = "ei_benzol:petroleum",
+        name = "ei_benzol__petroleum",
         type = "recipe",
         category = "chemistry",
         energy_required = 2,
@@ -618,7 +618,7 @@ data:extend({
         order = "b[fluid-chemistry]-b[petroleum]",
     },
     {
-        name = "ei_electric-engine:lube",
+        name = "ei_electric-engine__lube",
         type = "recipe",
         category = "advanced-crafting",
         energy_required = 6,
@@ -777,7 +777,7 @@ data:extend({
         main_product = "ei_crushed-gold",
     },
     {
-        name = "ei_crushed-gold:plate",
+        name = "ei_crushed-gold__plate",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 1,
@@ -855,7 +855,7 @@ data:extend({
         main_product = "ei_neodym-plate",
     },
     {
-        name = "ei_iron-ingot:chunk-smelting",
+        name = "ei_iron-ingot__chunk-smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -871,7 +871,7 @@ data:extend({
         main_product = "ei_iron-ingot",
     },
     {
-        name = "ei_copper-ingot:chunk-smelting",
+        name = "ei_copper-ingot__chunk-smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -887,7 +887,7 @@ data:extend({
         main_product = "ei_copper-ingot",
     },
     {
-        name = "ei_coal-chunk:crushing",
+        name = "ei_coal-chunk__crushing",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 2,
@@ -902,7 +902,7 @@ data:extend({
         main_product = "coal",
     },
     {
-        name = "ei_sulfur-chunk:crushing",
+        name = "ei_sulfur-chunk__crushing",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 1,
@@ -917,7 +917,7 @@ data:extend({
         main_product = "ei_crushed-sulfur",
     },
     {
-        name = "ei_acidic-water:crushed-sulfur",
+        name = "ei_acidic-water__crushed-sulfur",
         type = "recipe",
         category = "chemistry",
         energy_required = 1,
@@ -932,7 +932,7 @@ data:extend({
         enabled = false,
         main_product = "ei_acidic-water",
         subgroup = "fluid-recipes",
-        order = "a[fluid-chemistry]-a[ei_crushed-sulfur:acidic-water]",
+        order = "a[fluid-chemistry]-a[ei_crushed-sulfur__acidic-water]",
     },
     {
         name = "ei_drill-fluid",
@@ -974,7 +974,7 @@ data:extend({
         order = "b[fluid-chemistry]-g[lube-extraction]",
     },
     {
-        name = "ei_green-circuit:waver",
+        name = "ei_green-circuit__waver",
         type = "recipe",
         category = "crafting-with-fluid",
         energy_required = 10,
@@ -996,7 +996,7 @@ data:extend({
         order = "e[electronic-circuit]-1",
     },
     {
-        name = "ei_red-circuit:waver",
+        name = "ei_red-circuit__waver",
         type = "recipe",
         category = "crafting-with-fluid",
         energy_required = 18,
@@ -1093,11 +1093,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_benzol:coal-gas"
+                recipe = "ei_benzol__coal-gas"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_plastic:benzol"
+                recipe = "ei_plastic__benzol"
             },
         },
         unit = {
@@ -1158,11 +1158,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_green-circuit:waver"
+                recipe = "ei_green-circuit__waver"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_red-circuit:waver"
+                recipe = "ei_red-circuit__waver"
             },
         },
         unit = {
@@ -1216,7 +1216,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_crushed-gold:plate"
+                recipe = "ei_crushed-gold__plate"
             },
             {
                 type = "unlock-recipe",
@@ -1238,23 +1238,23 @@ data:extend({
             ]]
             {
                 type = "unlock-recipe",
-                recipe = "ei_iron-ingot:chunk-smelting"
+                recipe = "ei_iron-ingot__chunk-smelting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_copper-ingot:chunk-smelting"
+                recipe = "ei_copper-ingot__chunk-smelting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_coal-chunk:crushing"
+                recipe = "ei_coal-chunk__crushing"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_sulfur-chunk:crushing"
+                recipe = "ei_sulfur-chunk__crushing"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_acidic-water:crushed-sulfur"
+                recipe = "ei_acidic-water__crushed-sulfur"
             },
             {
                 type = "unlock-recipe",
@@ -1347,22 +1347,22 @@ table.insert(data.raw.technology["sulfur-processing"].effects,  {
 
 table.insert(data.raw.technology["sulfur-processing"].effects,  {
     type = "unlock-recipe",
-    recipe = "ei_sulfur:acidic-water"
+    recipe = "ei_sulfur__acidic-water"
 })
 
 table.insert(data.raw.technology["sulfur-processing"].effects,  {
     type = "unlock-recipe",
-    recipe = "ei_acidic-water:sulfur"
+    recipe = "ei_acidic-water__sulfur"
 })
 
 table.insert(data.raw.technology["coal-liquefaction"].effects,  {
     type = "unlock-recipe",
-    recipe = "ei_kerosene:heavy-oil"
+    recipe = "ei_kerosene__heavy-oil"
 })
 
 table.insert(data.raw.technology["lubricant"].effects,  {
     type = "unlock-recipe",
-    recipe = "ei_electric-engine:lube"
+    recipe = "ei_electric-engine__lube"
 })
 
 table.insert(data.raw["technology"]["battery"].effects, {
@@ -1377,12 +1377,12 @@ table.insert(data.raw["technology"]["advanced-oil-processing"].effects, {
 
 table.insert(data.raw["technology"]["coal-liquefaction"].effects, {
     type = "unlock-recipe",
-    recipe = "ei_coal-gas:reforming"
+    recipe = "ei_coal-gas__reforming"
 })
 
 table.insert(data.raw["technology"]["coal-liquefaction"].effects, {
     type = "unlock-recipe",
-    recipe = "ei_benzol:petroleum"
+    recipe = "ei_benzol__petroleum"
 })
 
 table.insert(data.raw["technology"]["ei_computer-age"].effects, {
@@ -1407,7 +1407,7 @@ table.insert(data.raw["technology"]["railway"].effects, {
 
 table.insert(data.raw["technology"]["concrete"].effects, {
     type = "unlock-recipe",
-    recipe = "ei_concrete:slag"
+    recipe = "ei_concrete__slag"
 })
 
 --OTHER

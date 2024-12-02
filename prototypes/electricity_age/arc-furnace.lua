@@ -50,79 +50,79 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-iron:pure-ore"
+                recipe = "ei_molten-iron__pure-ore"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-iron:ingot"
+                recipe = "ei_molten-iron__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-iron:plate"
+                recipe = "ei_molten-iron__plate"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-iron:beam"
+                recipe = "ei_molten-iron__beam"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-iron:mechanical-parts"
+                recipe = "ei_molten-iron__mechanical-parts"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-copper:pure-ore"
+                recipe = "ei_molten-copper__pure-ore"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-copper:ingot"
+                recipe = "ei_molten-copper__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-copper:plate"
+                recipe = "ei_molten-copper__plate"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-copper:beam"
+                recipe = "ei_molten-copper__beam"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-copper:mechanical-parts"
+                recipe = "ei_molten-copper__mechanical-parts"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-steel:ingot"
+                recipe = "ei_molten-steel__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-steel:beam"
+                recipe = "ei_molten-steel__beam"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-steel:mechanical-parts"
+                recipe = "ei_molten-steel__mechanical-parts"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-gold:pure-ore"
+                recipe = "ei_molten-gold__pure-ore"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-gold:ingot"
+                recipe = "ei_molten-gold__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-gold:plate"
+                recipe = "ei_molten-gold__plate"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-lead:pure-ore"
+                recipe = "ei_molten-lead__pure-ore"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-lead:ingot"
+                recipe = "ei_molten-lead__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-lead:plate"
+                recipe = "ei_molten-lead__plate"
             },
             {
                 type = "unlock-recipe",
@@ -130,23 +130,23 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_cast-gold:ingot"
+                recipe = "ei_cast-gold__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_cast-iron:ingot"
+                recipe = "ei_cast-iron__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_cast-copper:ingot"
+                recipe = "ei_cast-copper__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_cast-steel:ingot"
+                recipe = "ei_cast-steel__ingot"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_cast-lead:ingot"
+                recipe = "ei_cast-lead__ingot"
             },
         },
         unit = {
@@ -253,7 +253,7 @@ data:extend({
     },
     -- IRON
     {
-        name = "ei_molten-iron:pure-ore",
+        name = "ei_molten-iron__pure-ore",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -268,7 +268,7 @@ data:extend({
         main_product = "ei_molten-iron",
     },
     {
-        name = "ei_molten-iron:ingot",
+        name = "ei_molten-iron__ingot",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -283,7 +283,7 @@ data:extend({
         main_product = "ei_molten-iron",
     },
     {
-        name = "ei_molten-iron:plate",
+        name = "ei_molten-iron__plate",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -299,7 +299,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_molten-iron:beam",
+        name = "ei_molten-iron__beam",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -315,7 +315,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_molten-iron:mechanical-parts",
+        name = "ei_molten-iron__mechanical-parts",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -333,7 +333,7 @@ data:extend({
 
     -- copper
     {
-        name = "ei_molten-copper:pure-ore",
+        name = "ei_molten-copper__pure-ore",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -348,7 +348,7 @@ data:extend({
         main_product = "ei_molten-copper",
     },
     {
-        name = "ei_molten-copper:ingot",
+        name = "ei_molten-copper__ingot",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -363,7 +363,7 @@ data:extend({
         main_product = "ei_molten-copper",
     },
     {
-        name = "ei_molten-copper:plate",
+        name = "ei_molten-copper__plate",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -379,7 +379,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_molten-copper:beam",
+        name = "ei_molten-copper__beam",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -395,7 +395,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_molten-copper:mechanical-parts",
+        name = "ei_molten-copper__mechanical-parts",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -413,7 +413,7 @@ data:extend({
 
      -- steel
     {
-        name = "ei_molten-steel:ingot",
+        name = "ei_molten-steel__ingot",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -428,7 +428,7 @@ data:extend({
         main_product = "ei_molten-steel",
     },
     {
-        name = "ei_molten-steel:beam",
+        name = "ei_molten-steel__beam",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -444,7 +444,7 @@ data:extend({
         hide_from_player_crafting = true,
     },
     {
-        name = "ei_molten-steel:mechanical-parts",
+        name = "ei_molten-steel__mechanical-parts",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -462,7 +462,7 @@ data:extend({
 
     -- gold
     {
-        name = "ei_molten-gold:pure-ore",
+        name = "ei_molten-gold__pure-ore",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -477,7 +477,7 @@ data:extend({
         main_product = "ei_molten-gold",
     },
     {
-        name = "ei_molten-gold:ingot",
+        name = "ei_molten-gold__ingot",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -492,7 +492,7 @@ data:extend({
         main_product = "ei_molten-gold",
     },
     {
-        name = "ei_molten-gold:plate",
+        name = "ei_molten-gold__plate",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -510,7 +510,7 @@ data:extend({
 
     -- lead
     {
-        name = "ei_molten-lead:pure-ore",
+        name = "ei_molten-lead__pure-ore",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -525,7 +525,7 @@ data:extend({
         main_product = "ei_molten-lead",
     },
     {
-        name = "ei_molten-lead:ingot",
+        name = "ei_molten-lead__ingot",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,
@@ -540,7 +540,7 @@ data:extend({
         main_product = "ei_molten-lead",
     },
     {
-        name = "ei_molten-lead:plate",
+        name = "ei_molten-lead__plate",
         type = "recipe",
         category = "ei_arc-furnace",
         energy_required = 0.25,

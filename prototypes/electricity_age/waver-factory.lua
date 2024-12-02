@@ -72,7 +72,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_sand:faulty-semiconductor"
+                recipe = "ei_sand__faulty-semiconductor"
             },
         },
         unit = {
@@ -196,7 +196,7 @@ data:extend({
         main_product = "ei_semiconductor",
     },
     {
-        name = "ei_sand:faulty-semiconductor",
+        name = "ei_sand__faulty-semiconductor",
         type = "recipe",
         category = "ei_crushing",
         energy_required = 1,

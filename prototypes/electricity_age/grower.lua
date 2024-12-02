@@ -47,7 +47,7 @@ data:extend({
         main_product = "ei_grower",
     },
     {
-        name = "ei_energy-crystal:washing",
+        name = "ei_energy-crystal__washing",
         type = "recipe",
         category = "chemistry",
         energy_required = 15,
@@ -65,7 +65,7 @@ data:extend({
         main_product = "ei_energy-crystal",
     },
     {
-        name = "ei_energy-crystal:growing",
+        name = "ei_energy-crystal__growing",
         type = "recipe",
         category = "ei_growing",
         energy_required = 15,
@@ -93,11 +93,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_energy-crystal:growing"
+                recipe = "ei_energy-crystal__growing"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_energy-crystal:washing"
+                recipe = "ei_energy-crystal__washing"
             }
         },
         unit = {

@@ -35,7 +35,7 @@ data:extend({
         collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         map_color = ei_data.colors.assembler,
-        fixed_recipe = "ei_alien-stabilizer:running",
+        fixed_recipe = "ei_alien-stabilizer__running",
         crafting_categories = {"ei_alien-stabilizer"},
         crafting_speed = 2,
         energy_source = {
@@ -85,7 +85,7 @@ data:extend({
         },
     },
     {
-        name = "ei_alien-stabilizer:running",
+        name = "ei_alien-stabilizer__running",
         type = "recipe",
         category = "ei_alien-stabilizer",
         energy_required = 1000,

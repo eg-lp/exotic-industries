@@ -40,7 +40,7 @@ local recipes = {
     "ei_bio_hydrofluoric-acid",
     "ei_bio_nitric-acid",
     "ei_desulfurize-kerosene",
-    "ei_kerosene:heavy-oil",
+    "ei_kerosene__heavy-oil",
     "ei_hydrofluoric-acid",
     "ei_kerosene-cracking",
     "ei_nitric-acid",
@@ -51,11 +51,11 @@ local recipes = {
     "ei_dinitrogen-tetroxide-water-solution",
     "ei_oxygen-difluoride",
     --"ei_lube-destilation",
-    "ei_plastic:benzol",
-    "ei_battery:lithium",
+    "ei_plastic__benzol",
+    "ei_battery__lithium",
     "ei_carbon",
     "ei_lithium-crystal",
-    "ei_molten-steel:mix",
+    "ei_molten-steel__mix",
     "ei_steam-engine",
     "ei_electron-tube",
     "ei_cpu",
@@ -64,9 +64,9 @@ local recipes = {
     "ei_module-base",
     "ei_magnet",
     "ei_emtpy-cryo-container",
-    "ei_green-circuit:waver",
-    "ei_red-circuit:waver",
-    "ei_electric-engine:lube",
+    "ei_green-circuit__waver",
+    "ei_red-circuit__waver",
+    "ei_electric-engine__lube",
     "ei_advanced-motor",
     "ei_rocket-parts",
     "ei_dark-age-tech",
@@ -77,12 +77,12 @@ local recipes = {
     "ei_quantum-age-tech",
     "ei_ceramic",
     "ei_steel-blend",
-    "ei_dirty-water:fluorite",
+    "ei_dirty-water__fluorite",
     "ei_neutron-container",
     "ei_odd-plating",
     "ei_advanced-rocket-fuel",
-    "ei_plastic:crushed-coke",
-    "ei_rocket-parts:odd-plating",
+    "ei_plastic__crushed-coke",
+    "ei_rocket-parts__odd-plating",
     "ei_insulated-wire",
     "firearm-magazine",
     "piercing-rounds-magazine",
@@ -97,12 +97,12 @@ local recipes = {
     "artillery-shell",
     "rocket",
     "explosive-rocket",
-    "ei_molten-steel:oxygen",
+    "ei_molten-steel__oxygen",
     "ei_neodym-plate",
-    "ei_ceramic:water",
-    "ei_solid-fuel:residual-oil",
+    "ei_ceramic__water",
+    "ei_solid-fuel__residual-oil",
     "ei_diesel-fuel-unit",
-    "ei_benzol:petroleum"
+    "ei_benzol__petroleum"
 }
 
 local remove_prod = {
@@ -212,7 +212,7 @@ data.raw.recipe["heavy-oil-cracking"].crafting_machine_tint =
     quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}
 }
 
-data.raw.recipe["ei_solid-fuel:residual-oil"].crafting_machine_tint =
+data.raw.recipe["ei_solid-fuel__residual-oil"].crafting_machine_tint =
 {
     primary = {r=0.49, g=0.36, b=0.13, a = 1.000},
     secondary = {r=0.4, g=0.24, b=0.06, a = 1.000},
@@ -228,7 +228,7 @@ data.raw.recipe["ei_diesel-fuel-unit"].crafting_machine_tint =
 	quaternary = {r=0.90, g=0.83, b=0.67, a = 1.000}
 }
 
-data.raw.recipe["ei_plastic:benzol"].crafting_machine_tint =
+data.raw.recipe["ei_plastic__benzol"].crafting_machine_tint =
 {
 	primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
 	secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
@@ -244,7 +244,7 @@ data.raw.recipe["ei_desulfurize-kerosene"].crafting_machine_tint =
 	quaternary = {r=0.57, g=0.7, b=0.47,a = 1.000}
 }
 
-data.raw.recipe["ei_acidic-water:sulfur"].crafting_machine_tint =
+data.raw.recipe["ei_acidic-water__sulfur"].crafting_machine_tint =
 {
 	primary = {r = 0.876, g = 0.869, b = 0.597, a = 1.000},
 	secondary = {r = 0.969, g = 1.000, b = 0.019, a = 1.000},
@@ -252,7 +252,7 @@ data.raw.recipe["ei_acidic-water:sulfur"].crafting_machine_tint =
 	quaternary = {r=0.81, g=0.85, b=0.63, a = 1.000}
 }
 
-data.raw.recipe["ei_sulfur:acidic-water"].crafting_machine_tint =
+data.raw.recipe["ei_sulfur__acidic-water"].crafting_machine_tint =
 {
 	primary = {r=0.51, g=0.69, b=0.62, a = 1.000},
 	secondary = {r=0.81, g=0.85, b=0.63, a = 1.000},
@@ -260,7 +260,7 @@ data.raw.recipe["ei_sulfur:acidic-water"].crafting_machine_tint =
 	quaternary = {r = 0.969, g = 1.000, b = 0.019, a = 1.000}
 }
 
-data.raw.recipe["ei_kerosene:heavy-oil"].crafting_machine_tint =
+data.raw.recipe["ei_kerosene__heavy-oil"].crafting_machine_tint =
 {
 	primary = {r=0.57, g=0.7, b=0.47, a = 1.000},
 	secondary = {r=0.75, g=0.88, b=0.75, a = 1.000},
@@ -268,7 +268,7 @@ data.raw.recipe["ei_kerosene:heavy-oil"].crafting_machine_tint =
 	quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}
 }
 
-data.raw.recipe["ei_benzol:petroleum"].crafting_machine_tint =
+data.raw.recipe["ei_benzol__petroleum"].crafting_machine_tint =
 {
 	primary = {r = 0.764, g = 0.596, b = 0.780, a = 1.000},
 	secondary = {r = 0.762, g = 0.551, b = 0.844, a = 1.000},
@@ -284,7 +284,7 @@ data.raw.recipe["ei_kerosene-cracking"].crafting_machine_tint =
 	quaternary = {r=0.57, g=0.7, b=0.47,a = 1.000}
 }
 
-data.raw.recipe["ei_acidic-water:crushed-sulfur"].crafting_machine_tint =
+data.raw.recipe["ei_acidic-water__crushed-sulfur"].crafting_machine_tint =
 {
 	primary = {r=0.51, g=0.69, b=0.62, a = 1.000},
 	secondary = {r=0.81, g=0.85, b=0.63, a = 1.000},
@@ -364,7 +364,7 @@ data.raw.recipe["ei_cryodust"].crafting_machine_tint =
 	quaternary = {r=0.1, g=0.78, b=0.83, a = 1.000}
 }
 
-data.raw.recipe["ei_molten-steel:mix"].crafting_machine_tint =
+data.raw.recipe["ei_molten-steel__mix"].crafting_machine_tint =
 {
 	primary = {r=0.88, g=0.53, b=0.16, a = 1.000},
 	secondary = {r=0.50, g=0.61, b=0.67, a = 1.000},
@@ -372,7 +372,7 @@ data.raw.recipe["ei_molten-steel:mix"].crafting_machine_tint =
 	quaternary = {r=0.49, g=0.48, b=0.46, a = 1.000}
 }
 
-data.raw.recipe["ei_molten-steel:oxygen"].crafting_machine_tint =
+data.raw.recipe["ei_molten-steel__oxygen"].crafting_machine_tint =
 {
 	primary = {r=0.88, g=0.53, b=0.16, a = 1.000},
 	secondary = {r=0.50, g=0.61, b=0.67, a = 1.000},
@@ -428,7 +428,7 @@ data.raw.recipe["ei_nitric-acid"].crafting_machine_tint =
 	quaternary = {r=0.53, g=0.58, b=0.75, a = 1.000}
 }
 
-data.raw.recipe["ei_battery:lithium"].crafting_machine_tint =
+data.raw.recipe["ei_battery__lithium"].crafting_machine_tint =
 {
 	primary = {r = 0.65, g = 0.81, b = 0.87, a = 1.000},
 	secondary = {r = 0.80, g = 0.84, b = 0.73, a = 1.000},
@@ -492,7 +492,7 @@ data.raw.recipe["ei_uranium-hexafluorite"].crafting_machine_tint =
 	quaternary = {r=0.57, g=0.68, b=0.39, a = 1.000}
 }
 
-data.raw.recipe["ei_energy-crystal:washing"].crafting_machine_tint =
+data.raw.recipe["ei_energy-crystal__washing"].crafting_machine_tint =
 {
 	primary = {r = 0.51, g = 0.84, b = 0.61, a = 1.000},
 	secondary = {r = 0.210, g = 0.170, b = 0.013, a = 1.000},
@@ -508,7 +508,7 @@ data.raw.recipe["ei_hydrofluoric-acid"].crafting_machine_tint =
 	quaternary = {r = 0.969, g = 1.000, b = 0.019, a = 1.000}
 }
 
-data.raw.recipe["ei_alien-seed:harvesting"].crafting_machine_tint =
+data.raw.recipe["ei_alien-seed__harvesting"].crafting_machine_tint =
 {
 	primary = {r=0.0, g=0.82, b=1, a = 1.000},
 	secondary = {r=0.54, g=0.53, b=0.85, a = 1.000},

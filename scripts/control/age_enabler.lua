@@ -40,7 +40,7 @@ function age_enabler.on_research_finished()
     -- check for every tech if X% of techs from previous age are researched
     -- if so, enable tech for research
 
-    local neededPercentage = ei_lib.config("age-enabler:neededPercentage")
+    local neededPercentage = ei_lib.config("age-enabler__neededPercentage")
 
     if not global.ei.age_enabler then
         global.ei.age_enabler = {}

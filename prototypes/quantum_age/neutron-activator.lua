@@ -139,7 +139,7 @@ data:extend({
         },
     },
     {
-        name = "ei_deuterium:activator",
+        name = "ei_deuterium__activator",
         type = "recipe",
         category = "ei_neutron-activator",
         energy_required = 2,
@@ -157,7 +157,7 @@ data:extend({
         main_product = "ei_deuterium",
     },
     {
-        name = "ei_tritium:activator",
+        name = "ei_tritium__activator",
         type = "recipe",
         category = "ei_neutron-activator",
         energy_required = 2,
@@ -175,7 +175,7 @@ data:extend({
         main_product = "ei_tritium",
     },
     {
-        name = "ei_lithium-6:activator",
+        name = "ei_lithium-6__activator",
         type = "recipe",
         category = "ei_neutron-activator",
         energy_required = 2,

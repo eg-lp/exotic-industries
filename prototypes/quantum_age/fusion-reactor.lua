@@ -98,7 +98,7 @@ data:extend({
             type = 'electric',
             usage_priority = 'secondary-input',
         },
-        -- fixed_recipe = "ei_fusion-F1:ei_heated-deuterium-F2:ei_heated-tritium-TM:medium-FM:medium",
+        -- fixed_recipe = "ei_fusion-F1__ei_heated-deuterium-F2__ei_heated-tritium-TM__medium-FM__medium",
         energy_usage = "400MW",
         fluid_boxes = {
             {   
@@ -315,6 +315,6 @@ for fuel1, fuel2_combinations in pairs(fuel_combinations) do
 end
 
 -- example recipe name:
--- ei_fusion-F1:ei_heated-deuterium-F2:ei_heated-tritium-TM:medium-FM:high
+-- ei_fusion-F1__ei_heated-deuterium-F2__ei_heated-tritium-TM__medium-FM__high
 
 -- F1: fuel 1, F2: fuel 2, TM: temperature mode, FM: fuel injection mode

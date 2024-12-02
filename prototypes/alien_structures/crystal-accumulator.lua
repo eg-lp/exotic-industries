@@ -71,7 +71,7 @@ data:extend({
         continuous_animation = true,
     },
     {
-        name = "ei_crystal-accumulator:gaia",
+        name = "ei_crystal-accumulator__gaia",
         type = "electric-energy-interface",
         icon = ei_graphics_item_2_path.."crystal-accumulator.png",
         icon_size = 64,

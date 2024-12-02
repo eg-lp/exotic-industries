@@ -34,23 +34,23 @@ model.converters = {
 
 
 model.core = {
-    ["ei_induction-matrix-core:0"] = true,
-    ["ei_induction-matrix-core:1"] = true,
-    ["ei_induction-matrix-core:2"] = true,
-    ["ei_induction-matrix-core:3"] = true,
-    ["ei_induction-matrix-core:4"] = true,
-    ["ei_induction-matrix-core:5"] = true,
-    ["ei_induction-matrix-core:6"] = true,
-    ["ei_induction-matrix-core:7"] = true,
-    ["ei_induction-matrix-core:8"] = true,
-    ["ei_induction-matrix-core:9"] = true,
-    ["ei_induction-matrix-core:10"] = true,
-    ["ei_induction-matrix-core:11"] = true,
-    ["ei_induction-matrix-core:12"] = true,
-    ["ei_induction-matrix-core:13"] = true,
-    ["ei_induction-matrix-core:14"] = true,
-    ["ei_induction-matrix-core:15"] = true,
-    ["ei_induction-matrix-core:16"] = true,
+    ["ei_induction-matrix-core__0"] = true,
+    ["ei_induction-matrix-core__1"] = true,
+    ["ei_induction-matrix-core__2"] = true,
+    ["ei_induction-matrix-core__3"] = true,
+    ["ei_induction-matrix-core__4"] = true,
+    ["ei_induction-matrix-core__5"] = true,
+    ["ei_induction-matrix-core__6"] = true,
+    ["ei_induction-matrix-core__7"] = true,
+    ["ei_induction-matrix-core__8"] = true,
+    ["ei_induction-matrix-core__9"] = true,
+    ["ei_induction-matrix-core__10"] = true,
+    ["ei_induction-matrix-core__11"] = true,
+    ["ei_induction-matrix-core__12"] = true,
+    ["ei_induction-matrix-core__13"] = true,
+    ["ei_induction-matrix-core__14"] = true,
+    ["ei_induction-matrix-core__15"] = true,
+    ["ei_induction-matrix-core__16"] = true,
 }
 
 
@@ -1167,7 +1167,7 @@ function model.on_built_entity(entity)
         return
     end
 
-    if entity.name == "ei_induction-matrix-core:0" then
+    if entity.name == "ei_induction-matrix-core__0" then
 
         local dict = model.check_connected_tiles(entity.position, entity.surface, true, entity.unit_number, entity.force)
 

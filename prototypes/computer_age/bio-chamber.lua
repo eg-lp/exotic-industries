@@ -32,15 +32,15 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_alien-seed:growing"
+                recipe = "ei_alien-seed__growing"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_alien-seed:harvesting"
+                recipe = "ei_alien-seed__harvesting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_alien-resin:growing"
+                recipe = "ei_alien-resin__growing"
             },
         },
         unit = {
@@ -185,7 +185,7 @@ data:extend({
         },
     },
     {
-        name = "ei_alien-seed:growing",
+        name = "ei_alien-seed__growing",
         type = "recipe",
         category = "ei_bio-chamber",
         energy_required = 20,
@@ -203,7 +203,7 @@ data:extend({
         main_product = "ei_blooming-alien-seed",
     },
     {
-        name = "ei_alien-seed:harvesting",
+        name = "ei_alien-seed__harvesting",
         type = "recipe",
         category = "chemistry",
         energy_required = 10,
@@ -220,7 +220,7 @@ data:extend({
         main_product = "ei_alien-seed",
     },
     {
-        name = "ei_alien-resin:growing",
+        name = "ei_alien-resin__growing",
         type = "recipe",
         category = "ei_bio-chamber",
         energy_required = 20,

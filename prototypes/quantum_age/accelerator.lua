@@ -51,11 +51,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_exotic-matter-up:conversion"
+                recipe = "ei_exotic-matter-up__conversion"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_exotic-matter-down:conversion"
+                recipe = "ei_exotic-matter-down__conversion"
             },
         },
         unit = {
@@ -131,7 +131,7 @@ data:extend({
         },
     },
     {
-        name = "ei_exotic-matter-up:conversion",
+        name = "ei_exotic-matter-up__conversion",
         type = "recipe",
         category = "ei_accelerator",
         energy_required = 10,
@@ -154,7 +154,7 @@ data:extend({
         icon_size = 128,
     },
     {
-        name = "ei_exotic-matter-down:conversion",
+        name = "ei_exotic-matter-down__conversion",
         type = "recipe",
         category = "ei_accelerator",
         energy_required = 10,

@@ -803,8 +803,8 @@ ei_data.fusion.plasma_per_unit = 10
 -- retired
 --[[
 ei_data.planet_exploration.destination_dict = {
-    ["nauvis-orbit"] = "ei_rocket:nauvis-orbit",
-    ["moon"] = "ei_rocket:moon",
+    ["nauvis-orbit"] = "ei_rocket__nauvis-orbit",
+    ["moon"] = "ei_rocket__moon",
 }
 ]]
 

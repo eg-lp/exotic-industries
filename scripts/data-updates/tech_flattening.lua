@@ -10,7 +10,7 @@ local ei_data = require("lib/data")
 --TECH FLATTENING
 --====================================================================================================
 
-local startPrice = ei_lib.config("tech-scaling:startPrice")
+local startPrice = ei_lib.config("tech-scaling__startPrice")
 
 -- loop over all technologies
 for i,v in pairs(data.raw.technology) do

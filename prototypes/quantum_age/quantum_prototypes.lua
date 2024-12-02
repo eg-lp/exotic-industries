@@ -1115,7 +1115,7 @@ data:extend({
         main_product = "ei_molten-neodym",
     },
     {
-        name = "ei_cast-neodym:ingot",
+        name = "ei_cast-neodym__ingot",
         type = "recipe",
         category = "ei_casting",
         energy_required = 1,
@@ -1199,7 +1199,7 @@ data:extend({
         main_product = "ei_circuit-board",
     },
     {
-        name = "ei_processing-unit:circuit-board",
+        name = "ei_processing-unit__circuit-board",
         type = "recipe",
         category = "crafting",
         energy_required = 10,
@@ -1221,7 +1221,7 @@ data:extend({
         icon_size = 64,
     },
     {
-        name = "ei_fission-tech:u235",
+        name = "ei_fission-tech__u235",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1239,7 +1239,7 @@ data:extend({
         main_product = "ei_fission-tech",
     },
     {
-        name = "ei_fission-tech:u233",
+        name = "ei_fission-tech__u233",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1257,7 +1257,7 @@ data:extend({
         main_product = "ei_fission-tech",
     },
     {
-        name = "ei_fission-tech:pt239",
+        name = "ei_fission-tech__pt239",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1275,7 +1275,7 @@ data:extend({
         main_product = "ei_fission-tech",
     },
     {
-        name = "ei_fission-tech:th232",
+        name = "ei_fission-tech__th232",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1605,7 +1605,7 @@ data:extend({
         main_product = "ei_heated-lithium-6",
     },
     {
-        name = "ei_charged-neutron-container:pt239",
+        name = "ei_charged-neutron-container__pt239",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1621,7 +1621,7 @@ data:extend({
         main_product = "ei_charged-neutron-container",
     },
     {
-        name = "ei_charged-neutron-container:u235",
+        name = "ei_charged-neutron-container__u235",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1637,7 +1637,7 @@ data:extend({
         main_product = "ei_charged-neutron-container",
     },
     {
-        name = "ei_charged-neutron-container:u233",
+        name = "ei_charged-neutron-container__u233",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1653,7 +1653,7 @@ data:extend({
         main_product = "ei_charged-neutron-container",
     },
     {
-        name = "ei_charged-neutron-container:th232",
+        name = "ei_charged-neutron-container__th232",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 2,
@@ -1669,7 +1669,7 @@ data:extend({
         main_product = "ei_charged-neutron-container",
     },
     {
-        name = "ei_charged-neutron-container:u238",
+        name = "ei_charged-neutron-container__u238",
         type = "recipe",
         category = "ei_fission-facility",
         energy_required = 10,
@@ -1785,7 +1785,7 @@ data:extend({
         order = "a-i",
     },
     {
-        name = "ei_rocket-parts:odd-plating",
+        name = "ei_rocket-parts__odd-plating",
         type = "recipe",
         category = "crafting",
         energy_required = 10,
@@ -2186,7 +2186,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_cast-neodym:ingot"
+                recipe = "ei_cast-neodym__ingot"
             },
             {
                 type = "unlock-recipe",
@@ -2316,7 +2316,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_rocket-parts:odd-plating"
+                recipe = "ei_rocket-parts__odd-plating"
             },
         },
         unit = {
@@ -2347,23 +2347,23 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_charged-neutron-container:pt239"
+                recipe = "ei_charged-neutron-container__pt239"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_charged-neutron-container:u235"
+                recipe = "ei_charged-neutron-container__u235"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_charged-neutron-container:u238"
+                recipe = "ei_charged-neutron-container__u238"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_charged-neutron-container:u233"
+                recipe = "ei_charged-neutron-container__u233"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_charged-neutron-container:th232"
+                recipe = "ei_charged-neutron-container__th232"
             },
         },
         unit = {
@@ -2382,11 +2382,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_deuterium:activator"
+                recipe = "ei_deuterium__activator"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_tritium:activator"
+                recipe = "ei_tritium__activator"
             },
         },
         unit = {
@@ -2428,19 +2428,19 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_fission-tech:u235"
+                recipe = "ei_fission-tech__u235"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_fission-tech:u233"
+                recipe = "ei_fission-tech__u233"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_fission-tech:pt239"
+                recipe = "ei_fission-tech__pt239"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_fission-tech:th232"
+                recipe = "ei_fission-tech__th232"
             },
         },
         unit = {
@@ -2475,7 +2475,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_lithium-6:activator"
+                recipe = "ei_lithium-6__activator"
             },
         },
         unit = {
@@ -2856,7 +2856,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_processing-unit:circuit-board"
+                recipe = "ei_processing-unit__circuit-board"
             },
         },
         unit = {

@@ -68,7 +68,7 @@ data:extend({
             result = "ei_excavator"
         },
         max_health = 1000,
-        fixed_recipe = "ei_excavator:running",
+        fixed_recipe = "ei_excavator__running",
         corpse = "big-remnants",
         dying_explosion = "medium-explosion",
         collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
@@ -150,7 +150,7 @@ data:extend({
         },
     },
     {
-        name = "ei_excavator:running",
+        name = "ei_excavator__running",
         type = "recipe",
         category = "ei_excavator",
         energy_required = 5,

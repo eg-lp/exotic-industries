@@ -54,7 +54,7 @@ local blank = {
         collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
         selection_box = {{-1, -1}, {1, 1}},
         map_color = ei_data.colors.assembler,
-        fixed_recipe = "ei_holo-moon:running",
+        fixed_recipe = "ei_holo-moon__running",
         crafting_categories = {"ei_holo-moon"},
         crafting_speed = 1,
         energy_source = {
@@ -91,7 +91,7 @@ local blank = {
     },
 
     ["running"] = {
-        name = "ei_holo-moon:running",
+        name = "ei_holo-moon__running",
         type = "recipe",
         category = "ei_holo-moon",
         energy_required = 1000,

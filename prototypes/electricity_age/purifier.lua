@@ -198,59 +198,59 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_gold-chunk:purifier"
+                recipe = "ei_gold-chunk__purifier"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_iron-chunk:purifier"
+                recipe = "ei_iron-chunk__purifier"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_copper-chunk:purifier"
+                recipe = "ei_copper-chunk__purifier"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_lead-chunk:purifier"
+                recipe = "ei_lead-chunk__purifier"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_gold-ingot:pure-smelting"
+                recipe = "ei_gold-ingot__pure-smelting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_iron-ingot:pure-smelting"
+                recipe = "ei_iron-ingot__pure-smelting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_copper-ingot:pure-smelting"
+                recipe = "ei_copper-ingot__pure-smelting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_lead-ingot:pure-smelting"
+                recipe = "ei_lead-ingot__pure-smelting"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_dirty-water:fluorite"
+                recipe = "ei_dirty-water__fluorite"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_dirty-water:vent"
+                recipe = "ei_dirty-water__vent"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_water:vent"
+                recipe = "ei_water__vent"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_dirty-water:landfill"
+                recipe = "ei_dirty-water__landfill"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_dirty-water:slag"
+                recipe = "ei_dirty-water__slag"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_dirty-water:sand"
+                recipe = "ei_dirty-water__sand"
             },
         },
         unit = {
@@ -352,7 +352,7 @@ data:extend({
         },
     },
     {
-        name = "ei_gold-chunk:purifier",
+        name = "ei_gold-chunk__purifier",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 1,
@@ -372,7 +372,7 @@ data:extend({
         order = "a-d",
     },
     {
-        name = "ei_lead-chunk:purifier",
+        name = "ei_lead-chunk__purifier",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 1,
@@ -392,7 +392,7 @@ data:extend({
         order = "a-c",
     },
     {
-        name = "ei_iron-chunk:purifier",
+        name = "ei_iron-chunk__purifier",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 1,
@@ -412,7 +412,7 @@ data:extend({
         order = "a-a",
     },
     {
-        name = "ei_copper-chunk:purifier",
+        name = "ei_copper-chunk__purifier",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 1,
@@ -432,7 +432,7 @@ data:extend({
         order = "a-b",
     },
     {
-        name = "ei_copper-ingot:pure-smelting",
+        name = "ei_copper-ingot__pure-smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -448,7 +448,7 @@ data:extend({
         main_product = "ei_copper-ingot",
     },
     {
-        name = "ei_iron-ingot:pure-smelting",
+        name = "ei_iron-ingot__pure-smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -464,7 +464,7 @@ data:extend({
         main_product = "ei_iron-ingot",
     },
     {
-        name = "ei_lead-ingot:pure-smelting",
+        name = "ei_lead-ingot__pure-smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -480,7 +480,7 @@ data:extend({
         main_product = "ei_lead-ingot",
     },
     {
-        name = "ei_gold-ingot:pure-smelting",
+        name = "ei_gold-ingot__pure-smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -496,7 +496,7 @@ data:extend({
         main_product = "ei_gold-ingot",
     },
     {
-        name = "ei_dirty-water:fluorite",
+        name = "ei_dirty-water__fluorite",
         type = "recipe",
         category = "crafting-with-fluid",
         energy_required = 2,
@@ -511,7 +511,7 @@ data:extend({
         main_product = "ei_fluorite",
     },
     {
-        name = "ei_dirty-water:vent",
+        name = "ei_dirty-water__vent",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 2,
@@ -529,7 +529,7 @@ data:extend({
         order = "a-e",
     },
     {
-        name = "ei_water:vent",
+        name = "ei_water__vent",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 2,
@@ -547,7 +547,7 @@ data:extend({
         order = "a-f",
     },
     {
-        name = "ei_dirty-water:landfill",
+        name = "ei_dirty-water__landfill",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 2,
@@ -562,7 +562,7 @@ data:extend({
         main_product = "landfill",
     },
     {
-        name = "ei_dirty-water:slag",
+        name = "ei_dirty-water__slag",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 2,
@@ -578,7 +578,7 @@ data:extend({
         main_product = "ei_dirty-water",
     },
     {
-        name = "ei_dirty-water:sand",
+        name = "ei_dirty-water__sand",
         type = "recipe",
         category = "ei_purifier",
         energy_required = 2,

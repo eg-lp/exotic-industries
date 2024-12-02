@@ -88,7 +88,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_nitrogen-gas:vent"
+                recipe = "ei_nitrogen-gas__vent"
             },
             --[[
             {
@@ -98,7 +98,7 @@ data:extend({
             ]]
             {
                 type = "unlock-recipe",
-                recipe = "ei_steam:vent"
+                recipe = "ei_steam__vent"
             },
             {
                 type = "unlock-recipe",

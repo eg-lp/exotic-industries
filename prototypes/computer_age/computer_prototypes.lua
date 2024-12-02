@@ -1205,7 +1205,7 @@ data:extend({
         main_product = "ei_computing-unit",
     },
     {
-        name = "ei_molten-steel:mix",
+        name = "ei_molten-steel__mix",
         type = "recipe",
         category = "chemistry",
         energy_required = 2,
@@ -1223,7 +1223,7 @@ data:extend({
         icon = ei_graphics_other_path.."molten-steel_coke.png"
     },
     {
-        name = "ei_molten-steel:oxygen",
+        name = "ei_molten-steel__oxygen",
         type = "recipe",
         category = "chemistry",
         energy_required = 2,
@@ -1318,7 +1318,7 @@ data:extend({
         category = "crafting-with-fluid",
         energy_required = 1,
         ingredients = {
-            {type = "fluid", name = "ei_liquid-nitrogen", amount = 500*ei_lib.config("barrel:multiplier")},
+            {type = "fluid", name = "ei_liquid-nitrogen", amount = 500*ei_lib.config("barrel__multiplier")},
             {type = "item", name = "ei_empty-cryo-container", amount = 1},
         },
         results = {
@@ -1341,7 +1341,7 @@ data:extend({
         },
         results = {
             {type = "item", name = "ei_empty-cryo-container", amount = 1},
-            {type = "fluid", name = "ei_liquid-nitrogen", amount = 490*ei_lib.config("barrel:multiplier")},
+            {type = "fluid", name = "ei_liquid-nitrogen", amount = 490*ei_lib.config("barrel__multiplier")},
         },
         always_show_made_in = true,
         enabled = false,
@@ -1356,7 +1356,7 @@ data:extend({
         category = "crafting-with-fluid",
         energy_required = 1,
         ingredients = {
-            {type = "fluid", name = "ei_liquid-oxygen", amount = 500*ei_lib.config("barrel:multiplier")},
+            {type = "fluid", name = "ei_liquid-oxygen", amount = 500*ei_lib.config("barrel__multiplier")},
             {type = "item", name = "ei_empty-cryo-container", amount = 1},
         },
         results = {
@@ -1379,7 +1379,7 @@ data:extend({
         },
         results = {
             {type = "item", name = "ei_empty-cryo-container", amount = 1},
-            {type = "fluid", name = "ei_liquid-oxygen", amount = 490*ei_lib.config("barrel:multiplier")},
+            {type = "fluid", name = "ei_liquid-oxygen", amount = 490*ei_lib.config("barrel__multiplier")},
         },
         always_show_made_in = true,
         enabled = false,
@@ -1421,7 +1421,7 @@ data:extend({
         main_product = "ei_high-energy-crystal",
     },
     {
-        name = "ei_high-energy-crystal:growing",
+        name = "ei_high-energy-crystal__growing",
         type = "recipe",
         category = "ei_growing",
         energy_required = 60,
@@ -1592,7 +1592,7 @@ data:extend({
         main_product = "ei_advanced-motor",
     },
     {
-        name = "ei_battery:lithium",
+        name = "ei_battery__lithium",
         type = "recipe",
         category = "chemistry",
         energy_required = 4,
@@ -1706,7 +1706,7 @@ data:extend({
         icon_size = 64,
     },
     {
-        name = "ei_dirty-water:stone",
+        name = "ei_dirty-water__stone",
         type = "recipe",
         category = "ei_advanced-chem-plant",
         energy_required = 1,
@@ -1776,7 +1776,7 @@ data:extend({
         main_product = "ei_monosilicon",
     },
     {
-        name = "ei_semiconductor:monosilicon",
+        name = "ei_semiconductor__monosilicon",
         type = "recipe",
         category = "ei_waver-factory",
         energy_required = 5,
@@ -1795,7 +1795,7 @@ data:extend({
         icon_size = 128,
     },
     {
-        name = "ei_advanced-semiconductor:monosilicon",
+        name = "ei_advanced-semiconductor__monosilicon",
         type = "recipe",
         category = "ei_waver-factory",
         energy_required = 2,
@@ -2082,7 +2082,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-steel:mix"
+                recipe = "ei_molten-steel__mix"
             },
         },
         unit = {
@@ -2101,7 +2101,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_molten-steel:oxygen"
+                recipe = "ei_molten-steel__oxygen"
             },
         },
         unit = {
@@ -2120,7 +2120,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_battery:lithium"
+                recipe = "ei_battery__lithium"
             },
             {
                 type = "unlock-recipe",
@@ -2151,11 +2151,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_advanced-semiconductor:monosilicon"
+                recipe = "ei_advanced-semiconductor__monosilicon"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_semiconductor:monosilicon"
+                recipe = "ei_semiconductor__monosilicon"
             },
         },
         unit = {
@@ -2174,7 +2174,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_dirty-water:stone"
+                recipe = "ei_dirty-water__stone"
             },
         },
         unit = {
@@ -2220,7 +2220,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_oxygen-gas:vent"
+                recipe = "ei_oxygen-gas__vent"
             },
         },
         unit = {
@@ -2273,7 +2273,7 @@ data:extend({
         age = "computer-age",
     },
     {
-        name = "ei_high-energy-crystal:growing",
+        name = "ei_high-energy-crystal__growing",
         type = "technology",
         icon = ei_graphics_tech_path.."high-energy-crystal-growing.png",
         icon_size = 256,
@@ -2281,7 +2281,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "ei_high-energy-crystal:growing"
+                recipe = "ei_high-energy-crystal__growing"
             },
         },
         unit = {

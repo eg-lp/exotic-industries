@@ -50,11 +50,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_ceramic:water"
+                recipe = "ei_ceramic__water"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_plastic:crushed-coke"
+                recipe = "ei_plastic__crushed-coke"
             },
         },
         unit = {
@@ -65,7 +65,7 @@ data:extend({
         age = "knowledge-computer-age",
     },
     {
-        name = "ei_ceramic:water",
+        name = "ei_ceramic__water",
         type = "recipe",
         category = "ei_advanced-chem-plant",
         energy_required = 3,
@@ -81,7 +81,7 @@ data:extend({
         main_product = "ei_ceramic",
     },
     {
-        name = "ei_plastic:crushed-coke",
+        name = "ei_plastic__crushed-coke",
         type = "recipe",
         category = "ei_advanced-chem-plant",
         energy_required = 24,

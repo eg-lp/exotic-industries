@@ -260,7 +260,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_stone-quarry:mining"
+                recipe = "ei_stone-quarry__mining"
             }
         },
         prerequisites = {"ei_steam-age"},
@@ -303,7 +303,7 @@ data:extend({
         type = "recipe-category",
     },
     {
-        name = "ei_stone-quarry:mining",
+        name = "ei_stone-quarry__mining",
         type = "recipe",
         category = "ei_stone-quarry",
         enabled = true,
@@ -331,7 +331,7 @@ data:extend({
         },
         crafting_categories = {"ei_stone-quarry"},
         crafting_speed = 1,
-        fixed_recipe = "ei_stone-quarry:mining",
+        fixed_recipe = "ei_stone-quarry__mining",
         energy_source = {
             type = "burner",
             emissions_per_minute = 4,

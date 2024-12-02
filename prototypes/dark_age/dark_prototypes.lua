@@ -166,7 +166,7 @@ data:extend({
 ------------------------------------------------------------------------------------------------------
 data:extend({
     {
-        name = "ei_stone:handcrafting",
+        name = "ei_stone__handcrafting",
         type = "recipe",
         category = "ei_handcrafting",
         energy_required = 2,
@@ -180,7 +180,7 @@ data:extend({
         main_product = "stone",
     },
     {
-        name = "ei_poor-iron-chunk:smelting",
+        name = "ei_poor-iron-chunk__smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -196,7 +196,7 @@ data:extend({
         main_product = "ei_iron-ingot",
     },
     {
-        name = "ei_poor-copper-chunk:smelting",
+        name = "ei_poor-copper-chunk__smelting",
         type = "recipe",
         category = "smelting",
         energy_required = 3.2,
@@ -272,7 +272,7 @@ data:extend({
         main_product = "ei_copper-mechanical-parts",
     },
     {
-        name = "ei_stone:slag_processing",
+        name = "ei_stone__slag_processing",
         type = "recipe",
         category = "crafting",
         energy_required = 0.5,

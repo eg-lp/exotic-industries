@@ -944,7 +944,7 @@ data.raw["technology"]["electronics"].effects = {
     },
     {
         type = "unlock-recipe",
-        recipe = "ei_ceramic:steam-assembler"
+        recipe = "ei_ceramic__steam-assembler"
     },
 }
 
@@ -1101,7 +1101,7 @@ data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.pipe_connections = {
         }
     },
     {
-        max_underground_distance = ei_lib.config("pipe-to-ground:length"),
+        max_underground_distance = ei_lib.config("pipe-to-ground__length"),
         position = {
             0,
             1
@@ -1154,10 +1154,10 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes = {
 
 data.raw["reactor"]["nuclear-reactor"].energy_source.fuel_category = "ei_nuclear-fuel"
 data.raw["reactor"]["nuclear-reactor"].energy_source.effectivity = 2
-if ei_lib.config("nuclear-reactor:remove-bonus") then
+if ei_lib.config("nuclear-reactor__remove-bonus") then
     data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0
 end
-data.raw["reactor"]["nuclear-reactor"].consumption = ei_lib.config("nuclear-reactor:energy-output")
+data.raw["reactor"]["nuclear-reactor"].consumption = ei_lib.config("nuclear-reactor__energy-output")
 
 -- buff solar panel power output and set fast_replaceable_group/next_upgrade
 data.raw["solar-panel"]["solar-panel"].production = "80kW"
@@ -1580,14 +1580,14 @@ for i,item in pairs(data.raw["item"]) do
 
             if recipe.name == "fill-"..item.name then
                 recipe.ingredients = {
-                    {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel:multiplier")},
+                    {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel__multiplier")},
                     {type = "item", name = "barrel", amount = 1}
                 }
             end
 
             if recipe.name == "empty-"..item.name then
                 recipe.results = {
-                    {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel:multiplier")},
+                    {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel__multiplier")},
                     {type = "item", name = "barrel", amount = 1}
                 }
             end

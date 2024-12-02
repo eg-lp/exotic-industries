@@ -37,7 +37,7 @@ data:extend({
         main_product = "ei_knowledge-console",
     },
     {
-        name = "ei_knowledge-console:running",
+        name = "ei_knowledge-console__running",
         type = "recipe",
         category = "ei_knowledge-console",
         energy_required = 1000,
@@ -89,7 +89,7 @@ data:extend({
         dying_explosion = "medium-explosion",
         collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
         selection_box = {{-1, -1}, {1, 1}},
-        fixed_recipe = "ei_knowledge-console:running",
+        fixed_recipe = "ei_knowledge-console__running",
         map_color = ei_data.colors.assembler,
         crafting_speed = 1,
         energy_source = {

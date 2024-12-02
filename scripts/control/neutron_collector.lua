@@ -391,14 +391,14 @@ function model.calc_efficiency(entity, source)
 
     if source.name == "ei_fusion-reactor" then
 
-        local recipe = "ei_fusion-F1:ei_heated-deuterium-F2:ei_heated-tritium-TM:medium-FM:medium"
+        local recipe = "ei_fusion-F1__ei_heated-deuterium-F2__ei_heated-tritium-TM__medium-FM__medium"
         
         if source.get_recipe() then
             recipe = source.get_recipe().name
         end
 
         -- local recipe = source.get_recipe().name
-        -- default = "ei_fusion-F1:ei_heated-deuterium-F2:ei_heated-tritium-TM:medium-FM:medium"
+        -- default = "ei_fusion-F1__ei_heated-deuterium-F2__ei_heated-tritium-TM__medium-FM__medium"
 
         fuel1 = recipe:match("F1:(.+)-F2:")
         fuel2 = recipe:match("F2:(.+)-TM:")

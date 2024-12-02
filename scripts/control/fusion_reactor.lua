@@ -38,7 +38,7 @@ function model.on_built_entity(entity)
     -- set inital recipe and lock it
 
     if not entity.get_recipe() then
-        entity.set_recipe("ei_fusion-F1:ei_heated-deuterium-F2:ei_heated-tritium-TM:medium-FM:medium")
+        entity.set_recipe("ei_fusion-F1__ei_heated-deuterium-F2__ei_heated-tritium-TM__medium-FM__medium")
     end
     entity.recipe_locked = true
 

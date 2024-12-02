@@ -569,7 +569,7 @@ local K2_CHANGES = {
         ["rocket-fuel"] = {category = "fuel-refinery"},
         ["ei_diesel-fuel-unit"] = {category = "fuel-refinery"},
         ["ei_drill-fluid"] = {category = "fuel-refinery"},
-        ["ei_kerosene:heavy-oil"] = {category = "fuel-refinery"},
+        ["ei_kerosene__heavy-oil"] = {category = "fuel-refinery"},
         -- crushing
         ["sand"] = {category = "ei_crushing"},
         ["imersite-powder"] = {category = "ei_crushing"},
@@ -593,9 +593,9 @@ local K2_CHANGES = {
         ["matter-tech-card"] = {category = "t4-tech-cards"},
         ["advanced-tech-card"] = {category = "t4-tech-cards"},
         ["ei_superior-data"] = {energy_required = 50},
-        ["ei_plasma-data:deuterium"] = {energy_required = 50},
-        ["ei_plasma-data:protium"] = {energy_required = 50},
-        ["ei_plasma-data:tritium"] = {energy_required = 50},
+        ["ei_plasma-data__deuterium"] = {energy_required = 50},
+        ["ei_plasma-data__protium"] = {energy_required = 50},
+        ["ei_plasma-data__tritium"] = {energy_required = 50},
         ["ei_magnet-data"] = {energy_required = 50},
         ["ei_fusion-data"] = {energy_required = 50},
     },
@@ -1476,16 +1476,16 @@ local recipe_overwrite = {
 
 ei_lib.recipe_add("ei_simulation-data", "blank-tech-card", 3)
 ei_lib.recipe_add("ei_superior-data", "blank-tech-card", 10)
-ei_lib.recipe_add("ei_plasma-data:deuterium", "blank-tech-card", 10)
-ei_lib.recipe_add("ei_plasma-data:tritium", "blank-tech-card", 10)
-ei_lib.recipe_add("ei_plasma-data:protium", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_plasma-data__deuterium", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_plasma-data__tritium", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_plasma-data__protium", "blank-tech-card", 10)
 ei_lib.recipe_add("ei_magnet-data", "blank-tech-card", 10)
 ei_lib.recipe_add("ei_fusion-data", "blank-tech-card", 10)
 ei_lib.recipe_add("ei_fission-tech", "blank-tech-card", 4)
-ei_lib.recipe_add("ei_fission-tech:pt239", "blank-tech-card", 10)
-ei_lib.recipe_add("ei_fission-tech:th232", "blank-tech-card", 10)
-ei_lib.recipe_add("ei_fission-tech:u233", "blank-tech-card", 10)
-ei_lib.recipe_add("ei_fission-tech:u235", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_fission-tech__pt239", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_fission-tech__th232", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_fission-tech__u233", "blank-tech-card", 10)
+ei_lib.recipe_add("ei_fission-tech__u235", "blank-tech-card", 10)
 
 -- machinery and other
 -------------------------------------------------------------------------------
@@ -1898,7 +1898,7 @@ data.raw["recipe"]["copper-plate"].results = {
 ei_lib.remove_unlock_recipe("advanced-circuit", "electronic-components")
 ei_lib.recipe_add("ei_crystal-solution", "chlorine", 20, true)
 ei_lib.recipe_add("ei_advanced-semiconductor", "chlorine", 5, true)
-ei_lib.recipe_add("ei_advanced-semiconductor:monosilicon", "chlorine", 10, true)
+ei_lib.recipe_add("ei_advanced-semiconductor__monosilicon", "chlorine", 10, true)
 ei_lib.recipe_add("ei_monosilicon", "chlorine", 2, true)
 ei_lib.recipe_add("ei_nitric-acid-uranium-235", "chlorine", 10, true)
 ei_lib.recipe_add("ei_nitric-acid-uranium-233", "chlorine", 10, true)
@@ -1912,7 +1912,7 @@ ei_lib.recipe_add("empty-antimatter-fuel-cell", "ei_clean-plating", 10, false)
 ei_lib.recipe_add("heat-pipe", "quartz", 4, false)
 ei_lib.recipe_add("solar-panel", "quartz", 8, false)
 ei_lib.recipe_add("electronic-circuit", "wood", 1, false)
-ei_lib.recipe_add("ei_green-circuit:waver", "wood", 4, false)
+ei_lib.recipe_add("ei_green-circuit__waver", "wood", 4, false)
 ei_lib.recipe_add("ei_advanced-motor", "rare-metals", 2, false)
 ei_lib.recipe_add("ei_module-part", "rare-metals", 4, false)
 ei_lib.recipe_add("processing-unit", "rare-metals", 6, false)
@@ -1938,16 +1938,16 @@ data.raw["recipe"]["ai-core"].results = nil
 data.raw["recipe"]["ai-core"].result = "ai-core"
 data.raw["recipe"]["ai-core"].result_count = 10
 ei_lib.recipe_add("ei_superior-data", "ai-core", 1)
-ei_lib.recipe_add("ei_plasma-data:tritium", "ai-core", 1)
-ei_lib.recipe_add("ei_plasma-data:deuterium", "ai-core", 1)
-ei_lib.recipe_add("ei_plasma-data:protium", "ai-core", 1)
+ei_lib.recipe_add("ei_plasma-data__tritium", "ai-core", 1)
+ei_lib.recipe_add("ei_plasma-data__deuterium", "ai-core", 1)
+ei_lib.recipe_add("ei_plasma-data__protium", "ai-core", 1)
 ei_lib.recipe_add("ei_magnet-data", "ai-core", 1)
 ei_lib.recipe_add("ei_fusion-data", "ai-core", 1)
 
 ei_lib.recipe_add("ei_odd-plating", "imersite-crystal", 1)
 ei_lib.recipe_add("imersium-plate", "ei_neodym-plate", 2)
 
-ei_lib.recipe_add("ei_energy-crystal:growing", "quartz", 1)
+ei_lib.recipe_add("ei_energy-crystal__growing", "quartz", 1)
 
 ei_lib.add_unlock_recipe("kr-bio-processing", "ei_bio-matter:biomass")
 ei_lib.add_unlock_recipe("kr-imersium-processing", "imersium-beam:metalworks")
@@ -2009,7 +2009,7 @@ data:extend({
 })
 
 ei_lib.recipe_add("ei_neodym-plate", "mineral-water", 25, true)
-ei_lib.recipe_add("ei_cast-neodym:ingot", "rare-metals", 1)
+ei_lib.recipe_add("ei_cast-neodym__ingot", "rare-metals", 1)
 
 -- fuel and vehicles
 -------------------------------------------------------------------------------
@@ -2046,10 +2046,10 @@ ei_lib.recipe_add("ei_diesel-fuel-unit", "fuel", 1)
 -------------------------------------------------------------------------------
 data.raw["reactor"]["nuclear-reactor"].energy_source.fuel_category = "ei_nuclear-fuel"
 data.raw["reactor"]["nuclear-reactor"].energy_source.effectivity = 2
-if ei_lib.config("nuclear-reactor:remove-bonus") then
+if ei_lib.config("nuclear-reactor__remove-bonus") then
     data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0
 end
-data.raw["reactor"]["nuclear-reactor"].consumption = ei_lib.config("nuclear-reactor:energy-output")
+data.raw["reactor"]["nuclear-reactor"].consumption = ei_lib.config("nuclear-reactor__energy-output")
 
 -- heat exchanger
 -- 10 MW in, 103w/s in, 15dec min, 500dec steam out so 500dec min heat, out 103steam at 500dec / s
@@ -2257,7 +2257,7 @@ for tech_name, tech in pairs(data.raw.technology) do
         goto continue
     end
 
-    tech.unit.count = ei_lib.config("tech-scaling:startPrice")
+    tech.unit.count = ei_lib.config("tech-scaling__startPrice")
 
     ::continue::
 end

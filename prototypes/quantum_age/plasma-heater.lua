@@ -70,15 +70,15 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_plasma-data:protium"
+                recipe = "ei_plasma-data__protium"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_plasma-data:deuterium"
+                recipe = "ei_plasma-data__deuterium"
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_plasma-data:tritium"
+                recipe = "ei_plasma-data__tritium"
             },
         },
         unit = {
@@ -286,7 +286,7 @@ data:extend({
           },
     },
     {
-        name = "ei_plasma-data:protium",
+        name = "ei_plasma-data__protium",
         type = "recipe",
         category = "ei_quantum-computer",
         energy_required = 5,
@@ -304,7 +304,7 @@ data:extend({
         main_product = "ei_plasma-data",
     },
     {
-        name = "ei_plasma-data:deuterium",
+        name = "ei_plasma-data__deuterium",
         type = "recipe",
         category = "ei_quantum-computer",
         energy_required = 5,
@@ -322,7 +322,7 @@ data:extend({
         main_product = "ei_plasma-data",
     },
     {
-        name = "ei_plasma-data:tritium",
+        name = "ei_plasma-data__tritium",
         type = "recipe",
         category = "ei_quantum-computer",
         energy_required = 5,
