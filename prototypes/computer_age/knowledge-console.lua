@@ -137,12 +137,17 @@ data:extend({
         icon_size = 64,
         icon = ei_graphics_item_2_path.."scanner.png",
         -- flags = {"mod-openable"},
-        selection_color = {r=0.2, g=0.8, b=0, a=0.5 },
-        selection_mode = {"any-entity"},
-        selection_cursor_box_type = "entity",
-        alt_selection_color = {r=0.2, g=0.8, b=0, a=0.5 },
-        alt_selection_cursor_box_type = "entity",
-        alt_selection_mode = {"any-entity"},
+        select = {
+           
+            border_color = {r=0.2, g=0.8, b=0, a=0.5 },
+            mode = {"any-entity"},
+            cursor_box_type = "entity",
+        },
+        alt_select = {
+            border_color = {r=0.2, g=0.8, b=0, a=0.5 },
+            cursor_box_type = "entity",
+            mode = {"any-entity"},
+        },
         subgroup = "ei_repairs",
         order = "a",
     },
