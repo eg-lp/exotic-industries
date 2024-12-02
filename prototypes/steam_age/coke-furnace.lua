@@ -47,52 +47,29 @@ furnace.crafting_categories = {"ei_coke-furnace"}
 furnace.animation = {
     layers = {
         {
-            filename = ei_graphics_entity_path.."coke-furnace.png",
+            filename = ei_graphics_entity_path.."hr-coke-furnace.png",
             frame_count = 1,
-            height = 64,
-            hr_version = {
-                filename = ei_graphics_entity_path.."hr-coke-furnace.png",
-                frame_count = 1,
-                height = 146,
-                priority = "extra-high",
-                scale = 0.5,
-                shift = {
-                  -0.0078125,
-                  0.1875
-                },
-                width = 151
-            },
+            height = 146,
             priority = "extra-high",
+            scale = 0.5,
             shift = {
-                0.453125,
-                0.0625
+              -0.0078125,
+              0.1875
             },
-            width = 81
+            width = 151
         },
         {
             draw_as_shadow = true,
-            filename = "__base__/graphics/entity/stone-furnace/stone-furnace-shadow.png",
+            filename = "__base__/graphics/entity/stone-furnace/hr-stone-furnace-shadow.png",
             frame_count = 1,
-            height = 64,
-            hr_version = {
-                draw_as_shadow = true,
-                filename = "__base__/graphics/entity/stone-furnace/hr-stone-furnace-shadow.png",
-                frame_count = 1,
-                height = 74,
-                priority = "extra-high",
-                scale = 0.5,
-                shift = {
-                  0.453125,
-                  0.40625
-                },
-                width = 164
-            },
+            height = 74,
             priority = "extra-high",
+            scale = 0.5,
             shift = {
-                0.453125,
-                0.0625
+              0.453125,
+              0.40625
             },
-            width = 81
+            width = 164
         }
     }
 }

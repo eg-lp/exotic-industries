@@ -146,48 +146,26 @@ local entity_base = {
     animation = {
         layers = {
             {
-                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
+                filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
                 priority = "high",
-                width = 108,
-                height = 114,
+                width = 214,
+                height = 226,
                 frame_count = 32,
                 line_length = 8,
                 shift = util.by_pixel(0, 2 * 2 / 3),
-                scale = 2/3,
-                hr_version = {
-                    filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
-                    priority = "high",
-                    width = 214,
-                    height = 226,
-                    frame_count = 32,
-                    line_length = 8,
-                    shift = util.by_pixel(0, 2 * 2 / 3),
-                    scale = 1/3,
-                }
+                scale = 1/3,
             },
             {
-                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
+                filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
                 priority = "high",
-                width = 95,
-                height = 83,
+                width = 190,
+                height = 165,
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
                 draw_as_shadow = true,
-                shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
-                scale = 2/3,
-                hr_version = {
-                    filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
-                    priority = "high",
-                    width = 190,
-                    height = 165,
-                    frame_count = 1,
-                    line_length = 1,
-                    repeat_count = 32,
-                    draw_as_shadow = true,
-                    shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
-                    scale = 1/3
-                }
+                shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
+                scale = 1/3
             }
         }
     },        
@@ -259,68 +237,38 @@ end
 
 local foo_1 = {
     {
-        width = 108,
-        height = 114,
+        width = 214,
+        height = 226,
         shift = util.by_pixel(0, 2 * 2 / 3),
-        hr_version = {
-            width = 214,
-            height = 226,
-            shift = util.by_pixel(0, 2 * 2 / 3),
-        }
     },
     {
-        width = 95,
-        height = 83,
-        shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
-        hr_version = {
-            width = 190,
-            height = 165,
-            shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
-        }
+        width = 190,
+        height = 165,
+        shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
     }
 }
 local foo_2 = {
     {
-        width = 108,
-        height = 110,
+        width = 214,
+        height = 218,
         shift = util.by_pixel(0, 4 * 2 / 3),
-        hr_version = {
-            width = 214,
-            height = 218,
-            shift = util.by_pixel(0, 4 * 2 / 3),
-        }
     },
     {
-        width = 98,
-        height = 82,
-        shift = util.by_pixel(12 * 2 / 3, 5 * 2 / 3),
-        hr_version = {
-            width = 196,
-            height = 163,
-            shift = util.by_pixel(12 * 2 / 3, 4.75 * 2 / 3),
-        }
+        width = 196,
+        height = 163,
+        shift = util.by_pixel(12 * 2 / 3, 4.75 * 2 / 3),
     }
 }
 local foo_3 = {
     {
-        width = 108,
-        height = 119,
-        shift = util.by_pixel(0 * 2 / 3, -0.5 * 2 / 3),
-        hr_version = {
-            width = 214,
-            height = 237,
-            shift = util.by_pixel(0 * 2 / 3, -0.75 * 2 / 3),
-        }
+        width = 214,
+        height = 237,
+        shift = util.by_pixel(0 * 2 / 3, -0.75 * 2 / 3),
     },
     {
-        width = 130,
-        height = 82,
+        width = 260,
+        height = 162,
         shift = util.by_pixel(28 * 2 / 3, 4 * 2 / 3),
-        hr_version = {
-            width = 260,
-            height = 162,
-            shift = util.by_pixel(28 * 2 / 3, 4 * 2 / 3),
-        }
     }
 }
 

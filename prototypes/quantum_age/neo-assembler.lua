@@ -108,50 +108,30 @@ neo_assembler.fluid_boxes[2].secondary_draw_order = 2
 
 table.insert(neo_assembler.animation.layers,
 {
-    filename = ei_graphics_V453000_path.."beaconed-assembling-machine-3-overlay.png",
-    width = 107,
-    height = 109,
+    filename = ei_graphics_V453000_path.."hr-beaconed-assembling-machine-3-overlay.png",
+    priority = "high",
+    width = 214,
+    height = 218,
     frame_count = 1,
     repeat_count = 32,
     shift = util.by_pixel(0, 4),
     animation_speed = 1,
-    hr_version = {
-        filename = ei_graphics_V453000_path.."hr-beaconed-assembling-machine-3-overlay.png",
-        priority = "high",
-        width = 214,
-        height = 218,
-        frame_count = 1,
-        repeat_count = 32,
-        shift = util.by_pixel(0, 4),
-        animation_speed = 1,
-        scale = 0.5
-    }
+    scale = 0.5
 })
 
 table.insert(neo_assembler.animation.layers,
 {
-    filename = ei_graphics_V453000_path.."assembling-machine-3-mask.png",
-    width = 78,
-    height = 96,
+    filename = ei_graphics_V453000_path.."hr-assembling-machine-3-mask.png",
+    priority = "high",
+    width = 156,
+    height = 192,
     frame_count = 32,
     line_length = 8,
-    shift = util.by_pixel(-1, -11),
+    shift = util.by_pixel(-0.5, -11),
     tint = ei_data.colors.neo,
     blend_mode = "additive",
     animation_speed = 1,
-    hr_version = {
-        filename = ei_graphics_V453000_path.."hr-assembling-machine-3-mask.png",
-        priority = "high",
-        width = 156,
-        height = 192,
-        frame_count = 32,
-        line_length = 8,
-        shift = util.by_pixel(-0.5, -11),
-        tint = ei_data.colors.neo,
-        blend_mode = "additive",
-        animation_speed = 1,
-        scale = 0.5
-    }
+    scale = 0.5
 })
 
 data:extend({neo_assembler})

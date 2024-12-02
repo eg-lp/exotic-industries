@@ -687,33 +687,19 @@ ei_pipe_insulated_tank = {
 ei_pipe_heat_basic =
 make_4way_animation_from_spritesheet(
     {
-      filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
-      width = 32,
-      height = 32,
+      filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings.png",
+      width = 64,
+      height = 64,
       direction_count = 4,
-      hr_version =
-      {
-        filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings.png",
-        width = 64,
-        height = 64,
-        direction_count = 4,
-        scale = 0.5
-      }
+      scale = 0.5
     })
 
 ei_pipe_heated_basic =
 make_4way_animation_from_spritesheet(
     apply_heat_pipe_glow{
-      filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
-      width = 32,
-      height = 32,
+      filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings-heated.png",
+      width = 64,
+      height = 64,
       direction_count = 4,
-      hr_version =
-      {
-        filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings-heated.png",
-        width = 64,
-        height = 64,
-        direction_count = 4,
-        scale = 0.5
-      }
+      scale = 0.5
     })

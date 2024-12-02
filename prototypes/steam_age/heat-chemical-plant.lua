@@ -48,42 +48,25 @@ plant.crafting_speed = 0.5
 plant.animation = ei_lib.make_4way_animation_from_spritesheet({ layers =
 {
   {
-    filename = ei_graphics_entity_path.."heat-chemical-plant.png",
-    width = 108,
-    height = 148,
+    filename = ei_graphics_entity_path.."hr-heat-chemical-plant.png",
+    width = 220,
+    height = 292,
     frame_count = 24,
     line_length = 12,
-    shift = util.by_pixel(1, -9),
-    hr_version =
-    {
-      filename = ei_graphics_entity_path.."hr-heat-chemical-plant.png",
-      width = 220,
-      height = 292,
-      frame_count = 24,
-      line_length = 12,
-      shift = util.by_pixel(0.5, -9),
-      scale = 0.5
-      }
+    shift = util.by_pixel(0.5, -9),
+    scale = 0.5
+    }
   },
   {
-    filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
-    width = 154,
-    height = 112,
+    filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
+    width = 312,
+    height = 222,
     repeat_count = 24,
     frame_count = 1,
-    shift = util.by_pixel(28, 6),
+    shift = util.by_pixel(27, 6),
     draw_as_shadow = true,
-    hr_version =
-    {
-      filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
-      width = 312,
-      height = 222,
-      repeat_count = 24,
-      frame_count = 1,
-      shift = util.by_pixel(27, 6),
-      draw_as_shadow = true,
-      scale = 0.5
-      }
+    scale = 0.5
+    }
   }
 }})
 
