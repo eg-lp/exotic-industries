@@ -166,9 +166,13 @@ pipe.minable.result = "ei_insulated-pipe"
 -- loop over pictures and swap first part of filename with ei_graphics_insulated_path
 -- also treat the hr version of the picture
 for k, v in pairs(pipe.pictures) do
-    v.filename = ei_graphics_insulated_path..v.filename:match("^.+/(.+)$")
-    if v.hr_version then
-        v.hr_version.filename = ei_graphics_insulated_path..v.hr_version.filename:match("^.+/(.+)$")
+    local filename = v.filename:match("^.+/(.+)$")
+    if filename ~= "visualization.png" and filename ~= "disabled-visualization.png" then
+        if filename ~= "fluid-flow-high-temperature.png" and filename ~= "fluid-flow-low-temperature.png" and filename ~= "fluid-flow-medium-temperature.png" then
+            v.filename = ei_graphics_insulated_path.."hr-"..filename
+        else
+            v.filename = ei_graphics_insulated_path..filename
+        end
     end
 end
 
@@ -179,10 +183,7 @@ pipeToGround.fluid_box.pipe_connections[2].max_underground_distance = 11
 
 
 for k, v in pairs(pipeToGround.pictures) do
-    v.filename = ei_graphics_insulated_path..v.filename:match("^.+/(.+)$")
-    if v.hr_version then
-        v.hr_version.filename = ei_graphics_insulated_path..v.hr_version.filename:match("^.+/(.+)$")
-    end
+    v.filename = ei_graphics_insulated_path.."hr-"..v.filename:match("^.+/(.+)$")
 end
 
 data:extend({

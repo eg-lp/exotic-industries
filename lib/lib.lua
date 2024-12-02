@@ -630,23 +630,15 @@ function ei_lib.make_4way_animation_from_spritesheet(animation)
       }
     end
   
-    local function make_animation_layer_with_hr_version(idx, anim)
-      local anim_parameters = make_animation_layer(idx, anim)
-      if anim.hr_version and anim.hr_version.filename then
-        anim_parameters.hr_version = make_animation_layer(idx, anim.hr_version)
-      end
-      return anim_parameters
-    end
-  
     local function make_animation(idx)
       if animation.layers then
         local tab = { layers = {} }
         for k,v in ipairs(animation.layers) do
-          table.insert(tab.layers, make_animation_layer_with_hr_version(idx, v))
+          table.insert(tab.layers, make_animation_layer(idx, v))
         end
         return tab
       else
-        return make_animation_layer_with_hr_version(idx, animation)
+        return make_animation_layer(idx, animation)
       end
     end
   

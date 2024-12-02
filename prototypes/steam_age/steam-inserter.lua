@@ -119,7 +119,6 @@ local pictures_to_shift = {
 
 for _, picture in ipairs(pictures_to_shift) do
     inserter[picture].shift = hand_shift
-    inserter[picture].hr_version.shift = hand_shift
 end
 
 -- set energy source to steam fluid box
@@ -164,7 +163,6 @@ long_inserter.platform_picture = {
 
 for _, picture in ipairs(pictures_to_shift) do
     long_inserter[picture].shift = hand_shift
-    long_inserter[picture].hr_version.shift = hand_shift
 end
 
 -- set energy source to steam fluid box

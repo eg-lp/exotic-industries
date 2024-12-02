@@ -66,6 +66,8 @@ panel.fast_replaceable_group = "solar-panel"
 
 -- use new graphics
 panel.picture.layers[1].filename = ei_graphics_entity_path.."solar-panel-2.png"
-panel.picture.layers[1].hr_version.filename = ei_graphics_entity_path.."hr-solar-panel-2.png"
+panel.picture.layers[1].width = 116
+panel.picture.layers[1].height = 112
+panel.picture.layers[1].scale = 1
 
 data:extend({panel})
