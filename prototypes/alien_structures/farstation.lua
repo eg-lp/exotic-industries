@@ -20,13 +20,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"steel-plate", 20},
-            {"ei_steel-mechanical-parts", 32},
-            {"ei_electronic-parts", 20},
-            {"ei_computer-core", 1},
+            {type="item", name="steel-plate", amount=20},
+            {type="item", name="ei_steel-mechanical-parts", amount=32},
+            {type="item", name="ei_electronic-parts", amount=20},
+            {type="item", name="ei_computer-core", amount=1},
         },
-        result = "ei_farstation",
-        result_count = 1,
+        results = {{type="item", name="ei_farstation", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_farstation",

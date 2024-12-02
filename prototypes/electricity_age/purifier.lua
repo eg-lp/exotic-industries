@@ -170,13 +170,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"chemical-plant", 1},
-            {"electric-engine-unit", 6},
-            {"storage-tank", 2},
-            {"ei_steel-mechanical-parts", 8}
+            {type="item", name="chemical-plant", amount=1},
+            {type="item", name="electric-engine-unit", amount=6},
+            {type="item", name="storage-tank", amount=2},
+            {type="item", name="ei_steel-mechanical-parts", amount=8}
         },
-        result = "ei_purifier",
-        result_count = 1,
+        results = {{type="item", name="ei_purifier", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_purifier",

@@ -26,13 +26,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_insulated-tank", 2},
-            {"ei_arc-furnace", 1},
-            {"ei_magnet", 20},
-            {"ei_steel-mechanical-parts", 18}
+            {type="item", name="ei_insulated-tank", amount=2},
+            {type="item", name="ei_arc-furnace", amount=1},
+            {type="item", name="ei_magnet", amount=20},
+            {type="item", name="ei_steel-mechanical-parts", amount=18}
         },
-        result = "ei_plasma-heater",
-        result_count = 1,
+        results = {{type="item", name="ei_plasma-heater", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_plasma-heater",

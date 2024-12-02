@@ -23,15 +23,14 @@ data:extend({
         energy_required = 30,
         ingredients =
         {
-            {"concrete", 50},
-            {"ei_electronic-parts", 100},
-            {"battery", 200},
-            {"ei_high-energy-crystal", 50},
-            {"steel-plate", 200},
-            {"ei_steel-mechanical-parts", 100}
+            {type="item", name="concrete", amount=50},
+            {type="item", name="ei_electronic-parts", amount=100},
+            {type="item", name="battery", amount=200},
+            {type="item", name="ei_high-energy-crystal", amount=50},
+            {type="item", name="steel-plate", amount=200},
+            {type="item", name="ei_steel-mechanical-parts", amount=100}
         },
-        result = "ei_gate",
-        result_count = 1,
+        results = {{type="item", name="ei_gate", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_gate",

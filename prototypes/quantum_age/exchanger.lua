@@ -26,13 +26,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"heat-exchanger", 2},
-            {"ei_lead-plate", 20},
-            {"pipe", 10},
-            {"ei_advanced-motor", 5}
+            {type="item", name="heat-exchanger", amount=2},
+            {type="item", name="ei_lead-plate", amount=20},
+            {type="item", name="pipe", amount=10},
+            {type="item", name="ei_advanced-motor", amount=5}
         },
-        result = "ei_exchanger",
-        result_count = 1,
+        results = {{type="item", name="ei_exchanger", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_exchanger",

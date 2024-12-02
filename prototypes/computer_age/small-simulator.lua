@@ -78,13 +78,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"ei_electronic-parts", 4},
-            {"electric-engine-unit", 8},
-            {"steel-plate", 4},
-            {"ei_steel-mechanical-parts", 12}
+            {type="item", name="ei_electronic-parts", amount=4},
+            {type="item", name="electric-engine-unit", amount=8},
+            {type="item", name="steel-plate", amount=4},
+            {type="item", name="ei_steel-mechanical-parts", amount=12}
         },
-        result = "ei_small-simulator",
-        result_count = 1,
+        results = {{type="item", name="ei_small-simulator", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_small-simulator",

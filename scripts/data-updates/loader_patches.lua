@@ -36,19 +36,19 @@ table.insert(data.raw.technology["bulk-inserter"].effects, {
 
 -- make new loader recipes
 ei_lib.recipe_new("ei_loader", {
-    {"electric-engine-unit", 4},
-    {"fast-inserter", 2},
-    {"ei_iron-mechanical-parts", 6},
+    {type="item", name="electric-engine-unit", amount=4},
+    {type="item", name="fast-inserter", amount=2},
+    {type="item", name="ei_iron-mechanical-parts", amount=6},
 })
 
 ei_lib.recipe_new("ei_fast-loader", {
-    {"electric-engine-unit", 10},
-    {"ei_loader", 1},
-    {"advanced-circuit", 10},
+    {type="item", name="electric-engine-unit", amount=10},
+    {type="item", name="ei_loader", amount=1},
+    {type="item", name="advanced-circuit", amount=10},
 })
 
 ei_lib.recipe_new("ei_express-loader", {
-    {"bulk-inserter", 2},
-    {"ei_fast-loader", 1},
-    {"ei_steel-mechanical-parts", 10},
+    {type="item", name="bulk-inserter", amount=2},
+    {type="item", name="ei_fast-loader", amount=1},
+    {type="item", name="ei_steel-mechanical-parts", amount=10},
 })

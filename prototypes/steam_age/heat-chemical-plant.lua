@@ -23,13 +23,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"pipe", 4},
-            {"steel-plate", 6},
-            {"ei_copper-mechanical-parts", 4},
-            {"stone-furnace", 1},
+            {type="item", name="pipe", amount=4},
+            {type="item", name="steel-plate", amount=6},
+            {type="item", name="ei_copper-mechanical-parts", amount=4},
+            {type="item", name="stone-furnace", amount=1},
         },
-        result = "ei_heat-chemical-plant",
-        result_count = 1,
+        results = {{type="item", name="ei_heat-chemical-plant", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_heat-chemical-plant",

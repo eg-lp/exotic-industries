@@ -26,13 +26,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"storage-tank", 1},
-            {"ei_steel-mechanical-parts", 6},
-            {"pipe", 4},
-            {"stone-furnace", 1},
+            {type="item", name="storage-tank", amount=1},
+            {type="item", name="ei_steel-mechanical-parts", amount=6},
+            {type="item", name="pipe", amount=4},
+            {type="item", name="stone-furnace", amount=1},
         },
-        result = "ei_destill-tower",
-        result_count = 1,
+        results = {{type="item", name="ei_destill-tower", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_destill-tower",

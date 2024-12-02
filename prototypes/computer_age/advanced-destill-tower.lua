@@ -22,12 +22,11 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"ei_steel-mechanical-parts", 6},
-            {"ei_electronic-parts", 4},
-            {"ei_destill-tower", 1},
+            {type="item", name="ei_steel-mechanical-parts", amount=6},
+            {type="item", name="ei_electronic-parts", amount=4},
+            {type="item", name="ei_destill-tower", amount=1},
         },
-        result = "ei_advanced-destill-tower",
-        result_count = 1,
+        results = {{type="item", name="ei_advanced-destill-tower", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_advanced-destill-tower",

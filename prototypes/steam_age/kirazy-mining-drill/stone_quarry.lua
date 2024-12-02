@@ -290,12 +290,11 @@ data:extend({
         type = "recipe",
         enabled = false,
         ingredients = {
-            {"ei_copper-beam", 2},
-            {"ei_copper-mechanical-parts", 2},
-            {"burner-mining-drill", 1}
+            {type="item", name="ei_copper-beam", amount=2},
+            {type="item", name="ei_copper-mechanical-parts", amount=2},
+            {type="item", name="burner-mining-drill", amount=1}
         },
-        result = "ei_stone-quarry",
-        result_count = 1,
+        results = {{type="item", name="ei_stone-quarry", amount=1}},
         energy_required = 1,
     },
     {
@@ -309,8 +308,7 @@ data:extend({
         enabled = true,
         hidden = true,
         ingredients = {},
-        result = "stone",
-        result_count = 1,
+        results = {{type="item", name="stone", amount=1}},
         energy_required = 2,
     },
     {

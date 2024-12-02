@@ -26,13 +26,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_insulated-tank", 1},
-            {"solar-panel", 4},
-            {"ei_magnet", 4},
-            {"ei_steel-mechanical-parts", 8}
+            {type="item", name="ei_insulated-tank", amount=1},
+            {type="item", name="solar-panel", amount=4},
+            {type="item", name="ei_magnet", amount=4},
+            {type="item", name="ei_steel-mechanical-parts", amount=8}
         },
-        result = "ei_neutron-collector",
-        result_count = 1,
+        results = {{type="item", name="ei_neutron-collector", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_neutron-collector",
@@ -44,12 +43,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_empty-cryo-container", 3},
-            -- {"ei_magnet", 2},
-            {"ei_carbon-structure", 1}
+            {type="item", name="ei_empty-cryo-container", amount=3},
+            -- {type="item", name="ei_magnet", amount=2},
+            {type="item", name="ei_carbon-structure", amount=1}
         },
-        result = "ei_neutron-container",
-        result_count = 5,
+        results = {{type="item", name="ei_neutron-container", amount=5}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_neutron-container",

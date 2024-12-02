@@ -182,13 +182,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"advanced-circuit", 40},
-            {"ei_lead-plate", 50},
-            {"ei_energy-crystal", 25},
-            {"steel-plate", 50},
+            {type="item", name="advanced-circuit", amount=40},
+            {type="item", name="ei_lead-plate", amount=50},
+            {type="item", name="ei_energy-crystal", amount=25},
+            {type="item", name="steel-plate", amount=50},
         },
-        result = "ei_fission-facility",
-        result_count = 1,
+        results = {{type="item", name="ei_fission-facility", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_fission-facility",

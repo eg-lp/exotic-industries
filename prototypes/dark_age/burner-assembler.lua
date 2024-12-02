@@ -22,12 +22,11 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"stone-furnace", 1},
-            {"ei_copper-mechanical-parts", 2},
-            {"ei_copper-beam", 2}
+            {type="item", name="stone-furnace", amount=1},
+            {type="item", name="ei_copper-mechanical-parts", amount=2},
+            {type="item", name="ei_copper-beam", amount=2}
         },
-        result = "ei_burner-assembler",
-        result_count = 1,
+        results = {{type="item", name="ei_burner-assembler", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_burner-assembler",

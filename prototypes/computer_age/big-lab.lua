@@ -22,14 +22,13 @@ data:extend({
         energy_required = 20,
         ingredients =
         {
-            {"lab", 10},
-            {"ei_simulation-data", 100},
-            {"ei_electronic-parts", 100},
-            {"ei_steel-mechanical-parts", 40},
-            {"ei_energy-crystal", 40}
+            {type="item", name="lab", amount=10},
+            {type="item", name="ei_simulation-data", amount=100},
+            {type="item", name="ei_electronic-parts", amount=100},
+            {type="item", name="ei_steel-mechanical-parts", amount=40},
+            {type="item", name="ei_energy-crystal", amount=40}
         },
-        result = "ei_big-lab",
-        result_count = 1,
+        results = {{type="item", name="ei_big-lab", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_big-lab",

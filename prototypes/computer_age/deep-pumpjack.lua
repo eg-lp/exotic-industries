@@ -45,13 +45,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"pump", 2},
-            {"ei_deep-drill", 1},
-            {"pumpjack", 1},
-            {"ei_steel-mechanical-parts", 20}
+            {type="item", name="pump", amount=2},
+            {type="item", name="ei_deep-drill", amount=1},
+            {type="item", name="pumpjack", amount=1},
+            {type="item", name="ei_steel-mechanical-parts", amount=20}
         },
-        result = "ei_deep-pumpjack",
-        result_count = 1,
+        results = {{type="item", name="ei_deep-pumpjack", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_deep-pumpjack",

@@ -26,13 +26,12 @@ data:extend({
         energy_required = 20,
         ingredients =
         {
-            {"ei_carbon-structure", 20},
-            {"steam-turbine", 10},
-            {"ei_steel-mechanical-parts", 25},
-            {"ei_advanced-motor", 20}
+            {type="item", name="ei_carbon-structure", amount=20},
+            {type="item", name="steam-turbine", amount=10},
+            {type="item", name="ei_steel-mechanical-parts", amount=25},
+            {type="item", name="ei_advanced-motor", amount=20}
         },
-        result = "ei_big-turbine",
-        result_count = 1,
+        results = {{type="item", name="ei_big-turbine", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_big-turbine",

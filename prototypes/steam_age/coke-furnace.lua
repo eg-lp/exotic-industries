@@ -27,11 +27,10 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"stone-furnace", 1},
-            {"stone-brick", 6},
+            {type="item", name="stone-furnace", amount=1},
+            {type="item", name="stone-brick", amount=6},
         },
-        result = "ei_coke-furnace",
-        result_count = 1,
+        results = {{type="item", name="ei_coke-furnace", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_coke-furnace",

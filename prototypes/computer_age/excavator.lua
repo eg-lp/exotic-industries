@@ -26,13 +26,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"ei_electric-stone-quarry", 4},
-            {"ei_advanced-motor", 8},
-            {"steel-plate", 24},
-            {"ei_steel-mechanical-parts", 40}
+            {type="item", name="ei_electric-stone-quarry", amount=4},
+            {type="item", name="ei_advanced-motor", amount=8},
+            {type="item", name="steel-plate", amount=24},
+            {type="item", name="ei_steel-mechanical-parts", amount=40}
         },
-        result = "ei_excavator",
-        result_count = 1,
+        results = {{type="item", name="ei_excavator", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_excavator",

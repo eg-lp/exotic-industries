@@ -26,13 +26,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"lab", 4},
-            {"ei_electronic-parts", 40},
-            {"ei_energy-crystal", 20},
-            {"ei_steel-mechanical-parts", 16}
+            {type="item", name="lab", amount=4},
+            {type="item", name="ei_electronic-parts", amount=40},
+            {type="item", name="ei_energy-crystal", amount=20},
+            {type="item", name="ei_steel-mechanical-parts", amount=16}
         },
-        result = "ei_computer-core",
-        result_count = 1,
+        results = {{type="item", name="ei_computer-core", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_computer-core",

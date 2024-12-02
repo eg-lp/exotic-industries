@@ -219,7 +219,7 @@ data:extend({
         category = "ei_coke-furnace",
         energy_required = 3,
         ingredients = {
-            {"wood", 2}
+            {type="item", name="wood", amount=2}
         },
         results = {
             {type = "item", name = "ei_charcoal", amount = 3},
@@ -234,7 +234,7 @@ data:extend({
         category = "ei_coke-furnace",
         energy_required = 1.5,
         ingredients = {
-            {"coal", 1}
+            {type="item", name="coal", amount=1}
         },
         results = {
             {type = "item", name = "ei_coke", amount = 1},
@@ -249,7 +249,7 @@ data:extend({
         category = "ei_coke-furnace",
         energy_required = 1.5,
         ingredients = {
-            {"ei_charcoal", 1}
+            {type="item", name="ei_charcoal", amount=1}
         },
         results = {
             {type = "item", name = "ei_coke", amount = 1},
@@ -264,7 +264,7 @@ data:extend({
         category = "oil-processing",
         energy_required = 3.5,
         ingredients = {
-            {"coal", 4}
+            {type="item", name="coal", amount=4}
         },
         results = {
             {type = "item", name = "ei_coke", amount = 6},
@@ -280,7 +280,7 @@ data:extend({
         category = "oil-processing",
         energy_required = 3.5,
         ingredients = {
-            {"ei_charcoal", 4}
+            {type="item", name="ei_charcoal", amount=4}
         },
         results = {
             {type = "item", name = "ei_coke", amount = 6},
@@ -296,7 +296,7 @@ data:extend({
         category = "crafting",
         energy_required = 2,
         ingredients = {
-            {"ei_coke", 5}
+            {type="item", name="ei_coke", amount=5}
         },
         results = {
             {type = "item", name = "ei_coke-pellets", amount = 1},
@@ -311,7 +311,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"ei_coke", 1}
+            {type="item", name="ei_coke", amount=1}
         },
         results = {
             {type = "item", name = "ei_crushed-coke", amount = 2},
@@ -326,7 +326,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"ei_iron-ingot", 1}
+            {type="item", name="ei_iron-ingot", amount=1}
         },
         results = {
             {type = "item", name = "ei_crushed-iron", amount = 2},
@@ -341,7 +341,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"iron-plate", 1}
+            {type="item", name="iron-plate", amount=1}
         },
         results = {
             {type = "item", name = "ei_crushed-iron", amount = 2},
@@ -357,7 +357,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"ei_iron-beam", 1}
+            {type="item", name="ei_iron-beam", amount=1}
         },
         results = {
             {type = "item", name = "ei_crushed-iron", amount = 4},
@@ -373,7 +373,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"ei_iron-mechanical-parts", 1}
+            {type="item", name="ei_iron-mechanical-parts", amount=1}
         },
         results = {
             {type = "item", name = "ei_crushed-iron", amount = 1},
@@ -389,8 +389,8 @@ data:extend({
         category = "crafting",
         energy_required = 2,
         ingredients = {
-            {"ei_crushed-coke", 2},
-            {"ei_crushed-iron", 5}
+            {type="item", name="ei_crushed-coke", amount=2},
+            {type="item", name="ei_crushed-iron", amount=5}
         },
         results = {
             {type = "item", name = "ei_steel-blend", amount = 1},
@@ -405,7 +405,7 @@ data:extend({
         category = "smelting",
         energy_required = 3.2,
         ingredients = {
-            {"ei_steel-blend", 1}
+            {type="item", name="ei_steel-blend", amount=1}
         },
         results = {
             {type = "item", name = "ei_steel-ingot", amount = 1},
@@ -421,7 +421,7 @@ data:extend({
         category = "crafting",
         energy_required = 1,
         ingredients = {
-            {"ei_steel-ingot", 1}
+            {type="item", name="ei_steel-ingot", amount=1}
         },
         results = {
             {type = "item", name = "ei_steel-mechanical-parts", amount = 2},
@@ -436,7 +436,7 @@ data:extend({
         category = "crafting",
         energy_required = 2,
         ingredients = {
-            {"ei_steel-ingot", 2}
+            {type="item", name="ei_steel-ingot", amount=2}
         },
         results = {
             {type = "item", name = "steel-plate", amount = 1},
@@ -451,9 +451,9 @@ data:extend({
         category = "crafting",
         energy_required = 2,
         ingredients = {
-            {"ei_iron-beam", 10},
-            {"pipe", 4},
-            {"ei_copper-mechanical-parts", 6}
+            {type="item", name="ei_iron-beam", amount=10},
+            {type="item", name="pipe", amount=4},
+            {type="item", name="ei_copper-mechanical-parts", amount=6}
         },
         results = {
             {type = "item", name = "storage-tank", amount = 1},
@@ -486,7 +486,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"stone", 1},
+            {type="item", name="stone", amount=1},
         },
         results = {
             {type = "item", name = "ei_sand", amount = 2},
@@ -501,7 +501,7 @@ data:extend({
         category = "smelting",
         energy_required = 3.2,
         ingredients = {
-            {"ei_sand", 1},
+            {type="item", name="ei_sand", amount=1},
         },
         results = {
             {type = "item", name = "ei_glass", amount = 1},

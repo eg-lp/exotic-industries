@@ -91,7 +91,6 @@ data:extend({
         energy_required = 1000,
         ingredients = {},
         results = {},
-        result_count = 1,
         enabled = false,
         hidden = true,
         icon = ei_graphics_other_path.."matter-stabilizer.png",

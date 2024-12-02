@@ -132,12 +132,11 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"iron-plate", 6},
-            {"ei_copper-mechanical-parts", 4},
-            {"stone-brick", 4},
+            {type="item", name="iron-plate", amount=6},
+            {type="item", name="ei_copper-mechanical-parts", amount=4},
+            {type="item", name="stone-brick", amount=4},
         },
-        result = "ei_dark-age-lab",
-        resutl_count = 1,
+        results = {{type="item", name="ei_dark-age-lab", amount=1}},
         enabled = true,
         always_show_made_in = true,
         main_product = "ei_dark-age-lab",

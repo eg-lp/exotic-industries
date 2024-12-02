@@ -27,12 +27,11 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"steel-plate", 1},
-            {"ei_iron-ingot", 2},
-            {"ei_copper-ingot", 2},
+            {type="item", name="steel-plate", amount=1},
+            {type="item", name="ei_iron-ingot", amount=2},
+            {type="item", name="ei_copper-ingot", amount=2},
         },
-        result = "ei_basic-heat-pipe",
-        result_count = 1,
+        results = {{type="item", name="ei_basic-heat-pipe", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_basic-heat-pipe",

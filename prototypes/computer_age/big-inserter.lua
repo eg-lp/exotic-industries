@@ -36,11 +36,10 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_big-inserter-normal", 1},
-            {"electronic-circuit", 4},
+            {type="item", name="ei_big-inserter-normal", amount=1},
+            {type="item", name="electronic-circuit", amount=4},
         },
-        result = "ei_big-inserter",
-        result_count = 1,
+        results = {{type="item", name="ei_big-inserter", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_big-inserter",
@@ -52,12 +51,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_small-inserter-normal", 1},
-            {"bulk-inserter", 4},
-            {"low-density-structure", 6},
+            {type="item", name="ei_small-inserter-normal", amount=1},
+            {type="item", name="bulk-inserter", amount=4},
+            {type="item", name="low-density-structure", amount=6},
         },
-        result = "ei_big-inserter-normal",
-        result_count = 1,
+        results = {{type="item", name="ei_big-inserter-normal", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_big-inserter-normal",

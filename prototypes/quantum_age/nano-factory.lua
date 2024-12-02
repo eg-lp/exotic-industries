@@ -26,13 +26,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-motor", 20},
-            {"assembling-machine-3", 4},
-            {"processing-unit", 20},
-            {"ei_steel-mechanical-parts", 40}
+            {type="item", name="ei_advanced-motor", amount=20},
+            {type="item", name="assembling-machine-3", amount=4},
+            {type="item", name="processing-unit", amount=20},
+            {type="item", name="ei_steel-mechanical-parts", amount=40}
         },
-        result = "ei_nano-factory",
-        result_count = 1,
+        results = {{type="item", name="ei_nano-factory", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_nano-factory",

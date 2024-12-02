@@ -26,13 +26,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"pipe", 6},
-            {"ei_iron-mechanical-parts", 4},
-            {"ei_steam-engine", 4},
-            {"ei_copper-beam", 2}
+            {type="item", name="pipe", amount=6},
+            {type="item", name="ei_iron-mechanical-parts", amount=4},
+            {type="item", name="ei_steam-engine", amount=4},
+            {type="item", name="ei_copper-beam", amount=2}
         },
-        result = "ei_steam-crusher",
-        result_count = 1,
+        results = {{type="item", name="ei_steam-crusher", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_steam-crusher",

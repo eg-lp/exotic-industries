@@ -28,11 +28,10 @@ local blank = {
         energy_required = 4,
         ingredients =
         {
-            {"small-lamp", 2},
-            {"ei_energy-crystal", 2},
+            {type="item", name="small-lamp", amount=2},
+            {type="item", name="ei_energy-crystal", amount=2},
         },
-        result = "ei_holo-moon",
-        result_count = 1,
+        results = {{type="item", name="ei_holo-moon", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_holo-moon",
@@ -97,7 +96,6 @@ local blank = {
         energy_required = 1000,
         ingredients = {},
         results = {},
-        result_count = 1,
         enabled = false,
         hidden = true,
         icon = ei_graphics_other_path.."64_empty.png",

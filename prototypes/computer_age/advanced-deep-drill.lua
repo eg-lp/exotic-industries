@@ -45,12 +45,11 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"ei_advanced-motor", 16},
-            {"ei_deep-drill", 1},
-            {"ei_steel-mechanical-parts", 20}
+            {type="item", name="ei_advanced-motor", amount=16},
+            {type="item", name="ei_deep-drill", amount=1},
+            {type="item", name="ei_steel-mechanical-parts", amount=20}
         },
-        result = "ei_advanced-deep-drill",
-        result_count = 1,
+        results = {{type="item", name="ei_advanced-deep-drill", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_advanced-deep-drill",

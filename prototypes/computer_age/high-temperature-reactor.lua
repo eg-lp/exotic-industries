@@ -26,14 +26,13 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"nuclear-reactor", 1},
-            {"ei_fission-tech", 100},
-            {"ei_electronic-parts", 50},
-            {"ei_steel-mechanical-parts", 80},
-            {"ei_simulation-data", 100}
+            {type="item", name="nuclear-reactor", amount=1},
+            {type="item", name="ei_fission-tech", amount=100},
+            {type="item", name="ei_electronic-parts", amount=50},
+            {type="item", name="ei_steel-mechanical-parts", amount=80},
+            {type="item", name="ei_simulation-data", amount=100}
         },
-        result = "ei_high-temperature-reactor",
-        result_count = 1,
+        results = {{type="item", name="ei_high-temperature-reactor", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_high-temperature-reactor",

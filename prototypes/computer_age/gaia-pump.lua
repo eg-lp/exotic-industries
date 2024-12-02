@@ -20,11 +20,10 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"offshore-pump", 1},
-            {"ei_alien-resin", 2},
+            {type="item", name="offshore-pump", amount=1},
+            {type="item", name="ei_alien-resin", amount=2},
         },
-        result = "ei_gaia-pump",
-        result_count = 1,
+        results = {{type="item", name="ei_gaia-pump", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_gaia-pump",

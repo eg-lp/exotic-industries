@@ -26,13 +26,12 @@ data:extend({
         energy_required = 20,
         ingredients =
         {
-            {"ei_computer-core", 4},
-            {"ei_magnet", 40},
-            {"refined-concrete", 200},
-            {"processing-unit", 100}
+            {type="item", name="ei_computer-core", amount=4},
+            {type="item", name="ei_magnet", amount=40},
+            {type="item", name="refined-concrete", amount=200},
+            {type="item", name="processing-unit", amount=100}
         },
-        result = "ei_quantum-computer",
-        result_count = 1,
+        results = {{type="item", name="ei_quantum-computer", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_quantum-computer",

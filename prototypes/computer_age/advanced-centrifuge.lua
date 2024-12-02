@@ -26,13 +26,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"centrifuge", 2},
-            {"ei_advanced-motor", 10},
-            {"ei_energy-crystal", 20},
-            {"ei_steel-mechanical-parts", 8}
+            {type="item", name="centrifuge", amount=2},
+            {type="item", name="ei_advanced-motor", amount=10},
+            {type="item", name="ei_energy-crystal", amount=20},
+            {type="item", name="ei_steel-mechanical-parts", amount=8}
         },
-        result = "ei_advanced-centrifuge",
-        result_count = 1,
+        results = {{type="item", name="ei_advanced-centrifuge", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_advanced-centrifuge",

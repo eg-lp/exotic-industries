@@ -23,13 +23,12 @@ data:extend({
         energy_required = 3,
         ingredients =
         {
-            {"steel-plate", 4},
-            {"ei_steam-engine", 4},
-            {"ei_copper-mechanical-parts", 4},
-            {"pipe", 4}
+            {type="item", name="steel-plate", amount=4},
+            {type="item", name="ei_steam-engine", amount=4},
+            {type="item", name="ei_copper-mechanical-parts", amount=4},
+            {type="item", name="pipe", amount=4}
         },
-        result = "ei_steam-oil-pumpjack",
-        result_count = 1,
+        results = {{type="item", name="ei_steam-oil-pumpjack", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_steam-oil-pumpjack",

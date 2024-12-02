@@ -22,12 +22,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_crusher", 1},
-            {"ei_advanced-motor", 4},
-            {"ei_steel-mechanical-parts", 6}
+            {type="item", name="ei_crusher", amount=1},
+            {type="item", name="ei_advanced-motor", amount=4},
+            {type="item", name="ei_steel-mechanical-parts", amount=6}
         },
-        result = "ei_advanced-crusher",
-        result_count = 1,
+        results = {{type="item", name="ei_advanced-crusher", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_advanced-crusher",

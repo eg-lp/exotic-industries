@@ -319,13 +319,12 @@ data:extend({
         type = "recipe",
         enabled = false,
         ingredients = {
-            {"ei_iron-beam", 2},
-            {"ei_iron-mechanical-parts", 4},
-            {"electric-engine-unit", 2},
-            {"ei_stone-quarry", 1}
+            {type="item", name="ei_iron-beam", amount=2},
+            {type="item", name="ei_iron-mechanical-parts", amount=4},
+            {type="item", name="electric-engine-unit", amount=2},
+            {type="item", name="ei_stone-quarry", amount=1}
         },
-        result = "ei_electric-stone-quarry",
-        result_count = 1,
+        results = {{type="item", name="ei_electric-stone-quarry", amount=1}},
         energy_required = 1,
     },
     {
@@ -649,7 +648,7 @@ data:extend({
         category = "ei_crushing",
         energy_required = 1,
         ingredients = {
-            {"ei_copper-ingot", 1},
+            {type="item", name="ei_copper-ingot", amount=1},
         },
         results = {
             {type = "item", name = "ei_crushed-copper", amount = 2},

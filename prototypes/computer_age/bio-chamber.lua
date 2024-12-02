@@ -57,13 +57,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"steel-plate", 6},
-            {"chemical-plant", 1},
-            {"ei_glass", 30},
-            {"ei_electronic-parts", 4}
+            {type="item", name="steel-plate", amount=6},
+            {type="item", name="chemical-plant", amount=1},
+            {type="item", name="ei_glass", amount=30},
+            {type="item", name="ei_electronic-parts", amount=4}
         },
-        result = "ei_bio-chamber",
-        result_count = 1,
+        results = {{type="item", name="ei_bio-chamber", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_bio-chamber",

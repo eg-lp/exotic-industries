@@ -26,13 +26,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-motor", 10},
-            {"ei_high-tech-parts", 16},
-            {"ei_carbon-structure", 20},
-            {"ei_odd-plating", 20}
+            {type="item", name="ei_advanced-motor", amount=10},
+            {type="item", name="ei_high-tech-parts", amount=16},
+            {type="item", name="ei_carbon-structure", amount=20},
+            {type="item", name="ei_odd-plating", amount=20}
         },
-        result = "ei_matter-stabilizer",
-        result_count = 1,
+        results = {{type="item", name="ei_matter-stabilizer", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_matter-stabilizer",
@@ -129,7 +128,6 @@ data:extend({
         energy_required = 1000,
         ingredients = {},
         results = {},
-        result_count = 1,
         enabled = false,
         hidden = true,
         icon = ei_graphics_other_path.."matter-stabilizer.png",

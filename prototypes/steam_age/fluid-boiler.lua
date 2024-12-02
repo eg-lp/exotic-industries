@@ -31,13 +31,12 @@ data:extend({
         energy_required = 2,
         ingredients =
         {
-            {"boiler", 1},
-            {"ei_steel-mechanical-parts", 6},
-            {"pipe", 4},
-            {"ei_copper-beam", 4},
+            {type="item", name="boiler", amount=1},
+            {type="item", name="ei_steel-mechanical-parts", amount=6},
+            {type="item", name="pipe", amount=4},
+            {type="item", name="ei_copper-beam", amount=4},
         },
-        result = "ei_fluid-boiler",
-        result_count = 1,
+        results = {{type="item", name="ei_fluid-boiler", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_fluid-boiler",

@@ -26,13 +26,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"electric-furnace", 1},
-            {"electric-engine-unit", 4},
-            {"storage-tank", 2},
-            {"ei_steel-mechanical-parts", 8}
+            {type="item", name="electric-furnace", amount=1},
+            {type="item", name="electric-engine-unit", amount=4},
+            {type="item", name="storage-tank", amount=2},
+            {type="item", name="ei_steel-mechanical-parts", amount=8}
         },
-        result = "ei_arc-furnace",
-        result_count = 1,
+        results = {{type="item", name="ei_arc-furnace", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_arc-furnace",

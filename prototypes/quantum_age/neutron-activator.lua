@@ -26,13 +26,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"processing-unit", 6},
-            {"ei_cooler", 1},
-            {"ei_lead-plate", 25},
-            {"ei_magnet", 10}
+            {type="item", name="processing-unit", amount=6},
+            {type="item", name="ei_cooler", amount=1},
+            {type="item", name="ei_lead-plate", amount=25},
+            {type="item", name="ei_magnet", amount=10}
         },
-        result = "ei_neutron-activator",
-        result_count = 1,
+        results = {{type="item", name="ei_neutron-activator", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_neutron-activator",

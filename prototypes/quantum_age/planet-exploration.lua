@@ -24,11 +24,10 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"rocket-fuel", 10},
-            {"ei_rocket-parts", 10}
+            {type="item", name="rocket-fuel", amount=10},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -40,12 +39,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"rocket-fuel", 12},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10}
+            {type="item", name="rocket-fuel", amount=12},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -57,12 +55,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 16},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10}
+            {type="item", name="ei_advanced-rocket-fuel", amount=16},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -74,12 +71,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 26},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10}
+            {type="item", name="ei_advanced-rocket-fuel", amount=26},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -91,12 +87,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 18},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10}
+            {type="item", name="ei_advanced-rocket-fuel", amount=18},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -108,12 +103,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 24},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10}
+            {type="item", name="ei_advanced-rocket-fuel", amount=24},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -125,12 +119,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 20},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10}
+            {type="item", name="ei_advanced-rocket-fuel", amount=20},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10}
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -142,14 +135,13 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 20},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10},
-            {"ei_dt-mix", 1},
-            {"ei_fusion-drive", 1},
+            {type="item", name="ei_advanced-rocket-fuel", amount=20},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10},
+            {type="item", name="ei_dt-mix", amount=1},
+            {type="item", name="ei_fusion-drive", amount=1},
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",
@@ -161,14 +153,13 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-rocket-fuel", 20},
-            {"ei_carbon-structure", 2},
-            {"ei_rocket-parts", 10},
-            {"ei_dt-mix", 4},
-            {"ei_fusion-drive", 1},
+            {type="item", name="ei_advanced-rocket-fuel", amount=20},
+            {type="item", name="ei_carbon-structure", amount=2},
+            {type="item", name="ei_rocket-parts", amount=10},
+            {type="item", name="ei_dt-mix", amount=4},
+            {type="item", name="ei_fusion-drive", amount=1},
         },
-        result = "rocket-part",
-        result_count = 1,
+        results = {{type="item", name="rocket-part", amount=1}},
         enabled = false,
         hidden = true,
         main_product = "rocket-part",

@@ -23,11 +23,10 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"burner-inserter", 1},
-            {"ei_steam-engine", 1},
+            {type="item", name="burner-inserter", amount=1},
+            {type="item", name="ei_steam-engine", amount=1},
         },
-        result = "ei_steam-inserter",
-        result_count = 1,
+        results = {{type="item", name="ei_steam-inserter", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_steam-inserter",
@@ -50,11 +49,10 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"burner-inserter", 1},
-            {"ei_steam-engine", 1},
+            {type="item", name="burner-inserter", amount=1},
+            {type="item", name="ei_steam-engine", amount=1},
         },
-        result = "ei_steam-long-inserter",
-        result_count = 1,
+        results = {{type="item", name="ei_steam-long-inserter", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_steam-long-inserter",

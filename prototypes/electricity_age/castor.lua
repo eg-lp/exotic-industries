@@ -26,13 +26,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"advanced-circuit", 5},
-            {"storage-tank", 1},
-            {"ei_lead-plate", 50},
-            {"steel-plate", 12}
+            {type="item", name="advanced-circuit", amount=5},
+            {type="item", name="storage-tank", amount=1},
+            {type="item", name="ei_lead-plate", amount=50},
+            {type="item", name="steel-plate", amount=12}
         },
-        result = "ei_castor",
-        result_count = 1,
+        results = {{type="item", name="ei_castor", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_castor",

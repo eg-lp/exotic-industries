@@ -26,13 +26,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"electronic-circuit", 2},
-            {"electric-engine-unit", 2},
-            {"steel-plate", 4},
-            {"ei_steel-mechanical-parts", 6}
+            {type="item", name="electronic-circuit", amount=2},
+            {type="item", name="electric-engine-unit", amount=2},
+            {type="item", name="steel-plate", amount=4},
+            {type="item", name="ei_steel-mechanical-parts", amount=6}
         },
-        result = "ei_caster",
-        result_count = 1,
+        results = {{type="item", name="ei_caster", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_caster",

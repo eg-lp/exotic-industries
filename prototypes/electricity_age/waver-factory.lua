@@ -44,13 +44,12 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"advanced-circuit", 10},
-            {"electric-engine-unit", 8},
-            {"steel-plate", 20},
-            {"small-lamp", 6}
+            {type="item", name="advanced-circuit", amount=10},
+            {type="item", name="electric-engine-unit", amount=8},
+            {type="item", name="steel-plate", amount=20},
+            {type="item", name="small-lamp", amount=6}
         },
-        result = "ei_waver-factory",
-        result_count = 1,
+        results = {{type="item", name="ei_waver-factory", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_waver-factory",

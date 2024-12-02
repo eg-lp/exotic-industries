@@ -2437,12 +2437,11 @@ data:extend({
         energy_required = 4,
         ingredients =
         {
-            {"ei_advanced-electric-mining-drill", 1},
-            {"ei_superior-data", 5},
-            {"ei_steel-mechanical-parts", 15}
+            {type="item", name="ei_advanced-electric-mining-drill", amount=1},
+            {type="item", name="ei_superior-data", amount=5},
+            {type="item", name="ei_steel-mechanical-parts", amount=15}
         },
-        result = "ei_superior-electric-mining-drill",
-        result_count = 1,
+        results = {{type="item", name="ei_superior-electric-mining-drill", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_superior-electric-mining-drill",

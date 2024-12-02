@@ -26,14 +26,13 @@ data:extend({
         energy_required = 20,
         ingredients =
         {
-            {"ei_high-tech-parts", 20},
-            {"ei_plasma-heater", 2},
-            {"refined-concrete", 200},
-            {"ei_carbon-structure", 40},
-            {"ei_advanced-motor", 25}
+            {type="item", name="ei_high-tech-parts", amount=20},
+            {type="item", name="ei_plasma-heater", amount=2},
+            {type="item", name="refined-concrete", amount=200},
+            {type="item", name="ei_carbon-structure", amount=40},
+            {type="item", name="ei_advanced-motor", amount=25}
         },
-        result = "ei_accelerator",
-        result_count = 1,
+        results = {{type="item", name="ei_accelerator", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_accelerator",

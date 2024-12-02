@@ -42,12 +42,11 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"solar-panel", 2},
-            {"ei_energy-crystal", 8},
-            {"ei_gold-plate", 16}
+            {type="item", name="solar-panel", amount=2},
+            {type="item", name="ei_energy-crystal", amount=8},
+            {type="item", name="ei_gold-plate", amount=16}
         },
-        result = "ei_solar-panel-2",
-        result_count = 1,
+        results = {{type="item", name="ei_solar-panel-2", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_solar-panel-2",

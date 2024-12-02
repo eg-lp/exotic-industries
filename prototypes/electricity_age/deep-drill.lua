@@ -26,13 +26,12 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"electric-mining-drill", 4},
-            {"electric-engine-unit", 40},
-            {"steel-plate", 24},
-            {"ei_steel-mechanical-parts", 40}
+            {type="item", name="electric-mining-drill", amount=4},
+            {type="item", name="electric-engine-unit", amount=40},
+            {type="item", name="steel-plate", amount=24},
+            {type="item", name="ei_steel-mechanical-parts", amount=40}
         },
-        result = "ei_deep-drill",
-        result_count = 1,
+        results = {{type="item", name="ei_deep-drill", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_deep-drill",

@@ -23,12 +23,11 @@ data:extend({
         energy_required = 1,
         ingredients =
         {
-            {"ei_gold-plate", 2},
-            {"plastic-bar", 4},
-            {"ei_insulated-wire", 6},
+            {type="item", name="ei_gold-plate", amount=2},
+            {type="item", name="plastic-bar", amount=4},
+            {type="item", name="ei_insulated-wire", amount=6},
         },
-        result = "ei_data-pipe",
-        result_count = 1,
+        results = {{type="item", name="ei_data-pipe", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_data-pipe",

@@ -30,14 +30,13 @@ data:extend({
         energy_required = 6,
         ingredients =
         {
-            {"ei_copper-beacon", 2},
-            {"ei_steel-mechanical-parts", 10},
-            {"ei_carbon-structure", 5},
-            {"ei_superior-data", 20},
-            {"ei_magnet", 6}
+            {type="item", name="ei_copper-beacon", amount=2},
+            {type="item", name="ei_steel-mechanical-parts", amount=10},
+            {type="item", name="ei_carbon-structure", amount=5},
+            {type="item", name="ei_superior-data", amount=20},
+            {type="item", name="ei_magnet", amount=6}
         },
-        result = "ei_iron-beacon",
-        result_count = 1,
+        results = {{type="item", name="ei_iron-beacon", amount=1}},
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_iron-beacon",
@@ -49,7 +48,6 @@ data:extend({
         energy_required = 1,
         ingredients = {},
         results = {},
-        result_count = 1,
         enabled = false,
         always_show_made_in = true,
         icon = ei_graphics_other_path.."64_empty.png",
