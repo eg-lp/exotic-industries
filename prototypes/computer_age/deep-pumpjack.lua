@@ -180,25 +180,6 @@ data:extend({
                 }   
             }
         },
-
-        animations = {
-            layers = {
-                {
-                    
-                },
-                {
-                    filename = ei_graphics_entity_2_path.."deep-pumpjack_animation.png",
-                    size = {512,512},
-                    shift = {0, 0},
-                    scale = 0.35,
-                    line_length = 4,
-                    lines_per_file = 4,
-                    frame_count = 16,
-                    animation_speed = 0.4,
-                    run_mode = "backward",
-                }
-            }
-        },
         working_sound =
         {
             sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.8},

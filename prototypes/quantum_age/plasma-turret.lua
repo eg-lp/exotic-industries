@@ -103,14 +103,22 @@ data:extend({
             direction_count = 64,
             animation_speed = 0.35,
         },
-        base_picture = {
-            filename = ei_graphics_other_path.."64_empty.png",
-            size = {64,64},
-            shift = {0, 0},
-            scale = 0.44/2,
-            line_length = 1,
-            direction_count = 1,
-            frame_count = 1,
+        graphics_set = {
+            base_visualisation = {
+                animation = {
+                    layers = {
+                        {
+                            filename = ei_graphics_other_path.."64_empty.png",
+                            size = {64,64},
+                            shift = {0, 0},
+                            scale = 0.44/2,
+                            line_length = 1,
+                            direction_count = 1,
+                            frame_count = 1,
+                        }
+                    }
+                }
+            }
         },
         call_for_help_radius = 40,
         attack_parameters = {

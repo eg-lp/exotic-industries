@@ -94,13 +94,11 @@ local neo_assembler = {
         module_slots = 4
     },
     fluid_boxes = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes),
-    graphics_set = {
-        animation = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].animation),
-        working_sound =
-        {
-            sound = {filename = "__base__/sound/electric-furnace.ogg", volume = 0.6},
-            apparent_volume = 0.3,
-        },
+    graphics_set = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].graphics_set),
+    working_sound =
+    {
+        sound = {filename = "__base__/sound/electric-furnace.ogg", volume = 0.6},
+        apparent_volume = 0.3,
     },
     -- fast_replaceable_group = "assembling-machine",
 }
@@ -110,7 +108,7 @@ local neo_assembler = {
 neo_assembler.fluid_boxes[1].secondary_draw_order = 2
 neo_assembler.fluid_boxes[2].secondary_draw_order = 2
 
-table.insert(neo_assembler.animation.layers,
+table.insert(neo_assembler.graphics_set.animation.layers,
 {
     filename = ei_graphics_V453000_path.."hr-beaconed-assembling-machine-3-overlay.png",
     priority = "high",
@@ -123,7 +121,7 @@ table.insert(neo_assembler.animation.layers,
     scale = 0.5
 })
 
-table.insert(neo_assembler.animation.layers,
+table.insert(neo_assembler.graphics_set.animation.layers,
 {
     filename = ei_graphics_V453000_path.."hr-assembling-machine-3-mask.png",
     priority = "high",

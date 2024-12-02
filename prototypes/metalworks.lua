@@ -193,27 +193,17 @@ local function make_metalworks(base, foo, level, max_level, animation, result)
     entity.crafting_speed = 0.75 + (level-1)*0.5
     entity.energy_usage = tostring(150*level).."kW"
     if animation then
-        entity.animation = animation
+        entity.graphics_set = { animation = animation }
     else
-        entity.animation.layers[1].filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level..".png"
-        entity.animation.layers[1].width = foo[1].width
-        entity.animation.layers[1].height = foo[1].height
-        entity.animation.layers[1].shift = foo[1].shift
+        entity.graphics_set.animation.layers[1].filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level..".png"
+        entity.graphics_set.animation.layers[1].width = foo[1].width
+        entity.graphics_set.animation.layers[1].height = foo[1].height
+        entity.graphics_set.animation.layers[1].shift = foo[1].shift
 
-        entity.animation.layers[1].hr_version.filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level..".png"
-        entity.animation.layers[1].hr_version.width = foo[1].hr_version.width
-        entity.animation.layers[1].hr_version.height = foo[1].hr_version.height
-        entity.animation.layers[1].hr_version.shift = foo[1].hr_version.shift
-
-        entity.animation.layers[2].filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level.."-shadow.png"
-        entity.animation.layers[2].width = foo[2].width
-        entity.animation.layers[2].height = foo[2].height
-        entity.animation.layers[2].shift = foo[2].shift
-
-        entity.animation.layers[2].hr_version.filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level.."-shadow.png"
-        entity.animation.layers[2].hr_version.width = foo[2].hr_version.width
-        entity.animation.layers[2].hr_version.height = foo[2].hr_version.height
-        entity.animation.layers[2].hr_version.shift = foo[2].hr_version.shift
+        entity.graphics_set.animation.layers[2].filename = "__base__/graphics/entity/assembling-machine-"..level.."/assembling-machine-"..level.."-shadow.png"
+        entity.graphics_set.animation.layers[2].width = foo[2].width
+        entity.graphics_set.animation.layers[2].height = foo[2].height
+        entity.graphics_set.animation.layers[2].shift = foo[2].shift
     end
 
     if level < max_level then
@@ -227,14 +217,11 @@ end
 
 local metalworks_4_animation = util.table.deepcopy(data.raw["assembling-machine"]["ei_neo-assembler"])
 -- has 4 entries in layer, and also hr versions, mutiply their scale with 2/3 and 1/3 respectively
-for _, layer in ipairs(metalworks_4_animation.animation.layers) do
+for _, layer in ipairs(metalworks_4_animation.graphics_set.animation.layers) do
     if not layer.scale then
         layer.scale = 1
     end
     layer.scale = layer.scale * 2/3
-    if layer.hr_version then
-        layer.hr_version.scale = layer.hr_version.scale * 2/3
-    end
 end
 
 local foo_1 = {
@@ -277,7 +264,7 @@ local foo_3 = {
 make_metalworks(entity_base, foo_1, 1, 4)
 make_metalworks(entity_base, foo_2, 2, 4)
 make_metalworks(entity_base, foo_3, 3, 4)
-make_metalworks(entity_base, foo_1, 4, 4, metalworks_4_animation.animation, "ei_metalworks_4")
+make_metalworks(entity_base, foo_1, 4, 4, metalworks_4_animation.graphics_set.animation, "ei_metalworks_4")
 
 -- add the metalworks to their respective techs
 table.insert(

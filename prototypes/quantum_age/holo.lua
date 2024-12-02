@@ -121,23 +121,23 @@ local function make_holo(dest, icon_size, ani_size, lenght, scale)
     holo.item.place_result = "ei_holo-"..dest
 
     holo.recipe.name = "ei_holo-"..dest
-    holo.recipe.result = "ei_holo-"..dest
+    holo.recipe.results = {{type="item", name="ei_holo-"..dest, amount=1}}
     holo.recipe.main_product = "ei_holo-"..dest
 
     holo.entity.name = "ei_holo-"..dest
     holo.entity.icon = ei_graphics_destination_path..dest..".png"
     holo.entity.icon_size = icon_size
     holo.entity.minable.result = "ei_holo-"..dest
-    holo.entity.fixed_recipe = "ei_holo-"..dest..":running"
+    holo.entity.fixed_recipe = "ei_holo-"..dest.."__running"
     holo.entity.crafting_categories = {"ei_holo-"..dest}
-    holo.entity.working_visualisations[1].animation.filename = ei_graphics_destination_path..dest.."_animation.png"
-    holo.entity.working_visualisations[1].animation.size = {ani_size,ani_size}
-    holo.entity.working_visualisations[1].animation.line_length = lenght
-    holo.entity.working_visualisations[1].animation.lines_per_file = lenght
-    holo.entity.working_visualisations[1].animation.frame_count = lenght*lenght
-    holo.entity.working_visualisations[1].animation.scale = holo.entity.working_visualisations[1].animation.scale * scale
+    holo.entity.graphics_set.working_visualisations[1].animation.filename = ei_graphics_destination_path..dest.."_animation.png"
+    holo.entity.graphics_set.working_visualisations[1].animation.size = {ani_size,ani_size}
+    holo.entity.graphics_set.working_visualisations[1].animation.line_length = lenght
+    holo.entity.graphics_set.working_visualisations[1].animation.lines_per_file = lenght
+    holo.entity.graphics_set.working_visualisations[1].animation.frame_count = lenght*lenght
+    holo.entity.graphics_set.working_visualisations[1].animation.scale = holo.entity.graphics_set.working_visualisations[1].animation.scale * scale
 
-    holo.running.name = "ei_holo-"..dest..":running"
+    holo.running.name = "ei_holo-"..dest.."__running"
     holo.running.category = "ei_holo-"..dest
 
     data:extend({holo.category, holo.item, holo.recipe, holo.entity, holo.running})

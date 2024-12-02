@@ -45,30 +45,30 @@ plant.next_upgrade = "chemical-plant"
 
 plant.crafting_speed = 0.5
 
-plant.animation = ei_lib.make_4way_animation_from_spritesheet({ layers =
-{
+plant.graphics_set = {
+  animation = ei_lib.make_4way_animation_from_spritesheet({ layers =
   {
-    filename = ei_graphics_entity_path.."hr-heat-chemical-plant.png",
-    width = 220,
-    height = 292,
-    frame_count = 24,
-    line_length = 12,
-    shift = util.by_pixel(0.5, -9),
-    scale = 0.5
+    {
+      filename = ei_graphics_entity_path.."hr-heat-chemical-plant.png",
+      width = 220,
+      height = 292,
+      frame_count = 24,
+      line_length = 12,
+      shift = util.by_pixel(0.5, -9),
+      scale = 0.5
+    },
+    {
+      filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
+      width = 312,
+      height = 222,
+      repeat_count = 24,
+      frame_count = 1,
+      shift = util.by_pixel(27, 6),
+      draw_as_shadow = true,
+      scale = 0.5
     }
-  },
-  {
-    filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
-    width = 312,
-    height = 222,
-    repeat_count = 24,
-    frame_count = 1,
-    shift = util.by_pixel(27, 6),
-    draw_as_shadow = true,
-    scale = 0.5
-    }
-  }
-}})
+  }})
+}
 
 plant.energy_source = {
     type = 'heat',

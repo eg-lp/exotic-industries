@@ -145,28 +145,10 @@ data:extend({
 				volume = 0.4
 			},
 			persistent = true
-		},		
-		animations =
-		{
-        {
-            filename = ei_graphics_belt_path .. "hr-neo-transport-belt.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            frame_count = 32,
-            direction_count = 12,
-            scale = 0.5
-        }
-    },
-    belt_animation_set = {
-        animation_set =
-        {
-            filename = ei_graphics_belt_path .. "neo-transport-belt.png",
-            priority = "extra-high",
-            width = 64,
-            height = 64,
-            frame_count = 32,
-            direction_count = 20,
+		},
+		belt_animation_set = {
+            animation_set =
+            {
                 filename = ei_graphics_belt_path .. "hr-neo-transport-belt.png",
                 priority = "extra-high",
                 width = 128,

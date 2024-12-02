@@ -257,6 +257,8 @@ data:extend({
         },
 
         -- since assembling machien has square collision box only north animation will get displayed
-        animation = drill_animations.north,
+        graphics_set = {
+            animation = drill_animations.north
+        },
     },
 })
