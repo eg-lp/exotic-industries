@@ -174,15 +174,17 @@ data:extend({
             },
         },
         energy_usage = "200kW",
-        animation = {
-            filename = ei_graphics_entity_path.."destill-tower.png",
-            size = {512*2,512*2},
-            shift = {0,-0.2},
-	        scale = 0.3,
-            line_length = 1,
-            --lines_per_file = 2,
-            frame_count = 1,
-            -- animation_speed = 0.2,
+        graphics_set = {
+            animation = {
+                filename = ei_graphics_entity_path.."destill-tower.png",
+                size = {512*2,512*2},
+                shift = {0,-0.2},
+    	        scale = 0.3,
+                line_length = 1,
+                --lines_per_file = 2,
+                frame_count = 1,
+                -- animation_speed = 0.2,
+            },
         },
         working_sound =
         {

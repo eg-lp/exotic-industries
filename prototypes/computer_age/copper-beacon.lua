@@ -209,14 +209,16 @@ data:extend({
         },
         energy_usage = "1MW",
         --animation
-        animation = {
-            filename = ei_graphics_other_path.."64_empty.png",
-            size = {64,64},
-            scale = 1,
-            line_length = 1,
-            lines_per_file = 1,
-            frame_count = 1,
-            animation_speed = 1,
-        }
+        graphics_set = {
+            animation = {
+                filename = ei_graphics_other_path.."64_empty.png",
+                size = {64,64},
+                scale = 1,
+                line_length = 1,
+                lines_per_file = 1,
+                frame_count = 1,
+                animation_speed = 1,
+            }
+        },
     }
 })

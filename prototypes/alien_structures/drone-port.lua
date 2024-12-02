@@ -58,40 +58,42 @@ data:extend({
             usage_priority = "secondary-input",
         },
         energy_usage = "50MW",
-        animation = {
-            filename = ei_graphics_entity_2_path.."drone-port.png",
-            size = {512,512},
-            shift = {-0.1, 0.2},
-	        scale = 0.35,
-            line_length = 1,
-            --lines_per_file = 2,
-            frame_count = 1,
-            -- animation_speed = 0.2,
-        },
-        working_visualisations = {
-            {
-              animation = 
-              {
-                filename = ei_graphics_entity_2_path.."drone-port_animation.png",
+        graphics_set = {
+            animation = {
+                filename = ei_graphics_entity_2_path.."drone-port.png",
                 size = {512,512},
                 shift = {-0.1, 0.2},
-	            scale = 0.35,
-                line_length = 4,
-                lines_per_file = 4,
-                --frame_count = 16,
-                frame_sequence = {1,2,3,4,5,6,7,8,9,10,11,12},
-                frame_count = 12,
-                animation_speed = 0.4,
-                run_mode = "backward",
-              }
+    	        scale = 0.35,
+                line_length = 1,
+                --lines_per_file = 2,
+                frame_count = 1,
+                -- animation_speed = 0.2,
             },
-            {
-                light = {
-                type = "basic",
-                intensity = 1,
-                size = 15
+            working_visualisations = {
+                {
+                  animation = 
+                  {
+                    filename = ei_graphics_entity_2_path.."drone-port_animation.png",
+                    size = {512,512},
+                    shift = {-0.1, 0.2},
+    	            scale = 0.35,
+                    line_length = 4,
+                    lines_per_file = 4,
+                    --frame_count = 16,
+                    frame_sequence = {1,2,3,4,5,6,7,8,9,10,11,12},
+                    frame_count = 12,
+                    animation_speed = 0.4,
+                    run_mode = "backward",
+                  }
+                },
+                {
+                    light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15
+                    }
                 }
-            }
+            },
         },
     },
     {

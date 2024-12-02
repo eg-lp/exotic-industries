@@ -143,32 +143,34 @@ local entity_base = {
         usage_priority = 'secondary-input',
     },
     energy_usage = "150kW",
-    animation = {
-        layers = {
-            {
-                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
-                priority = "high",
-                width = 214,
-                height = 226,
-                frame_count = 32,
-                line_length = 8,
-                shift = util.by_pixel(0, 2 * 2 / 3),
-                scale = 1/3,
-            },
-            {
-                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
-                priority = "high",
-                width = 190,
-                height = 165,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 32,
-                draw_as_shadow = true,
-                shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
-                scale = 1/3
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
+                    priority = "high",
+                    width = 214,
+                    height = 226,
+                    frame_count = 32,
+                    line_length = 8,
+                    shift = util.by_pixel(0, 2 * 2 / 3),
+                    scale = 1/3,
+                },
+                {
+                    filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
+                    priority = "high",
+                    width = 190,
+                    height = 165,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 32,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
+                    scale = 1/3
+                }
             }
-        }
-    },        
+        },
+    },
     fast_replaceable_group = "ei_metalworks",
     next_upgrade = "ei_metalworks_2",
     working_sound =

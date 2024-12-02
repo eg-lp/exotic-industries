@@ -103,39 +103,41 @@ pump.energy_source = {
     scale_fluid_usage = true,
 }
 
-pump.animations = {
-    north = {
-      layers = {
-        {
-            animation_speed = 0.5,
-            filename = ei_graphics_entity_path.."steam-oil-pumpjack_animation.png",
-            frame_count = 40,
-            height = 202,
-            line_length = 8,
-            priority = "high",
-            scale = 0.5,
-            shift = {
-              -0.125,
-              -0.75
-            },
-            width = 206
-        },
-        {
-            animation_speed = 0.5,
-            draw_as_shadow = true,
-            filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead-shadow.png",
-            frame_count = 40,
-            height = 82,
-            line_length = 8,
-            priority = "high",
-            scale = 0.5,
-            shift = {
-              0.5546875,
-              0.453125
-            },
-            width = 309
+pump.graphics_set = {
+    animation = {
+        north = {
+            layers = {
+                {
+                    animation_speed = 0.5,
+                    filename = ei_graphics_entity_path.."steam-oil-pumpjack_animation.png",
+                    frame_count = 40,
+                    height = 202,
+                    line_length = 8,
+                    priority = "high",
+                    scale = 0.5,
+                    shift = {
+                    -0.125,
+                    -0.75
+                    },
+                    width = 206
+                },
+                {
+                    animation_speed = 0.5,
+                    draw_as_shadow = true,
+                    filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead-shadow.png",
+                    frame_count = 40,
+                    height = 82,
+                    line_length = 8,
+                    priority = "high",
+                    scale = 0.5,
+                    shift = {
+                    0.5546875,
+                    0.453125
+                    },
+                    width = 309
+                }
+            }
         }
-      }
     }
 }
 data:extend({pump})

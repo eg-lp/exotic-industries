@@ -61,31 +61,33 @@ local blank = {
             usage_priority = 'secondary-input',
         },
         energy_usage = "100kW",
-        animation = {
-            filename = ei_graphics_entity_path.."holo-base.png",
-            size = {83,70},
-            shift = {0, 0},
-	        scale = 1,
-            line_length = 1,
-            --lines_per_file = 2,
-            frame_count = 1,
-            -- animation_speed = 0.2,
-        },
-        working_visualisations = {
-            {
-              animation = 
-              {
-                filename = ei_graphics_destination_path.."moon_animation.png",
-                size = {128,128},
-                shift = {0, -1.3},
-	            scale = 0.65,
-                line_length = 8,
-                lines_per_file = 8,
-                frame_count = 64,
-                animation_speed = 0.5,
-                run_mode = "forward",
-              }
-            }
+        graphics_set = {
+            animation = {
+                filename = ei_graphics_entity_path.."holo-base.png",
+                size = {83,70},
+                shift = {0, 0},
+    	        scale = 1,
+                line_length = 1,
+                --lines_per_file = 2,
+                frame_count = 1,
+                -- animation_speed = 0.2,
+            },
+            working_visualisations = {
+                {
+                  animation = 
+                  {
+                    filename = ei_graphics_destination_path.."moon_animation.png",
+                    size = {128,128},
+                    shift = {0, -1.3},
+    	            scale = 0.65,
+                    line_length = 8,
+                    lines_per_file = 8,
+                    frame_count = 64,
+                    animation_speed = 0.5,
+                    run_mode = "forward",
+                  }
+                }
+            },
         },
     },
 

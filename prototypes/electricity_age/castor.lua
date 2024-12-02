@@ -78,46 +78,48 @@ data:extend({
         },
         energy_usage = "1W",
         fixed_recipe = "ei_store-nuclear-waste",
-        animation = {
-            filename = ei_graphics_entity_path.."castor.png",
-            size = {512,512},
-            width = 512,
-            height = 512,
-            shift = {0, -0.1},
-	        scale = 0.44/2,
-            line_length = 1,
-            --lines_per_file = 2,
-            frame_count = 1,
-            -- animation_speed = 0.2,
-        },
-        allowed_effects = {"speed", "consumption", "pollution"},
-        module_specification = {
-            module_slots = 1
-        },
-        working_visualisations = {
-            {
-              animation = 
-              {
-                filename = ei_graphics_entity_path.."castor_animation.png",
+        graphics_set = {
+            animation = {
+                filename = ei_graphics_entity_path.."castor.png",
                 size = {512,512},
                 width = 512,
                 height = 512,
                 shift = {0, -0.1},
-	            scale = 0.44/2,
+    	        scale = 0.44/2,
                 line_length = 1,
-                lines_per_file = 1,
+                --lines_per_file = 2,
                 frame_count = 1,
-                animation_speed = 0.6,
-                run_mode = "backward",
-              }
+                -- animation_speed = 0.2,
             },
-            {
-                light = {
-                type = "basic",
-                intensity = 1,
-                size = 15
+            working_visualisations = {
+                {
+                  animation = 
+                  {
+                    filename = ei_graphics_entity_path.."castor_animation.png",
+                    size = {512,512},
+                    width = 512,
+                    height = 512,
+                    shift = {0, -0.1},
+    	            scale = 0.44/2,
+                    line_length = 1,
+                    lines_per_file = 1,
+                    frame_count = 1,
+                    animation_speed = 0.6,
+                    run_mode = "backward",
+                  }
+                },
+                {
+                    light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15
+                    }
                 }
-            }
+            },
+        },
+        allowed_effects = {"speed", "consumption", "pollution"},
+        module_specification = {
+            module_slots = 1
         },
     },
     {

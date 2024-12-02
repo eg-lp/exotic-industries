@@ -87,42 +87,44 @@ data:extend({
             usage_priority = 'secondary-input',
         },
         energy_usage = "100MW",
-        animation = {
-            filename = ei_graphics_entity_2_path.."accelerator_animation.png",
-            size = {1024, 1014},
-            shift = {0.75, -0.55},
-	        scale = 0.42,
-            line_length = 4,
-            lines_per_file = 4,
-            frame_count = 16,
-            animation_speed = 0.6,
-            run_mode = "backward",
-        },
-        --[[
-        working_visualisations = {
-            {
-              animation = 
-              {
+        graphics_set = {
+            animation = {
                 filename = ei_graphics_entity_2_path.."accelerator_animation.png",
                 size = {1024, 1014},
                 shift = {0.75, -0.55},
-	            scale = 0.42,
+                scale = 0.42,
                 line_length = 4,
                 lines_per_file = 4,
                 frame_count = 16,
                 animation_speed = 0.6,
                 run_mode = "backward",
-              }
             },
-            {
-                light = {
-                type = "basic",
-                intensity = 1,
-                size = 15
+            --[[
+            working_visualisations = {
+                {
+                  animation = 
+                  {
+                    filename = ei_graphics_entity_2_path.."accelerator_animation.png",
+                    size = {1024, 1014},
+                    shift = {0.75, -0.55},
+                    scale = 0.42,
+                    line_length = 4,
+                    lines_per_file = 4,
+                    frame_count = 16,
+                    animation_speed = 0.6,
+                    run_mode = "backward",
+                  }
+                },
+                {
+                    light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15
+                    }
                 }
-            }
+            },
+            ]]
         },
-        ]]
         working_sound =
         {
             sound = {filename = "__base__/sound/nuclear-reactor-1.ogg", volume = 0.6},

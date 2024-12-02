@@ -60,51 +60,79 @@ data:extend({
             usage_priority = 'secondary-input',
         },
         energy_usage = "500kW",
-        animation = {
-            west = {
-                filename = ei_graphics_entity_path.."exchanger_vertical.png",
-                width = 192*2,
-                height = 256*2,
-                shift = {0, 0},
-                scale = 0.5/2,
-                line_length = 1,
-                --lines_per_file = 2,
-                frame_count = 1,
-                -- animation_speed = 0.2,
+        graphics_set = {
+            animation = {
+                west = {
+                    filename = ei_graphics_entity_path.."exchanger_vertical.png",
+                    width = 192*2,
+                    height = 256*2,
+                    shift = {0, 0},
+                    scale = 0.5/2,
+                    line_length = 1,
+                    --lines_per_file = 2,
+                    frame_count = 1,
+                    -- animation_speed = 0.2,
+                },
+                east = {
+                    filename = ei_graphics_entity_path.."exchanger_vertical.png",
+                    width = 192*2,
+                    height = 256*2,
+                    shift = {0, 0},
+                    scale = 0.5/2,
+                    line_length = 1,
+                    --lines_per_file = 2,
+                    frame_count = 1,
+                    -- animation_speed = 0.2,
+                },
+                south = {
+                    filename = ei_graphics_entity_path.."exchanger_horizontal.png",
+                    width = 192*2,
+                    height = 256*2,
+                    shift = {0, 0},
+                    scale = 0.5/2,
+                    line_length = 1,
+                    --lines_per_file = 2,
+                    frame_count = 1,
+                    -- animation_speed = 0.2,
+                },
+                north = {
+                    filename = ei_graphics_entity_path.."exchanger_horizontal.png",
+                    width = 192*2,
+                    height = 256*2,
+                    shift = {0, 0},
+                    scale = 0.5/2,
+                    line_length = 1,
+                    --lines_per_file = 2,
+                    frame_count = 1,
+                    -- animation_speed = 0.2,
+                },
             },
-            east = {
-                filename = ei_graphics_entity_path.."exchanger_vertical.png",
-                width = 192*2,
-                height = 256*2,
-                shift = {0, 0},
-                scale = 0.5/2,
-                line_length = 1,
-                --lines_per_file = 2,
-                frame_count = 1,
-                -- animation_speed = 0.2,
+            --[[
+            working_visualisations = {
+                {
+                animation = 
+                {
+                    filename = ei_graphics_entity_path.."exchanger_animation.png",
+                    width = 192,
+                    height = 256,
+                    shift = {0,-0.2},
+                    scale = 0.44/2,
+                    line_length = 1,
+                    lines_per_file = 1,
+                    frame_count = 16,
+                    animation_speed = 0.6,
+                    run_mode = "backward",
+                }
+                },
+                {
+                    light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15
+                    }
+                }
             },
-            south = {
-                filename = ei_graphics_entity_path.."exchanger_horizontal.png",
-                width = 192*2,
-                height = 256*2,
-                shift = {0, 0},
-                scale = 0.5/2,
-                line_length = 1,
-                --lines_per_file = 2,
-                frame_count = 1,
-                -- animation_speed = 0.2,
-            },
-            north = {
-                filename = ei_graphics_entity_path.."exchanger_horizontal.png",
-                width = 192*2,
-                height = 256*2,
-                shift = {0, 0},
-                scale = 0.5/2,
-                line_length = 1,
-                --lines_per_file = 2,
-                frame_count = 1,
-                -- animation_speed = 0.2,
-            },
+            ]]
         },
         allowed_effects = {"speed", "consumption", "pollution"},
         module_specification = {
@@ -148,32 +176,6 @@ data:extend({
                 production_type = "output",
             },
         },
-        --[[
-        working_visualisations = {
-            {
-              animation = 
-              {
-                filename = ei_graphics_entity_path.."exchanger_animation.png",
-                width = 192,
-                height = 256,
-                shift = {0,-0.2},
-	            scale = 0.44/2,
-                line_length = 1,
-                lines_per_file = 1,
-                frame_count = 16,
-                animation_speed = 0.6,
-                run_mode = "backward",
-              }
-            },
-            {
-                light = {
-                type = "basic",
-                intensity = 1,
-                size = 15
-                }
-            }
-        },
-        ]]
     },
     {
         name = "ei_coolant-exchange",

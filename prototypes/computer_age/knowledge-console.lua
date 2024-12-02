@@ -94,39 +94,41 @@ data:extend({
             type = "void",
         },
         energy_usage = "1W",
-        animation = {
-            filename = ei_graphics_entity_2_path.."knowledge-console.png",
-            size = {256, 256},
-            shift = {0, -0.3},
-            scale = 0.16*2,
-            line_length = 1,
-            --lines_per_file = 2,
-            frame_count = 1,
-            -- animation_speed = 0.2,
-        },
-        working_visualisations = {
-            {
-              animation = 
-              {
-                filename = ei_graphics_entity_2_path.."knowledge-console_animation.png",
+        graphics_set = {
+            animation = {
+                filename = ei_graphics_entity_2_path.."knowledge-console.png",
                 size = {256, 256},
                 shift = {0, -0.3},
                 scale = 0.16*2,
-                line_length = 8,
-                lines_per_file = 8,
-                frame_count = 64,
-                animation_speed = 0.5,
-                run_mode = "backward",
-              }
+                line_length = 1,
+                --lines_per_file = 2,
+                frame_count = 1,
+                -- animation_speed = 0.2,
             },
-            {
-                light = {
-                type = "basic",
-                intensity = 1,
-                size = 15
+            working_visualisations = {
+                {
+                  animation = 
+                  {
+                    filename = ei_graphics_entity_2_path.."knowledge-console_animation.png",
+                    size = {256, 256},
+                    shift = {0, -0.3},
+                    scale = 0.16*2,
+                    line_length = 8,
+                    lines_per_file = 8,
+                    frame_count = 64,
+                    animation_speed = 0.5,
+                    run_mode = "backward",
+                  }
+                },
+                {
+                    light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15
+                    }
                 }
             }
-        }
+        },
     },
     {
         name = "ei_scanner",

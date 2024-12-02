@@ -92,11 +92,13 @@ local neo_assembler = {
         module_slots = 6
     },
     fluid_boxes = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes),
-    animation = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].animation),
-    working_sound =
-    {
-        sound = {filename = "__base__/sound/electric-furnace.ogg", volume = 0.6},
-        apparent_volume = 0.3,
+    graphics_set = {
+        animation = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-3"].animation),
+        working_sound =
+        {
+            sound = {filename = "__base__/sound/electric-furnace.ogg", volume = 0.6},
+            apparent_volume = 0.3,
+        },
     },
     fast_replaceable_group = "assembling-machine",
 }
