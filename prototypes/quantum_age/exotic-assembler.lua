@@ -84,7 +84,7 @@ local neo_assembler = {
     energy_source = {
         type = 'electric',
         usage_priority = 'secondary-input',
-        emissions_per_minute = 4,
+        emissions_per_minute = {pollution = 4 },
     },
     energy_usage = "1MW",
     result_inventory_size = 1,

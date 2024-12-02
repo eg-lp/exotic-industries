@@ -228,20 +228,18 @@ data:extend({
         fixed_recipe = "ei_stone-quarry__mining",
         energy_source = {
             type = "burner",
-            emissions_per_minute = 4,
+            emissions_per_minute = {pollution=4},
             fuel_inventory_size = 1,
             burnt_inventory_size = 1,
             smoke = {
                 {
                     name = "smoke",
-                    tape = "trival-smoke",
                     frequency = 5,
                     position = {0,-1.3},
-                    duration = 1,
                 },
             },
             effectivity = 1,
-            fuel_category = "chemical",
+            fuel_categories = {"chemical"},
         },
         energy_usage = "20kW",
         working_sound = {

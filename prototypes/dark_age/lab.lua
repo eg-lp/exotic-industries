@@ -99,9 +99,9 @@ lab.energy_source = {
     type = "burner",
     effectivity = 1,
     fuel_inventory_size = 1,
-    emissions_per_minute = 6,
+    emissions_per_minute = {pollution = 6 },
     burnt_inventory_size = 1,
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
 }
 
 lab.energy_usage = "100kW"
@@ -161,9 +161,9 @@ data:extend({
             type = "burner",
             effectivity = 1,
             fuel_inventory_size = 1,
-            emissions_per_minute = 6,
+            emissions_per_minute = {pollution = 6 },
             burnt_inventory_size = 1,
-            fuel_category = "chemical",
+            fuel_categories = {"chemical"},
         },
         energy_usage = "200KW",
         researching_speed = 0.5,

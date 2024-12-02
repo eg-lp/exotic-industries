@@ -992,8 +992,8 @@ data.raw["recipe"]["electronic-circuit"].expensive.enabled = false
 ------------------------------------------------------------------------------------------------------
 
 -- introduce diesel and rocket fuels
-data.raw["item"]["rocket-fuel"].fuel_category = "ei_rocket-fuel"
--- data.raw["item"]["nuclear-fuel"].fuel_category = "ei_rocket-fuel"
+data.raw["item"]["rocket-fuel"].fuel_categories = {"ei_rocket-fuel"}
+-- data.raw["item"]["nuclear-fuel"].fuel_categories = {"ei_rocket-fuel"}
 
 --ITEM SUBGROUPS
 ------------------------------------------------------------------------------------------------------
@@ -1037,7 +1037,7 @@ data.raw["fluid"]["petroleum-gas"].fuel_value = "400kJ"
 
 -- make locomotive use diesel and rocket fuel
 -- add burnt fuel slot
-data.raw["locomotive"]["locomotive"].burner.fuel_categories = {
+data.raw["locomotive"]["locomotive"].energy_source.fuel_categories = {
     "ei_diesel-fuel",
     "ei_rocket-fuel"
 }
@@ -1132,7 +1132,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recip
 -- remove neighbour bonus from nuclear reactor and set fuel category to ei_nuclear_fuel
 -- also set energy output to 100MW (setting)
 
-data.raw["reactor"]["nuclear-reactor"].energy_source.fuel_category = "ei_nuclear-fuel"
+data.raw["reactor"]["nuclear-reactor"].energy_source.fuel_categories = {"ei_nuclear-fuel"}
 data.raw["reactor"]["nuclear-reactor"].energy_source.effectivity = 2
 if ei_lib.config("nuclear-reactor__remove-bonus") then
     data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0

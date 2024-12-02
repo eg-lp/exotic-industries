@@ -74,26 +74,24 @@ data:extend({
         consumption = "1300kW",
         energy_source = {
             type = "burner",
-            fuel_category = "chemical",
+            fuel_categories = {"chemical"},
             effectivity = 0.85,
             fuel_inventory_size = 1,
             burnt_inventory_size = 1,
             smoke = {
                 {
                     name = "smoke",
-                    tape = "trival-smoke",
                     frequency = 5,
                     position = {0,-1.3},
-                    duration = 1,
                 },
             },
-            emissions_per_minute = 15,
+            emissions_per_minute = {pollution = 15 },
         },
         heat_buffer = {
             max_temperature = 275,
             specific_heat = ei_data.specific_heat,
-            max_transfer = "1800KW",
-            minimum_heat = "1KJ",
+            max_transfer = "1800kW",
+            minimum_heat = "1kJ",
             heat_decay = 0,
             heat_buffer = "100MW",
             connections = {

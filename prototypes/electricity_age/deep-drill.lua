@@ -73,7 +73,7 @@ data:extend({
             },
             effectivity = 1,
             burns_fluid = true,
-            emissions_per_minute = 20,
+            emissions_per_minute = {pollution = 20 },
             scale_fluid_usage = true,
         },
         energy_usage = "1MW",

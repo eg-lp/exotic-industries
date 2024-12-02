@@ -695,8 +695,8 @@ ei_data.tech_swap_dict = {
 --OTHER
 --====================================================================================================
 
-ei_data.specific_heat = "100KJ"
-ei_data.high_specific_heat = "1000KJ"
+ei_data.specific_heat = "100kJ"
+ei_data.high_specific_heat = "1000kJ"
 
 ei_data.matter_stabilizer.matter_range = 10
 ei_data.matter_stabilizer.alien_range = 12

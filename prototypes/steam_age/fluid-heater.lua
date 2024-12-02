@@ -93,13 +93,13 @@ data:extend({
             effectivity = 1,
             burns_fluid = true,
             scale_fluid_usage = true,
-            emissions_per_minute = 15,
+            emissions_per_minute = {pollution = 15 },
         },
         heat_buffer = {
             max_temperature = 275,
             specific_heat = ei_data.specific_heat,
-            max_transfer = "1800KW",
-            minimum_heat = "1KJ",
+            max_transfer = "1800kW",
+            minimum_heat = "1kJ",
             heat_decay = 0,
             heat_buffer = "100MW",
             connections = {

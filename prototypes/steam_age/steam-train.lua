@@ -144,9 +144,10 @@ data:extend({
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		burner =
+		energy_source =
 		{
-			fuel_category = "chemical",
+			type = "burner",
+			fuel_categories = {"chemical"},
 			effectivity = 1,
 			fuel_inventory_size = 3,
 			smoke =
@@ -716,8 +717,9 @@ data:extend({
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact", decrease = 50, percent = 60}
 		},
-		burner = {
-			fuel_category = "chemical",
+		energy_source = {
+			type = "burner",
+			fuel_categories = {"chemical"},
 			effectivity = 1.1,
 			fuel_inventory_size = 2,
 			smoke = {

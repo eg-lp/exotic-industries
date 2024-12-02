@@ -2037,7 +2037,7 @@ ei_lib.recipe_add("ei_diesel-fuel-unit", "fuel", 1)
 
 -- nuclear and steam reset
 -------------------------------------------------------------------------------
-data.raw["reactor"]["nuclear-reactor"].energy_source.fuel_category = "ei_nuclear-fuel"
+data.raw["reactor"]["nuclear-reactor"].energy_source.fuel_categories = {"ei_nuclear-fuel"}
 data.raw["reactor"]["nuclear-reactor"].energy_source.effectivity = 2
 if ei_lib.config("nuclear-reactor__remove-bonus") then
     data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0

@@ -127,11 +127,9 @@ data:extend({
         smoke = {
           {
               name = "smoke",
-              tape = "trival-smoke",
               frequency = 1,
               position = {0,-3},
               --deviation = {x = -2, y = -2},
-              duration = 1,
           },
         },
         working_sound =

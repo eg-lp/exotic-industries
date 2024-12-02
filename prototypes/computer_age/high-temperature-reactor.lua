@@ -365,7 +365,7 @@ data:extend({
         icon_size = 64,
         subgroup = "ei_nuclear-fission-fuel",
         order = "a-d-1",
-        -- fuel_category = "ei_nuclear-fuel",
+        -- fuel_categories = {"ei_nuclear-fuel"},
         -- fuel_value = "10GJ",
         burnt_result = "ei_used-thorium-232-fuel",
         stack_size = 10,

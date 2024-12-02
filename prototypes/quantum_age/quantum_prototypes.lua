@@ -806,7 +806,7 @@ data:extend({
         categories = {"armor"},
         energy_source = {
             type = "electric",
-            buffer_capacity = "1000KJ",
+            buffer_capacity = "1000kJ",
             input_flow_limit = "1500kW",
             usage_priority = "primary-input"
         },

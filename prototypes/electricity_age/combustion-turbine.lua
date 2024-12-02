@@ -75,10 +75,10 @@ data:extend({
         },
         burner = {
             type = "burner",
-            fuel_category = "chemical",
+            fuel_categories = {"chemical"},
             effectivity = 1.25,
             fuel_inventory_size = 3,
-            emissions_per_minute = 120,
+            emissions_per_minute = {pollution = 120 },
             smoke = {
                 {
                     name = "smoke",
