@@ -1244,7 +1244,6 @@ data.raw["ammo"]["firearm-magazine"].ammo_type = {
         type = "direct"
       }
     },
-    category = "bullet"
 }
 
 data.raw["ammo"]["piercing-rounds-magazine"].ammo_type = {
@@ -1287,7 +1286,6 @@ data.raw["ammo"]["piercing-rounds-magazine"].ammo_type = {
       },
       type = "direct"
     },
-    category = "bullet"
 }
 
 -- alter all projectiles with the cannon-shell category to only collide with enemies

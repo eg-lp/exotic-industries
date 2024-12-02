@@ -190,8 +190,8 @@ data:extend({
                 type = "projectile",
                 range = 1000,
                 cooldown = 60,
+                ammo_category = "ei_gate-remote-ammo",
                 ammo_type = {
-                    category = "ei_gate-remote-ammo",
                     target_type = "position",
                     action = {
                         type = "direct",

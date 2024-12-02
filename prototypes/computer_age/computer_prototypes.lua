@@ -258,7 +258,7 @@ data:extend({
         categories = {"armor"},
         burner = {
             type = "burner",
-            fuel_category = "ei_nuclear-fuel",
+            fuel_categories = {"ei_nuclear-fuel"},
             effectivity = 0.05,
             fuel_inventory_size = 3,
             burnt_inventory_size = 3,
@@ -313,6 +313,7 @@ data:extend({
         },
         automatic = true,
         attack_parameters = {
+            ammo_category = "laser",
             ammo_type = {
                 action = {
                     action_delivery = {
@@ -327,7 +328,6 @@ data:extend({
                     },
                     type = "direct"
                 },
-                category = "laser",
                 energy_consumption = "100kJ"
             },
             cooldown = 20,
@@ -405,6 +405,7 @@ data:extend({
             }
         },
         stack_size = 200,
+        ammo_category = "bullet",
         ammo_type = {
             action = {
                 action_delivery = {
@@ -447,7 +448,6 @@ data:extend({
                 },
                 type = "direct"
             },
-            category = "bullet"
         },
     },
     {
