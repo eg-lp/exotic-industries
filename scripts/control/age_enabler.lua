@@ -66,7 +66,7 @@ function age_enabler.on_research_finished()
 
             -- count how many techs from previous age are researched
             -- here we already have the dummy tech name as "ei_"..age
-            local researchedAgeTechs, totalTechs = age_enabler.get_researched_age_techs(force, "ei_"..age..":dummy")
+            local researchedAgeTechs, totalTechs = age_enabler.get_researched_age_techs(force, "ei_"..age.."__dummy")
 
             -- calculate current reasearch percentage of total techs
             -- if => then neededPercentage eneable next age tech for research
@@ -105,7 +105,7 @@ function age_enabler.hidden_listener(event)
     for _,age in ipairs(ages) do
 
         -- if researched tech is dummy tech set researched = false
-        if tech.name == "ei_"..age..":dummy" then
+        if tech.name == "ei_"..age.."__dummy" then
             tech.researched = false
             log("researched tech "..tech.name.." is a dummy tech, set researched = false")
         end

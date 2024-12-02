@@ -188,7 +188,7 @@ function model.update_gui(player, data)
         action = "set-destination",
         destination_list = data.destination_list
     }
-    sprite.sprite = "ei_destination:" .. data.destination
+    sprite.sprite = "ei_destination__" .. data.destination
 
     -- Information panel
     distance_bar.value = data.distance / 2

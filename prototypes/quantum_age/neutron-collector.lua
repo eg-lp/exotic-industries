@@ -194,7 +194,7 @@ local base_recipe = {
 for i = 10, 300, 10 do
     local recipe = util.table.deepcopy(base_recipe)
     -- ei_charged-neutron-container:percentage
-    recipe.name = recipe.name..":"..i
+    recipe.name = recipe.name.."__"..i
 
     -- set time usage -> 100 percent <=> 10s/2, 10 percent <=> 100s
     recipe.energy_required = 1000/(i+i-10)

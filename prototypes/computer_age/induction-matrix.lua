@@ -681,7 +681,7 @@ local function make_matrix_core(i)
 
     local matrix = table.deepcopy(base)
 
-    matrix.name = "ei_induction-matrix-core:"..i
+    matrix.name = "ei_induction-matrix-core__"..i
 
     -- matrix.energy_source.buffer_capacity = (2^i).."MW"
     matrix.energy_source.input_flow_limit = (2^i).."MW"

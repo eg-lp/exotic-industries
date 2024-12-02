@@ -285,7 +285,7 @@ for fuel1, fuel2_combinations in pairs(fuel_combinations) do
 
                 for fuel_injection_mode, fuel_injection_mode_values in pairs(fuel_injection_modes) do
                     local recipe = table.deepcopy(base_recipe)
-                    recipe.name = "ei_fusion-F1:"..fuel1.."-F2:"..fuel2.."-TM:"..temp_mode.."-FM:"..fuel_injection_mode
+                    recipe.name = "ei_fusion-F1__"..fuel1.."-F2__"..fuel2.."-TM__"..temp_mode.."-FM__"..fuel_injection_mode
 
                     recipe.ingredients[1].name = fuel1
                     recipe.ingredients[1].amount = fuel_injection_mode_values[2]

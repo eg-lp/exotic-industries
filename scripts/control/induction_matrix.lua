@@ -432,7 +432,7 @@ function model.swap_core(old_id, core, max_IO)
     -- return the new core id
 
     local new_core = core.surface.create_entity{
-        name = "ei_induction-matrix-core:"..math.floor(max_IO),
+        name = "ei_induction-matrix-core__"..math.floor(max_IO),
         position = core.position,
         force = core.force,
         create_build_effect_smoke = false,

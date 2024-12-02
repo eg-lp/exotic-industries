@@ -200,7 +200,7 @@ function model.update_neutron_collector(entity, exclude)
     end
 
     -- set the recipe
-    entity.set_recipe("ei_charged-neutron-container:"..foo.eff)
+    entity.set_recipe("ei_charged-neutron-container__"..foo.eff)
     entity.recipe_locked = true
     
     -- get the direction count corresponding to 64 directions
@@ -400,10 +400,10 @@ function model.calc_efficiency(entity, source)
         -- local recipe = source.get_recipe().name
         -- default = "ei_fusion-F1__ei_heated-deuterium-F2__ei_heated-tritium-TM__medium-FM__medium"
 
-        fuel1 = recipe:match("F1:(.+)-F2:")
-        fuel2 = recipe:match("F2:(.+)-TM:")
-        temp_mode = recipe:match("TM:(.+)-FM:")
-        fuel_mode = recipe:match("FM:(.+)")
+        fuel1 = recipe:match("F1__(.+)-F2__")
+        fuel2 = recipe:match("F2__(.+)-TM__")
+        temp_mode = recipe:match("TM__(.+)-FM__")
+        fuel_mode = recipe:match("FM__(.+)")
 
         efficiency = efficiency * 2 * model.calc_fusion_flux(fuel1, fuel2, temp_mode, fuel_mode)
     end

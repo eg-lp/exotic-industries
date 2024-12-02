@@ -218,7 +218,7 @@ data:extend({
 if ei_mod.dev_mode == true then
 
     for _, tech in pairs(data.raw.technology) do
-        if string.find(tech.name, ":dummy") then
+        if string.find(tech.name, "__dummy") then
             tech.hidden = false
         end
 
@@ -244,7 +244,7 @@ if ei_mod.dev_mode == true then
    
     if not ei_mod.show_dummy then
         for _, tech in pairs(data.raw.technology) do
-            if string.find(tech.name, ":dummy") then
+            if string.find(tech.name, "__dummy") then
                 tech.hidden = true
             end
         end

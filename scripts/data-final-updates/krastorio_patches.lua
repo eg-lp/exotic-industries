@@ -895,7 +895,7 @@ local function make_dummy_techs(foo, ages_dummy_dict)
                 age = ei_data.sub_age[age]
             end
 
-            local next_age = "ei_"..ages_dummy_dict[age]..":dummy"
+            local next_age = "ei_"..ages_dummy_dict[age].."__dummy"
             
             if next_age then
                 --set_prerequisites(next_age, i)
@@ -1616,7 +1616,7 @@ data:extend({
         always_show_made_in = true,
     },
     {
-        name = "ei_bio-matter:biomass",
+        name = "ei_bio-matter__biomass",
         type = "recipe",
         category = "bioprocessing",
         energy_required = 10,
@@ -1636,7 +1636,7 @@ data:extend({
         always_show_made_in = true,
     },
     {
-        name = "imersium-beam:metalworks",
+        name = "imersium-beam__metalworks",
         type = "recipe",
         category = "ei_metalworks",
         energy_required = 3,
@@ -1653,7 +1653,7 @@ data:extend({
         always_show_made_in = true,
     },
     {
-        name = "imersium-gear-wheel:metalworks",
+        name = "imersium-gear-wheel__metalworks",
         type = "recipe",
         category = "ei_metalworks",
         energy_required = 2,
@@ -1773,7 +1773,7 @@ data:extend({
         always_show_made_in = true,
     },
     {
-        name = "ei_blank-tech-card:electronic-parts",
+        name = "ei_blank-tech-card__electronic-parts",
         type = "recipe",
         category = "crafting",
         energy_required = 8,
@@ -1859,7 +1859,7 @@ data:extend({
 })
 
 ei_lib.add_unlock_recipe("electronics", "ei_blank-tech-card")
-ei_lib.add_unlock_recipe("ei_electronic-parts", "ei_blank-tech-card:electronic-parts")
+ei_lib.add_unlock_recipe("ei_electronic-parts", "ei_blank-tech-card__electronic-parts")
 ei_lib.add_unlock_recipe("ei_steam-age", "logistic-science-pack")
 ei_lib.add_unlock_recipe("ei_electricity-age", "chemical-science-pack")
 ei_lib.add_unlock_recipe("kr-research-server", "utility-science-pack")
@@ -1943,9 +1943,9 @@ ei_lib.recipe_add("imersium-plate", "ei_neodym-plate", 2)
 
 ei_lib.recipe_add("ei_energy-crystal__growing", "quartz", 1)
 
-ei_lib.add_unlock_recipe("kr-bio-processing", "ei_bio-matter:biomass")
-ei_lib.add_unlock_recipe("kr-imersium-processing", "imersium-beam:metalworks")
-ei_lib.add_unlock_recipe("kr-imersium-processing", "imersium-gear-wheel:metalworks")
+ei_lib.add_unlock_recipe("kr-bio-processing", "ei_bio-matter__biomass")
+ei_lib.add_unlock_recipe("kr-imersium-processing", "imersium-beam__metalworks")
+ei_lib.add_unlock_recipe("kr-imersium-processing", "imersium-gear-wheel__metalworks")
 
 ei_lib.recipe_add("imersium-beam", "steel-plate", 1)
 ei_lib.recipe_add("imersium-gear-wheel", "ei_steel-mechanical-parts", 4)
@@ -2276,7 +2276,7 @@ local recipes = {
     "advanced-tech-card",
     "blank-tech-card",
     "ei_blank-tech-card",
-    "ei_blank-tech-card:electronic-parts",
+    "ei_blank-tech-card__electronic-parts",
     "utility-science-pack_alt",
     "production-science-pack_alt",
     "utility-science-pack_alt",

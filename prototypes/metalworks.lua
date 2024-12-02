@@ -304,7 +304,7 @@ for recipe_name, tech in pairs(recipes_to_add) do
     
     -- make a copy of the recipe and change the category
     local new_recipe = util.table.deepcopy(recipe)
-    new_recipe.name = new_recipe.name..":metalworks"
+    new_recipe.name = new_recipe.name.."__metalworks"
     new_recipe.category = "ei_metalworks"
     new_recipe.hide_from_player_crafting = true
 

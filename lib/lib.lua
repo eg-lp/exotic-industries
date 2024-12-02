@@ -462,7 +462,7 @@ function ei_lib.remove_prerequisite(tech, prerequisite)
         if v == prerequisite then
 
             -- skip this tech if it is a dummy tech :dummy in name
-            if string.find(tech, ":dummy") then
+            if string.find(tech, "__dummy") then
                 goto continue
             end
 
