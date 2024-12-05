@@ -753,7 +753,7 @@ data:extend({
         subgroup = "equipment",
         order = "a[energy-source]-c[personal-solar-panel]",
         stack_size = 20,
-        placed_as_equipment_result = "ei_personal-solar-3",
+        place_as_equipment_result = "ei_personal-solar-3",
     },
     {
         name = "ei_personal-solar-3",
@@ -785,7 +785,7 @@ data:extend({
         subgroup = "military-equipment",
         order = "a[shield]-c[personal-shield]",
         stack_size = 10,
-        placed_as_equipment_result = "ei_personal-shield",
+        place_as_equipment_result = "ei_personal-shield",
     },
     {
         name = "ei_personal-shield",
@@ -820,7 +820,7 @@ data:extend({
         subgroup = "military-equipment",
         order = "c[zapper]-a[bug-zapper]",
         stack_size = 1,
-        placed_as_equipment_result = "ei_bug-zapper",
+        place_as_equipment_result = "ei_bug-zapper",
     },
     {
         name = "ei_bug-zapper",
@@ -948,6 +948,16 @@ data:extend({
             },
             type = "projectile"
         },
+    },
+    {
+        name = "ei_personal-reactor",
+        type = "item",
+        icon = ei_graphics_item_path.."personal-reactor.png",
+        icon_size = 64,
+        subgroup = "equipment",
+        order = "a[energy-source]-f[personal-reactor]",
+        stack_size = 1,
+        place_as_equipment_result = "ei_personal-reactor",
     },
 })
 
@@ -1374,7 +1384,7 @@ data:extend({
         category = "ei_nano-factory",
         energy_required = 60,
         ingredients = {
-            {type = "item", name = "fusion-reactor-equipment", amount = 1},
+            {type = "item", name = "ei_personal-reactor", amount = 1},
             {type = "item", name = "energy-shield-mk2-equipment", amount = 2},
             {type = "item", name = "ei_steel-mechanical-parts", amount = 20},
         },
@@ -2070,6 +2080,22 @@ data:extend({
         enabled = false,
         main_product = "ei_gauss-module",
     },
+    {
+        name = "ei_personal-reactor",
+        type = "recipe",
+        category = "crafting",
+        energy_required = 10,
+        ingredients =
+        {
+            {type="item", name="ei_plasma-cube", amount=4},
+            {type="item", name="processing-unit", amount=100},
+            {type="item", name="ei_fusion-data", amount=40},
+        },
+        results = {{type="item", name="ei_personal-reactor", amount=1}},
+        enabled = false,
+        always_show_made_in = true,
+        main_product = "ei_personal-reactor",
+    },
 })
 
 --TECHS
@@ -2388,7 +2414,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_item_path.."fusion-drive.png",
         icon_size = 128,
-        prerequisites = {"fusion-reactor-equipment"},
+        prerequisites = {"ei_personal-reactor"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -2853,6 +2879,25 @@ data:extend({
         },
         age = "quantum-age",
     },
+    {
+        name = "ei_personal-reactor",
+        type = "technology",
+        icon = ei_graphics_other_path.."personal-reactor.png",
+        icon_size = 256,
+        prerequisites = {"ei_fusion-reactor", "ei_plasma-cube"},
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "ei_personal-reactor"
+            },
+        },
+        unit = {
+            count = 100,
+            ingredients = ei_data.science["quantum-age"],
+            time = 20
+        },
+        age = "quantum-age",
+    },
 })
 
 --OTHER
@@ -2899,7 +2944,29 @@ data:extend({
         equipment_categories = {"armor"},
         width = 14,
         height = 14,
-    }
+    },
+    {
+        name = "ei_personal-reactor",
+        type = "generator-equipment",
+        power = "3MW",
+        categories = {"armor"},
+        sprite = {
+            filename = ei_graphics_other_path.."personal-reactor.png",
+            width = 256,
+            height = 256,
+            priority = "medium"
+        },
+        shape = {
+            width = 4,
+            height = 4,
+            type = "full"
+        },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-output"
+        },
+        take_result = "ei_personal-reactor",
+    },
 })
 
 table.insert(data.raw["technology"]["ei_exotic-age"].effects, {

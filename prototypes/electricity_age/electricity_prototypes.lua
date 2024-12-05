@@ -362,7 +362,7 @@ data:extend({
         subgroup = "equipment",
         order = "a[energy-source]-b[personal-solar-panel]",
         stack_size = 20,
-        placed_as_equipment_result = "ei_personal-solar-2",
+        place_as_equipment_result = "ei_personal-solar-2",
     },
     {
         name = "ei_personal-solar-2",

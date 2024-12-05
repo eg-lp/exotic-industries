@@ -242,45 +242,6 @@ data:extend({
         stack_size = 50
     },
     {
-        name = "ei_personal-reactor",
-        type = "item",
-        icon = ei_graphics_item_path.."personal-reactor.png",
-        icon_size = 64,
-        subgroup = "equipment",
-        order = "a[energy-source]-f[personal-reactor]",
-        stack_size = 1,
-        placed_as_equipment_result = "ei_personal-reactor",
-    },
-    {
-        name = "ei_personal-reactor",
-        type = "generator-equipment",
-        power = "1000kW",
-        categories = {"armor"},
-        burner = {
-            type = "burner",
-            fuel_categories = {"ei_nuclear-fuel"},
-            effectivity = 0.05,
-            fuel_inventory_size = 3,
-            burnt_inventory_size = 3,
-        },
-        sprite = {
-            filename = ei_graphics_other_path.."personal-reactor.png",
-            width = 256,
-            height = 256,
-            priority = "medium"
-        },
-        shape = {
-            width = 3,
-            height = 3,
-            type = "full"
-        },
-        energy_source = {
-            type = "electric",
-            usage_priority = "secondary-output"
-        },
-        take_result = "ei_personal-reactor",
-    },
-    {
         name = "ei_personal-laser",
         type = "item",
         icon = ei_graphics_item_path.."personal-laser.png",
@@ -288,7 +249,7 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = "military-equipment",
         order = "b[active-defense]-a[personal-laser-defense-equipment]-a",
-        placed_as_equipment_result = "ei_personal-laser",
+        place_as_equipment_result = "ei_personal-laser",
         stack_size = 20
     },
     {
@@ -347,7 +308,7 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = "equipment",
         order = "d[exoskeleton]-b[personal-leg]",
-        placed_as_equipment_result = "ei_personal-leg",
+        place_as_equipment_result = "ei_personal-leg",
         stack_size = 20
     },
     {
@@ -1096,22 +1057,6 @@ data:extend({
         enabled = false,
         always_show_made_in = true,
         main_product = "ei_compound-ammo",
-    },
-    {
-        name = "ei_personal-reactor",
-        type = "recipe",
-        category = "crafting",
-        energy_required = 10,
-        ingredients =
-        {
-            {type="item", name="nuclear-reactor", amount=1},
-            {type="item", name="ei_fission-tech", amount=30},
-            {type="item", name="steam-turbine", amount=1},
-        },
-        results = {{type="item", name="ei_personal-reactor", amount=1}},
-        enabled = false,
-        always_show_made_in = true,
-        main_product = "ei_personal-reactor",
     },
     {
         name = "ei_personal-laser",
@@ -1938,25 +1883,6 @@ data:extend({
             ingredients = ei_data.science["knowledge-2"],
             time = 20
         },
-    },
-    {
-        name = "ei_personal-reactor",
-        type = "technology",
-        icon = ei_graphics_other_path.."personal-reactor.png",
-        icon_size = 256,
-        prerequisites = {"ei_high-temperature-reactor"},
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "ei_personal-reactor"
-            },
-        },
-        unit = {
-            count = 100,
-            ingredients = ei_data.science["computer-age"],
-            time = 20
-        },
-        age = "computer-age",
     },
     {
         name = "ei_personal-leg",

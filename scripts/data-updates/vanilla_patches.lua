@@ -427,11 +427,11 @@ local new_ingredients_table = {
         {type="item", name="concrete", amount=1000},
         {type="item", name="ei_advanced-motor", amount=50},
     },
-    ["fusion-reactor-equipment"] = {
-        {type="item", name="ei_plasma-cube", amount=4},
-        {type="item", name="processing-unit", amount=100},
-        {type="item", name="ei_fusion-data", amount=40},
-    },
+    ["fission-reactor-equipment"] = {
+        {type="item", name="nuclear-reactor", amount=1},
+        {type="item", name="ei_fission-tech", amount=30},
+        {type="item", name="steam-turbine", amount=1},
+},
     ["arithmetic-combinator"] = {
         {type="item", name="electronic-circuit", amount=2},
         {type="item", name="copper-cable", amount=3},
@@ -783,6 +783,7 @@ new_prerequisites_table["computer-age"] = {
     {"ei_rocket-parts", "rocket-fuel"},
     {"rocket-silo", "ei_rocket-parts"},
     {"processing-unit", "ei_advanced-computer-age-tech"},
+    {"fission-reactor-equipment", "ei_high-temperature-reactor"},
     
 }
 
@@ -793,8 +794,6 @@ new_prerequisites_table["quantum-age"] = {
     {"worker-robots-speed-6", "ei_deep-exploration"},
     {"worker-robots-speed-5", "ei_fusion-data"},
     {"worker-robots-storage-3", "ei_fusion-data"},
-    {"fusion-reactor-equipment", "ei_fusion-reactor"},
-    {"fusion-reactor-equipment", "ei_plasma-cube"},
     {"laser-weapons-damage-6", "ei_fusion-data"},
     {"laser-weapons-damage-7", "ei_deep-exploration"},
     {"stronger-explosives-7", "ei_deep-exploration"},
@@ -1354,8 +1353,16 @@ end
 
 -- increase power output of fusion reactor equipment
 
-data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "3MW"
-data.raw["item"]["fusion-reactor-equipment"].order = "a[energy-source]-g[fusion-reactor-equipment]"
+data.raw["generator-equipment"]["fission-reactor-equipment"].power = "1MW"
+data.raw["generator-equipment"]["fission-reactor-equipment"].burner = {
+    type = "burner",
+    fuel_categories = {"ei_nuclear-fuel"},
+    effectivity = 0.05,
+    fuel_inventory_size = 3,
+    burnt_inventory_size = 3,
+}
+data.raw["generator-equipment"]["fission-reactor-equipment"].energy_source.usage_priority = "secondary-output"
+data.raw["item"]["fission-reactor-equipment"].order = "a[energy-source]-g[fission-reactor-equipment]"
 
 
 -- hide unused items

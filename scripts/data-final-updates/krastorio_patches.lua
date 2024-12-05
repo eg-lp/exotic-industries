@@ -615,13 +615,13 @@ local K2_CHANGES = {
     ["generator-equipment"] = {
         ["nuclear-reactor-equipment"] = {
             burner = {
-                type = "burner", fuel_category = "ei_nuclear-fuel",
+                type = "burner", fuel_categories = {"ei_nuclear-fuel"},
                 effectivity = 0.25, fuel_inventory_size = 3, burnt_inventory_size = 3
             },
         },
-        ["fusion-reactor-equipment"] = {
+        ["ei_personal-reactor"] = {
             burner = {
-                type = "burner", fuel_category = "ei_fusion-fuel",
+                type = "burner", fuel_categories = {"ei_fusion-fuel"},
                 effectivity = 1, fuel_inventory_size = 1, burnt_inventory_size = 1
             },
         },
@@ -745,7 +745,7 @@ local new_prerequisites = {
         ["bulk-inserter"] = {{"kr-fluids-chemistry"},{},false},
         ["ei_deep-pumpjack"] = {{"kr-fluids-chemistry"},{},false},
         ["ei_cooler"] = {{"kr-fluids-chemistry"},{},false},
-        ["kr-nuclear-reactor-equipment"] = {{"ei_personal-reactor"},{},false},
+        ["kr-nuclear-reactor-equipment"] = {{"fission-reactor-equipment"},{},false},
         ["ei_high-energy-crystal"] = {{"kr-fluids-chemistry"},{},false},
         ["kr-singularity-lab"] = {{"ei_computer-core"},{"ei_advanced-computer-age-tech", "ei_knowledge-computer-age-tech"},true},
     },
@@ -813,7 +813,7 @@ local new_prerequisites = {
         ["ei_plasma-turret"] = {{"ei_high-tech-parts", "kr-laser-artillery-turret"},{},false},
         ["kr-antimatter-reactor"] = {{"ei_antimatter-cube"},{},false},
         ["kr-antimatter-ammo"] = {{"kr-antimatter-reactor", "kr-laser-artillery-turret", "kr-rocket-turret"},{},false},
-        ["kr-antimatter-reactor-equipment"] = {{"kr-antimatter-reactor", "fusion-reactor-equipment"},{},false},
+        ["kr-antimatter-reactor-equipment"] = {{"kr-antimatter-reactor", "ei_personal-reactor"},{},false},
         ["ei_personal-shield"] = {{"kr-energy-shield-mk4-equipment", "ei_high-tech-parts"},{},false},
     },
 }
@@ -1251,7 +1251,7 @@ local recipe_overwrite = {
         {type = "fluid", name = "ei_nitric-acid", amount = 25},
     },
     ["nuclear-reactor-equipment"] = {
-        {type = "item", name = "ei_personal-reactor", amount = 1},
+        {type = "item", name = "fission-reactor-equipment", amount = 1},
         {type = "item", name = "rare-metals", amount = 30},
         {type = "item", name = "ei_simulation-data", amount = 20},
         {type = "item", name = "ei_fission-tech", amount = 20},

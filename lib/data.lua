@@ -335,7 +335,7 @@ ei_data.sub_age["four-quantum-age"] = "quantum-age"
 
 
 ei_data.add_to_sub_age["fusion-quantum-age"] = {
-    "fusion-reactor-equipment",
+    "ei_personal-reactor",
     "worker-robots-speed-5",
     "worker-robots-storage-3",
     "laser-weapons-damage-6",
@@ -640,7 +640,7 @@ ei_data.tech_structure["computer-age"] = {
 
 ei_data.tech_structure["quantum-age"] = {
     "atomic-bomb",
-    "fusion-reactor-equipment",
+    "ei_personal-reactor",
     "inserter-capacity-bonus-5",
     "inserter-capacity-bonus-6",
     "inserter-capacity-bonus-7",
