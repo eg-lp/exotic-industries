@@ -348,7 +348,6 @@ ei_data.add_to_sub_age["both-quantum-age"] = {
     "inserter-capacity-bonus-7",
     "laser-weapons-damage-7",
     "stronger-explosives-7",
-    "follower-robot-count-7",
 }
 
 ei_data.sub_age["black-hole-exotic-age"] = "exotic-age"
@@ -473,7 +472,6 @@ ei_data.tech_structure["steam-age"] = {
     "advanced-material-processing",
     -- train
     "automated-rail-transportation",
-    "rail-signals",
     "braking-force-1",
     "braking-force-2",
     "weapon-shooting-speed-2",
@@ -659,8 +657,6 @@ ei_data.tech_structure["quantum-age"] = {
     "laser-weapons-damage-6",
     "laser-weapons-damage-7",
     "follower-robot-count-5",
-    "follower-robot-count-6",
-    "follower-robot-count-7",
     "artillery-shell-range-1",
     "artillery-shell-speed-1",
 }

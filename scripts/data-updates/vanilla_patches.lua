@@ -790,7 +790,6 @@ new_prerequisites_table["quantum-age"] = {
     {"laser-weapons-damage-6", "ei_fusion-data"},
     {"laser-weapons-damage-7", "ei_deep-exploration"},
     {"stronger-explosives-7", "ei_deep-exploration"},
-    {"follower-robot-count-7", "ei_deep-exploration"},
     {"physical-projectile-damage-7", "ei_deep-exploration"},
     {"refined-flammables-7", "ei_deep-exploration"},
     {"artillery-shell-range-1", "artillery"},
@@ -811,7 +810,6 @@ end
 
 numbered_buffs = {
     "stronger-explosives-7",
-    "follower-robot-count-7",
     "mining-productivity-4",
     "research-speed-6",
     "worker-robots-speed-6",
