@@ -731,6 +731,14 @@ data:extend({
             },
         },
     },
+    {
+        type = "item",
+        name = "ei_rocket-control-unit",
+        icons = {{icon="__base__/graphics/icons/processing-unit.png", tint={r=1.0, g=0.8, b=0.0}}},
+        subgroup = "intermediate-product",
+        order = "n[ei_rocket-control-unit]",
+        stack_size = 10
+      },
 })
 
 --RECIPES
@@ -1133,7 +1141,7 @@ data:extend({
         category = "crafting",
         energy_required = 15,
         ingredients = {
-            {type = "item", name = "rocket-control-unit", amount = 1},
+            {type = "item", name = "ei_rocket-control-unit", amount = 1},
             {type = "item", name = "ei_module-base", amount = 1},
             {type = "item", name = "ei_condensed-cryodust", amount = 1},
             {type = "item", name = "ei_sus-plating", amount = 3},
@@ -1205,7 +1213,7 @@ data:extend({
         energy_required = 10,
         ingredients =
         {
-            {type="item", name="rocket-control-unit", amount=1},
+            {type="item", name="ei_rocket-control-unit", amount=1},
             {type="item", name="low-density-structure", amount=2},
             {type="item", name="ei_steel-mechanical-parts", amount=4},
             {type="item", name="ei_insulated-wire", amount=2},
@@ -1751,6 +1759,20 @@ data:extend({
         icon = ei_graphics_other_path.."monosilicon_advanced-waver.png",
         icon_size = 128,
     },
+    {
+        type = "recipe",
+        name = "ei_rocket-control-unit",
+        energy_required = 30,
+        enabled = false,
+        category = "crafting",
+        ingredients =
+        {
+            {type="item", name="processing-unit", amount=1},
+            {type="item", name="ei_high-energy-crystal", amount=1},
+            {type="item", name="ei_insulated-wire", amount=6},
+        },
+        results={{type = "item", name= "ei_rocket-control-unit", amount=1}}
+      },
 })
 
 --TECHS
@@ -2152,7 +2174,7 @@ data:extend({
         type = "technology",
         icon = ei_graphics_tech_path.."rocket-parts.png",
         icon_size = 128,
-        prerequisites = {"rocket-control-unit", "low-density-structure", "rocketry"},
+        prerequisites = {"ei_rocket-control-unit", "low-density-structure", "rocketry"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -2360,6 +2382,27 @@ data:extend({
             time = 20
         },
         age = "computer-age",
+    },
+    {
+        type = "technology",
+        name = "ei_rocket-control-unit",
+        icons = {{icon="__base__/graphics/technology/processing-unit.png", tint={r=1.0, g=1.0, b=0.0}, icon_size = 256}},
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "ei_rocket-control-unit"
+          }
+        },
+        prerequisites = {"utility-science-pack", "speed-module", "processing-unit", "ei_high-energy-crystal"},
+        unit =
+        {
+            count = 100,
+            ingredients = ei_data.science["computer-age"],
+            time = 20
+        },
+        age = "computer-age",
+        order = "k-a"
     },
 })
 

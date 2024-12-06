@@ -350,11 +350,6 @@ local new_ingredients_table = {
         {type="item", name="ei_module-base", amount=1},
         {type="item", name="speed-module-2", amount=2},
     },
-    ["rocket-control-unit"] = {
-        {type="item", name="processing-unit", amount=1},
-        {type="item", name="ei_high-energy-crystal", amount=1},
-        {type="item", name="ei_insulated-wire", amount=6},
-    },
     ["rocket-part"] = {
         {type="item", name="ei_rocket-parts", amount=10},
         {type="item", name="rocket-fuel", amount=10},
@@ -778,8 +773,6 @@ new_prerequisites_table["computer-age"] = {
     {"low-density-structure", "ei_advanced-steel"},
     {"rocket-fuel", "refined-flammables-6"},
     {"rocket-fuel", "ei_oxygen-gas"},
-    {"rocket-control-unit", "processing-unit"},
-    {"rocket-control-unit", "ei_high-energy-crystal"},
     {"ei_rocket-parts", "rocket-fuel"},
     {"rocket-silo", "ei_rocket-parts"},
     {"processing-unit", "ei_advanced-computer-age-tech"},

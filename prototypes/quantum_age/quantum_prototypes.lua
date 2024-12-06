@@ -1789,7 +1789,7 @@ data:extend({
         energy_required = 10,
         ingredients =
         {
-            {type="item", name="rocket-control-unit", amount=1},
+            {type="item", name="ei_rocket-control-unit", amount=1},
             {type="item", name="ei_carbon-structure", amount=2},
             {type="item", name="ei_steel-mechanical-parts", amount=8},
             {type="item", name="ei_insulated-wire", amount=6},
