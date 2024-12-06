@@ -56,3 +56,5 @@ require("gaia-pump")
 require("bio-reactor")
 -- add excavator
 require("excavator")
+-- add dummy lab
+require("dummy-lab")
