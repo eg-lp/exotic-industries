@@ -818,3 +818,18 @@ data:extend({
   category = "resource"
   },
 })
+
+for _, resource_name in pairs({
+  "ei_gold-patch",
+  "ei_lead-patch",
+  "ei_neodym-patch",
+  "ei_iron-patch",
+  "ei_copper-patch",
+  "ei_coal-patch",
+  "ei_uranium-patch",
+  "ei_sulfur-patch",
+}) do
+  -- enable placing and control. I think.
+  data.raw["planet"]["nauvis"].map_gen_settings.autoplace_settings["entity"]["settings"][resource_name] = {}
+  data.raw["planet"]["nauvis"].map_gen_settings.autoplace_controls[resource_name] = {}
+end
