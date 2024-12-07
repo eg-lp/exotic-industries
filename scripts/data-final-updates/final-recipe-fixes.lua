@@ -108,6 +108,7 @@ local recipes = {
 local remove_prod = {
     "iron-plate",
     "copper-plate",
+	"lubricant",
 }
 
 local crafting_categories = {
@@ -119,29 +120,13 @@ local crafting_categories = {
 -- add them to limitation of productivity modules
 
 for i,v in pairs(recipes) do
-    table.insert(data.raw["module"]["productivity-module"].limitation, v)
-    table.insert(data.raw["module"]["productivity-module-2"].limitation, v)
-    table.insert(data.raw["module"]["productivity-module-3"].limitation, v)
+	data.raw["recipe"][v].allow_productivity = true
 end
 
 -- remove productivity from given recipes
 
 for i,v in pairs(remove_prod) do
-    for i2,v2 in ipairs(data.raw["module"]["productivity-module"].limitation) do
-        if v2 == v then
-            table.remove(data.raw["module"]["productivity-module"].limitation, i2)
-        end
-    end
-    for i2,v2 in ipairs(data.raw["module"]["productivity-module-2"].limitation) do
-        if v2 == v then
-            table.remove(data.raw["module"]["productivity-module-2"].limitation, i2)
-        end
-    end
-    for i2,v2 in ipairs(data.raw["module"]["productivity-module-3"].limitation) do
-        if v2 == v then
-            table.remove(data.raw["module"]["productivity-module-3"].limitation, i2)
-        end
-    end
+    data.raw["recipe"][v].allow_productivity = false
 end
 
 -- get all recipes that have given crafting category and add them to limitation of productivity modules
@@ -149,36 +134,11 @@ end
 for i,v in pairs(crafting_categories) do
     for i2,v2 in pairs(data.raw["recipe"]) do
         if v2.category == v then
-            table.insert(data.raw["module"]["productivity-module"].limitation, v2.name)
-            table.insert(data.raw["module"]["productivity-module-2"].limitation, v2.name)
-            table.insert(data.raw["module"]["productivity-module-3"].limitation, v2.name)
+            v2.allow_productivity = true
         end
     end
 end
 
--- remove productivity
-
-local remove = {
-    "lubricant",
-}
-
--- loop over modules and their limitation and remove productivity from them for given recipes
-
-local modules = {
-    "productivity-module",
-    "productivity-module-2",
-    "productivity-module-3",
-}
-
-for i,v in pairs(modules) do
-    for i2,v2 in ipairs(data.raw["module"][v].limitation) do
-        for i3,v3 in ipairs(remove) do
-            if v2 == v3 then
-                table.remove(data.raw["module"][v].limitation, i2)
-            end
-        end
-    end
-end
 
 -- fix recipes that need vanilla iron-ore, copper-ore or iron-gear-wheel/iron-stick
 -- loop over all recipes
@@ -295,7 +255,7 @@ data.raw.recipe["ei_acidic-water__crushed-sulfur"].crafting_machine_tint =
 data.raw.recipe["ei_drill-fluid"].crafting_machine_tint =
 {
 	primary = {r=0.49, g=0.48, b=0.44, a = 1.000},
-	secondary = {r=0.69, g=0.63, b=0.46, b = 0.771, a = 1.000},
+	secondary = {r=0.69, g=0.63, b = 0.771, a = 1.000},
 	tertiary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000},
 	quaternary = {r = 1.000, g = 0.852, b = 0.172, a = 1.000}
 }

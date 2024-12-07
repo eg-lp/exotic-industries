@@ -1450,11 +1450,6 @@ data.raw.module["speed-module-3"].effect = {
     speed = 0.5
 }
 
--- clone vanilla prod module limitation to ei prod modules
-data.raw.module["ei_productivity-module-4"].limitation = data.raw.module["productivity-module"].limitation
-data.raw.module["ei_productivity-module-5"].limitation = data.raw.module["productivity-module"].limitation
-data.raw.module["ei_productivity-module-6"].limitation = data.raw.module["productivity-module"].limitation
-
 -- remove the ignore_tech_multiplier from all techs
 -- increase bot speed buff in speed techs by 15 percent each
 for _,tech in pairs(data.raw.technology) do

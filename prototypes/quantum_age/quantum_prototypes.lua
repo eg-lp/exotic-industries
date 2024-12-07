@@ -98,8 +98,6 @@ data:extend({
             pollution = 0.2,
             speed = -0.25
         },
-        limitation = data.raw["module"]["productivity-module"].limitation,
-        limitation_message_key = data.raw["module"]["productivity-module"].limitation_message_key,
     },
     {
         name = "ei_productivity-module-5",
@@ -117,8 +115,6 @@ data:extend({
             pollution = 0.4,
             speed = -0.4
         },
-        limitation = data.raw["module"]["productivity-module"].limitation,
-        limitation_message_key = data.raw["module"]["productivity-module"].limitation_message_key,
     },
     {
         name = "ei_productivity-module-6",
@@ -136,8 +132,6 @@ data:extend({
             pollution = 0.6,
             speed = -0.8
         },
-        limitation = data.raw["module"]["productivity-module"].limitation,
-        limitation_message_key = data.raw["module"]["productivity-module"].limitation_message_key,
     },
     {
         name = "ei_gauss-module",
