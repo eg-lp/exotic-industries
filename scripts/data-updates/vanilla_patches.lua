@@ -966,7 +966,7 @@ data.raw["recipe"]["steel-plate"].hidden = true
 -- military
 data.raw["recipe"]["radar"].enabled = false
 
--- expensive/normal variants
+
 data.raw["recipe"]["pipe"].enabled = false
 data.raw["recipe"]["steam-engine"].enabled = false
 data.raw["recipe"]["electric-mining-drill"].enabled = false
