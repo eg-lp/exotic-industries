@@ -2394,7 +2394,7 @@ data:extend({
             recipe = "ei_rocket-control-unit"
           }
         },
-        prerequisites = {"utility-science-pack", "speed-module", "processing-unit", "ei_high-energy-crystal"},
+        prerequisites = {"processing-unit", "ei_high-energy-crystal"},
         unit =
         {
             count = 100,

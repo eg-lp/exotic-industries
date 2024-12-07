@@ -623,7 +623,6 @@ ei_data.tech_structure["computer-age"] = {
     "logistic-system",
     "low-density-structure",
     "mining-productivity-2",
-    "ei_rocket-control-unit",
     "rocket-fuel",
     "rocket-silo",
     "rocketry",
@@ -633,12 +632,12 @@ ei_data.tech_structure["computer-age"] = {
     "artillery",
     "follower-robot-count-3",
     "follower-robot-count-4",
+    "fission-reactor-equipment"
 
 }
 
 ei_data.tech_structure["quantum-age"] = {
     "atomic-bomb",
-    "ei_personal-reactor",
     "inserter-capacity-bonus-5",
     "inserter-capacity-bonus-6",
     "inserter-capacity-bonus-7",
@@ -956,6 +955,20 @@ ei_data.scanner_values = {
   ["ei_alien-beacon"] = 300,
   ["ei_crystal-accumulator"] = 200,
   ["ei_farstation"] = 200,
+}
+
+--TECHNOLOGIES TO REMOVE
+
+
+ei_data.technologies_to_remove = {
+    "uranium-mining",
+    "automation-science-pack",
+    "oil-gathering",
+    "electric-mining-drill",
+    "repair-pack",
+    "radar",
+    "automation-science-pack",
+    "steam-power"
 }
 
 

@@ -1263,6 +1263,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "ei_drill-fluid"
             },
+            {
+                type="mining-with-fluid", 
+                modifier=true
+            },
         },
         unit = {
             count = 100,

@@ -821,6 +821,7 @@ numbered_buffs = {
     "braking-force-7",
     "laser-shooting-speed-7",
     "weapon-shooting-speed-6",
+    "follower-robot-count-5"
 }
 
 local prereqs_to_remove = {}
@@ -971,6 +972,7 @@ data.raw["recipe"]["steam-engine"].enabled = false
 data.raw["recipe"]["electric-mining-drill"].enabled = false
 data.raw["recipe"]["iron-gear-wheel"].enabled = false
 data.raw["recipe"]["electronic-circuit"].enabled = false
+data.raw["recipe"]["repair-pack"].enabled = false
 
 --FUEL CATEGORIES
 ------------------------------------------------------------------------------------------------------
@@ -1591,3 +1593,12 @@ end
 for i,v in ipairs(prereqs_to_remove) do
     ei_lib.remove_prerequisite(v[1], v[2])
 end
+
+--HIDE VANILLA TECHNOLOGIES
+
+for _, tech in ipairs(ei_data.technologies_to_remove) do
+    ei_lib.remove_tech(tech)
+end
+
+ei_lib.add_unlock_recipe("lamp", "radar")
+ei_lib.add_unlock_recipe("oil-processing", "pumpjack")
