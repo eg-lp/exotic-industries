@@ -1595,5 +1595,4 @@ for _, tech in ipairs(ei_data.technologies_to_remove) do
     ei_lib.remove_tech(tech)
 end
 
-ei_lib.add_unlock_recipe("lamp", "radar")
 ei_lib.add_unlock_recipe("oil-processing", "pumpjack")
