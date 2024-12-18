@@ -226,25 +226,25 @@ data:extend({
             {
                 filename = ei_graphics_item_path.."crushed-neodym.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-neodym-1.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-neodym-2.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-neodym-3.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },
@@ -262,25 +262,25 @@ data:extend({
             {
                 filename = ei_graphics_item_path.."crushed-pure-neodym.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-pure-neodym-1.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-pure-neodym-2.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-pure-neodym-3.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },
@@ -300,19 +300,19 @@ data:extend({
             {
                 filename = ei_graphics_item_path.."crushed-coal.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-coal-1.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."crushed-coal-2.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },
@@ -339,25 +339,25 @@ data:extend({
             {
                 filename = ei_graphics_item_path.."carbon-nanotube.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."carbon-nanotube-1.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."carbon-nanotube-2.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."carbon-nanotube-3.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },

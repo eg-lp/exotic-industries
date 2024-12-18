@@ -299,14 +299,14 @@ data:extend({
               {
                 size = 64,
                 filename = ei_graphics_item_path.."uranium-233-fuel.png",
-                scale = 0.25
+                scale = 0.5
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 64,
                 filename = ei_graphics_item_path.."fission-fuel_light.png",
-                scale = 0.25
+                scale = 0.5
               }
             }
         },
@@ -337,14 +337,14 @@ data:extend({
               {
                 size = 64,
                 filename = ei_graphics_item_path.."plutonium-239-fuel.png",
-                scale = 0.25
+                scale = 0.5
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 64,
                 filename = ei_graphics_item_path.."fission-fuel_light.png",
-                scale = 0.25
+                scale = 0.5
               }
             }
         },
@@ -375,14 +375,14 @@ data:extend({
               {
                 size = 64,
                 filename = ei_graphics_item_path.."thorium-232-fuel.png",
-                scale = 0.25
+                scale = 0.5
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 64,
                 filename = ei_graphics_item_path.."fission-fuel_light.png",
-                scale = 0.25
+                scale = 0.5
               }
             }
         },
