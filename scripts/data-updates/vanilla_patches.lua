@@ -1596,3 +1596,4 @@ for _, tech in ipairs(ei_data.technologies_to_remove) do
 end
 
 ei_lib.add_unlock_recipe("oil-processing", "pumpjack")
+data.raw["recipe"]["repair-pack"].enabled = true;
