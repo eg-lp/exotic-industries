@@ -1543,7 +1543,7 @@ for i,item in pairs(data.raw["item"]) do
         -- find barreling and unbarreling recipes and change fluid in/out
         for _,recipe in pairs(data.raw["recipe"]) do
 
-            if recipe.name == "fill-"..item.name then
+            if recipe.name == item.name then
                 recipe.ingredients = {
                     {type = "fluid", name = fluid, amount = 500*ei_lib.config("barrel__multiplier")},
                     {type = "item", name = "barrel", amount = 1}
