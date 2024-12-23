@@ -82,7 +82,7 @@ data:extend({
     },
     {
         name = "ei_high-temperature-reactor",
-        type = "furnace",
+        type = "assembling-machine",
         icon = ei_graphics_item_path.."high-temperature-reactor.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
