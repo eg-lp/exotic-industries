@@ -451,4 +451,4 @@ table.insert(data.raw.technology["uranium-processing"].effects,  {
 })
 
 ei_lib.remove_unlock_recipe("uranium-processing", "uranium-processing")
-ei_lib.remove_unlock_recipe("uranium-processing", "uranium-fuel-cell")
+ei_lib.remove_unlock_recipe("nuclear-power", "uranium-fuel-cell")
