@@ -52,10 +52,6 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "ei_gaia-pump"
-            },
-            {
-                type = "unlock-recipe",
                 recipe = "ei_concentrated-gaia-water"
             },
             {

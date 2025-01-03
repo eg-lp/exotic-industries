@@ -20,14 +20,12 @@ local decorative_settings = {
 
 -- buildings that will get destroyed on gaia
 model.destroy_gaia = {
-    ["offshore-pump"] = true,
     ["rocket-silo"] = true,
     ["teleporter"] = true
 }
 
 -- buildings that will get destroyed on non gaia
 model.destroy_non_gaia = {
-    ["ei_gaia-pump"] = true,
     ["ei_bio-chamber"] = true,
     ["ei_bio-reactor"] = true,
 }
@@ -116,6 +114,9 @@ function model.create_gaia()
             ["control-setting:moisture:bias"] = 0.7,
             --["control-setting:temperature:bias"] = 0.8,
             ["control-setting:moisture:frequency:multiplier"] = -10,
+
+            ["tile:water:probability"] = "-inf",
+            ["tile:deepwater:probability"] = "-inf",
         },
     })
 

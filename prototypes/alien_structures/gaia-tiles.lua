@@ -256,6 +256,7 @@ data:extend({
     }
 })
 
-
---NOISE LAYERS
-------------------------------------------------------------------------------------------------------
+gaia_water = table.deepcopy(data.raw.tile["water"]);
+gaia_water.name = "ei_gaia-water"
+gaia_water.fluid = "ei_gaia-water";
+data:extend({gaia_water})

@@ -50,8 +50,6 @@ require("knowledge-console")
 require("bio-chamber")
 -- add deep pumpjack
 require("deep-pumpjack")
--- add gaia pump
-require("gaia-pump")
 -- add bio reactor
 require("bio-reactor")
 -- add excavator
