@@ -140,25 +140,25 @@ data:extend({
             {
                 filename = ei_graphics_item_path.."pure-gold.png",
                 mipmap_count = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."pure-gold-1.png",
                 mipmap_count = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."pure-gold-2.png",
                 mipmap_count = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."pure-gold-3.png",
                 mipmap_count = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             }
         },

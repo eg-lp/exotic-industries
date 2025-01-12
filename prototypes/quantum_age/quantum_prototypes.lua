@@ -394,14 +394,14 @@ data:extend({
               {
                 size = 128,
                 filename = ei_graphics_item_path.."magnet-data.png",
-                scale = 0.25/2
+                scale = 0.25
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 128,
                 filename = ei_graphics_item_path.."magnet-data_light.png",
-                scale = 0.25/2
+                scale = 0.25
               }
             }
           },
@@ -420,14 +420,14 @@ data:extend({
               {
                 size = 128,
                 filename = ei_graphics_item_path.."fusion-data.png",
-                scale = 0.25/2
+                scale = 0.25
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 128,
                 filename = ei_graphics_item_path.."simulation-data_light.png",
-                scale = 0.25/2
+                scale = 0.25
               }
             }
           },
@@ -446,14 +446,14 @@ data:extend({
               {
                 size = 128,
                 filename = ei_graphics_item_path.."sun-data.png",
-                scale = 0.25/2
+                scale = 0.25
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 128,
                 filename = ei_graphics_item_path.."space-data_light.png",
-                scale = 0.25/2
+                scale = 0.25
               }
             }
           },
@@ -472,14 +472,14 @@ data:extend({
               {
                 size = 128,
                 filename = ei_graphics_item_path.."gas-giant-data.png",
-                scale = 0.25/2
+                scale = 0.25
               },
               {
                 draw_as_light = true,
                 flags = {"light"},
                 size = 128,
                 filename = ei_graphics_item_path.."space-data_light.png",
-                scale = 0.25/2
+                scale = 0.25
               }
             }
           },
@@ -667,25 +667,25 @@ data:extend({
             {
                 filename = ei_graphics_item_path.."lithium-crystal.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."lithium-crystal-1.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."lithium-crystal-2.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."lithium-crystal-3.png",
                 icon_mipmaps = 4,
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },

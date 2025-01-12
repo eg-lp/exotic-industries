@@ -465,13 +465,13 @@ data:extend({
             layers = {
                 {
                     filename = ei_graphics_item_2_path.."condensed-cryodust-1.png",
-                    scale = 0.125,
+                    scale = 0.25,
                     size = 128
                 },
                 {
                     draw_as_light = true,
                     filename = ei_graphics_item_2_path.."condensed-cryodust-1.png",
-                    scale = 0.125,
+                    scale = 0.25,
                     size = 128
                 }
             },
@@ -566,13 +566,13 @@ data:extend({
             layers = {
                 {
                     filename = ei_graphics_item_2_path.."enriched-cryodust.png",
-                    scale = 0.125,
+                    scale = 0.25,
                     size = 128
                 },
                 {
                     draw_as_light = true,
                     filename = ei_graphics_item_2_path.."enriched-cryodust.png",
-                    scale = 0.125,
+                    scale = 0.25,
                     size = 128
                 }
             },
@@ -680,27 +680,27 @@ data:extend({
         pictures = {
             {
                 filename = ei_graphics_item_path.."silicon.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."silicon-2.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."silicon-3.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."silicon-4.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."silicon-5.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },
@@ -716,17 +716,17 @@ data:extend({
         pictures = {
             {
                 filename = ei_graphics_item_path.."monosilicon.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."monosilicon-2.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
             {
                 filename = ei_graphics_item_path.."monosilicon-3.png",
-                scale = 0.25,
+                scale = 0.5,
                 size = 64
             },
         },
