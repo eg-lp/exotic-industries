@@ -123,6 +123,7 @@ data:extend({
 local entity_base = {
     name = "ei_metalworks_1",
     type = "assembling-machine",
+    circuit_wire_max_distance = 9,
     icon = ei_graphics_item_path.."metalworks_1.png",
     icon_size = 64,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},

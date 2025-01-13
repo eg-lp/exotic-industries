@@ -109,6 +109,7 @@ data:extend({
     {
         name = "ei_grower",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_path.."grower.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

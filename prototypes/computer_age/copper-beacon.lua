@@ -172,6 +172,7 @@ data:extend({
     {
         name = "ei_copper-beacon_slave",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_other_path.."64_empty.png",
         fixed_recipe = "ei_copper-beacon_slave",
         icon_size = 64,

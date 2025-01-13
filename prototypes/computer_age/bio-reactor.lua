@@ -73,6 +73,7 @@ data:extend({
     {
         name = "ei_bio-reactor",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         crafting_categories = {"ei_bio-chamber", "ei_bio-reactor"},
         icon = ei_graphics_item_2_path.."bio-reactor.png",
         icon_size = 64,

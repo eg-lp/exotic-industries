@@ -91,6 +91,7 @@ data:extend({
     {
         name = "ei_small-simulator",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_path.."small-simulator.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

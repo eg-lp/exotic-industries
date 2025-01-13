@@ -58,6 +58,7 @@ data:extend({
     {
         name = "ei_deep-pumpjack",
         type = "mining-drill",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_2_path.."deep-pumpjack.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

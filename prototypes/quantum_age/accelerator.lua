@@ -67,6 +67,7 @@ data:extend({
     {
         name = "ei_accelerator",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_2_path.."accelerator.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

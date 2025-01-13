@@ -40,6 +40,7 @@ local blank = {
     ["entity"] = {
         name = "ei_holo-moon",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_destination_path.."moon.png",
         icon_size = 128,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

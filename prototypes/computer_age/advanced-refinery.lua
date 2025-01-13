@@ -62,6 +62,7 @@ data:extend({
     {
         name = "ei_advanced-refinery",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         crafting_categories = {"oil-processing", "ei_advanced-refinery"},
         icon = ei_graphics_item_path.."advanced-refinery.png",
         icon_size = 64,

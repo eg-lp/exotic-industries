@@ -58,6 +58,7 @@ data:extend({
     {
         name = "ei_excavator",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         crafting_categories = {"ei_bio-chamber", "ei_excavator"},
         icon = ei_graphics_item_2_path.."excavator.png",
         icon_size = 64,

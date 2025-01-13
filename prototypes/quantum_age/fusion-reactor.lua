@@ -78,6 +78,7 @@ data:extend({
     {
         name = "ei_fusion-reactor",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_path.."fusion-reactor.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

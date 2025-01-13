@@ -58,6 +58,7 @@ data:extend({
     {
         name = "ei_advanced-centrifuge",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         crafting_categories = {"centrifuging"},
         icon = ei_graphics_item_path.."advanced-centrifuge.png",
         icon_size = 64,

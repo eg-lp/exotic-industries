@@ -70,6 +70,7 @@ data:extend({
     {
         name = "ei_black-hole",
         type = "container",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_path.."black-hole.png",
         icon_size = 64,
         flags = {"placeable-neutral", "player-creation"},
@@ -100,6 +101,7 @@ data:extend({
     {
         name = "ei_energy-injector-pylon",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         icon = ei_graphics_item_path.."energy-injector-pylon.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},

@@ -99,6 +99,7 @@ data:extend({
     {
         name = "ei_advanced-chem-plant",
         type = "assembling-machine",
+        circuit_wire_max_distance = 9,
         crafting_categories = {"chemistry", "ei_advanced-chem-plant"},
         icon = ei_graphics_item_path.."advanced-chem-plant.png",
         icon_size = 64,

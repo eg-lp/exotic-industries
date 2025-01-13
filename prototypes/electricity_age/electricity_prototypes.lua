@@ -1427,6 +1427,7 @@ quarry.energy_source = {
 }
 quarry.allowed_effects = {"speed", "productivity", "consumption", "pollution"}
 quarry.module_slots = 2
+quarry.circircuit_wire_max_distance = 9
 
 data:extend({
     {
