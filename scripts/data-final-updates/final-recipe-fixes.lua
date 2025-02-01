@@ -97,7 +97,8 @@ local recipes = {
     "ei_ceramic__water",
     "ei_solid-fuel__residual-oil",
     "ei_diesel-fuel-unit",
-    "ei_benzol__petroleum"
+    "ei_benzol__petroleum",
+	"ei_rocket-control-unit"
 }
 
 local remove_prod = {
