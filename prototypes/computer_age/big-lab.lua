@@ -82,6 +82,10 @@ data:extend({
         inputs = ei_data.lab_inputs["big-lab"],
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_slots = 6,
+        icons_positioning = {
+            {inventory_index = defines.inventory.lab_modules, shift = {0, 0.8}},
+            {inventory_index = defines.inventory.lab_input, shift = {0, 0}}
+        },
         off_animation = {
             filename = ei_graphics_entity_path.."big-lab.png",
             size = {512*2,512*2},
