@@ -350,10 +350,6 @@ local new_ingredients_table = {
         {type="item", name="ei_module-base", amount=1},
         {type="item", name="speed-module-2", amount=2},
     },
-    ["rocket-part"] = {
-        {type="item", name="ei_rocket-parts", amount=10},
-        {type="item", name="rocket-fuel", amount=10},
-    },
     ["satellite"] = {
         {type="item", name="rocket-fuel", amount=20},
         {type="item", name="ei_rocket-parts", amount=5},
@@ -898,10 +894,7 @@ table.insert(data.raw["technology"]["automation-2"].effects, {
     recipe = "ei_ceramic"
 })
 
-table.insert(data.raw["technology"]["rocket-silo"].effects, {
-    type = "unlock-recipe",
-    recipe = "satellite"
-})
+ei_lib.remove_unlock_recipe("rocket-silo", "rocket-part")
 
 table.insert(data.raw["technology"]["rocket-silo"].effects, {
     type = "unlock-recipe",
